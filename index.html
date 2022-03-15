@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html xml:lang="ko" lang="ko" id="ivStyle" class="main">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>ohora</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel="stylesheet" href="css/optimizer.css">
+    <!-- 스마트 pc 기본 css-->
+    <link rel="stylesheet" href="css/smartpc/smartpc_default.css">
+    <link rel="stylesheet" href="css/smartpc/smartpc_common2.css">
+    <link rel="stylesheet" href="css/smartpc/smartpc_main.css">
+    <link rel="stylesheet" href="css/smartpc/slick.css">
+    <link rel="stylesheet" href="css/inclued/headerGnb/headerGnb.css">
+    <!-- 상품 리스트 -->
+    <link rel="stylesheet" href="css/inclued/prdList/prdList_common.css">
+    <!-- // 스마트 pc 기본 css-->
+
+    <!-- 서브공통css -->
+    <link rel="stylesheet" href="css/smartpc/smartpc_subcommon.css">
+    <link rel="stylesheet" href="css/inclued/floatingLayout_css/floatingLayout.css">
+
+    <!-- 스마트pc추가 css -->
+    <!-- 인스타그램 -->
+    <link rel="stylesheet" href="css/inclued/instagram/instagram.css">
+    <!-- 로그인페이지 css -->
+    <link rel="stylesheet" href="css/smartpc/smartpc_login.css">
+    <!-- 회원가입 css -->
+    <link rel="stylesheet" href="css/smartpc/smartpc_join.css">
+    <!-- 상품 상세페이지 css -->
+    <link rel="stylesheet" href="css/smartpc/smartpc_detail.css">
+    <!-- 마이페이지 css -->
+    <link rel="stylesheet" href="css/smartpc/smartpc_mypage.css">
+    <!-- 게시판 , 서치css -->
+    <link rel="stylesheet" href="css/smartpc/smartpc_board.css">
+    <link rel="stylesheet" href="css/smartpc/smartpc_search.css">
+    <!--  카테고리 css-->
+    <link rel="stylesheet" href="css/smartpc/smartpc_category.css">
+    <!-- 장바구니 css -->
+    <link rel="stylesheet" href="css/smartpc/smartpc_order.css">
+    <!-- //스마트pc추가 css  -->
+
+    
+</head>
+<body id="smartpc">
+    <!-- 탑배너 -->
+    <div class="sp_topbanner" style="display: block;">
+        <div class = "SP_layoutMin">
+            <div class="SP_topBn_inner"></div>
+            <!-- 상단띠 배너 -->
+            <div class="xans-element- xans-layout xans-layout-statelogoff">
+                <div class="slide_banner_top slick-initialized slick-slider" id="sltop_ban">
+                    <div class="slick-list draggable">
+                        <div class="slick-track">
+                            <a href=""><img src="images/banner/banner_top.jpg" alt="탑베너"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    
+    
+    
+    </div>
+    <!-- //탑배너 -->
+    
+    <!-- 헤더 호출 -->
+    <div id="fix_position" class = modify>
+        <div id="SMS_fixed_wrap" class="SMS_fixed_wrap">
+            <div class="SP_top_wrap">
+                <div class="layout_Top">
+                    <div class="xans-element- xans-layout xans-layout-statelogoff SP_gnb_inr">
+                        <a href="#">
+                            <span class="title">회원가입</span>
+                        </a>
+                        <a href="#" class="log" > 
+                            <span class="title">로그인</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="SMS_fixed_inner">
+                <div class="small_icon m_menu">
+                    <a class="SMS_menu"><img src="images/smartpc/ham_menu.png" alt="메뉴아이콘"></a>
+                </div>
+                <div class="xans-element- xans-layout xans-layout-logotop fixed_logo">
+                    <a href="/" style="display: block; text-align: center;">
+                        <img src="images/banner/ohora_BI_logotype_w.png" alt="오호라메인로고">
+                    &nbsp;
+                    </a>
+                </div>
+                <div class="icon_wrap"> 
+                    <div class="small_icon search_fixed_btn">
+                        <a href="/"><img src="/images/smartpc/ham_search.png" alt="검색아이콘"></a>
+                    </div>
+                    <div class="xans-element- xans_layout xans_layout-orderbasket small_icon m_cart common_cart">
+                        <a href="/">
+                            <img src="images/web/icon_cart.png" alt="장바구니">
+                            <b class="count EC-Layout-Basket-count"></b>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- 상품 관련 페이지에서 노출되는 헤더 -->
+            <div class="prd_cate_container" style="display: none;">
+            <ul class="prd_cate_wrap">
+                <li class="eng_font">
+                    <a href="#">product</a>
+                    <ul class="prd_cate_sub">
+                        <li style="min-width: 5px;">
+                        <a class href="#"><span>신상품</span></a>
+                        </li>
+                        <li style="min-width: 5px;">
+                            <a class href="#"><span>베스트</span></a>
+                        </li>
+                        <li style="min-width: 5px;">
+                            <a class href="#"><span>네일</span></a>
+                        </li>
+                        <li style="min-width: 5px;">
+                            <a class href="#"><span>페디</span></a>
+                        </li>
+                        <li style="min-width: 5px;">
+                            <a class href="#"><span>케어&툴</span></a>
+                        </li>
+                        <li style="min-width: 5px;">
+                            <a class href="#"><span>네일샵</span></a>
+                        </li>
+                        <li style="min-width: 5px;">
+                            <a class href="#"><span>크루추천</span></a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="eng_font">
+                    <a href="#">event</a>
+                </li>
+                <li class="eng_font">
+                    <a href="#">review</a>
+                </li>
+                <li class="eng_font">
+                    <a href="#">brand</a>
+                    <ul class="prd_cate_sub">
+                        <li style="min-width: 5px;">
+                        <a class href="#"><span>about</span></a>
+                        </li>
+                        <li style="min-width: 5px;">
+                            <a class href="#"><span>membership</span></a>
+                        </li>
+                        <li style="min-width: 5px;">
+                            <a class href="#"><span>magazine</span></a>
+                        </li>
+                        <li style="min-width: 5px;">
+                            <a class href="#"><span>collaboration</span></a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            </div>
+            <!-- //상품 관련 페이지에서 노출되는 헤더 -->
+
+            <!-- 검색 레이아웃 -->
+            <div class="hd_search_container" style="overflow: hidden;display: block;">
+                <div class="SP_search_wrap">
+                    <div class="SP_utilListSearch_inner">
+                        <form name action="" id="searchBarForm" method="get" target="_self" enctype="multipart/form-data">
+                            <input id="banner_action" name="banner_action" value type="hidden">
+                            <div class="xans-element- xans-layout xans-layout-searchheader">
+                                <fieldset>
+                                    <legend style="display: none;">검색</legend>
+                                    <input id="keyword" name="keyword" fw-filter="" fw-label="검색어" fw-msg="" class="inputTypeText" placeholder="" onkeyup="SEARCH_HASHTAG.getHashtag($(this)); " autocomplete="off" onmousedown="SEARCH_BANNER.clickSearchForm(this)" value="" type="text">
+                                    <button type="button" class="SP_srh_submit_btn" onclick="SEARCH_BANNER.submitSearchBanner(this); return false;"><span class="SP_cm_icon SP_black_search_icon"></span>
+                                    </button>
+                                </fieldset>
+                            </div>
+                        </form>
+                    </div>
+                    <!-- 검색 키워드 -->
+                    <div class="SP_utilListKeyword_inner">
+                        <ul>
+                            <li>
+                                <a href="#">#봄인기디자인</a>
+                            </li>
+                            <li>
+                                <a href="#">#2022봄신상</a>
+                            </li>
+                            <li>
+                                <a href="#">2+1이벤트</a>
+                            </li>
+                            <li>
+                                <a href="#">#오호라커스텀젤</a>
+                            </li>
+                            <li>
+                                <a href="#">#파스텔풀컬러</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- 검색키워드 -->
+                </div>
+            </div>
+            <!-- //검색레이아웃 -->
+            <!-- 햄버거 메뉴 -->
+            <div class="hd_cate_container">
+                <div class="SP_category_wrap">
+                    <div class="inner">
+                        <!-- 첫번째 줄 메뉴 -->
+                        <div class="cate_wrap">
+                            <div class="big_txt">
+                                <a class="eng_font big_" href="#empty">
+                                    <span>product</span>
+                                </a>
+                                <!--<a class="" href="/product/list.html?cate_no=278" style="margin-top:30px !important;">
+                                    <span>크리스마스</span>-->
+                                
+                                <a class="" href="/product/list.html?cate_no=317">
+                                    <span>커스텀젤</span>
+                                </a>
+                                <a class="" href="/product/list.html?cate_no=121">
+                                    <span>신상품</span>
+                                </a>
+                                <a class="" href="/product/list.html?cate_no=120">
+                                    <span>베스트</span>
+                                </a>
+                                <a class="" href="/product/list.html?cate_no=160">
+                                    <span>네일</span>
+                                </a>
+                                <a class="" href="/product/list.html?cate_no=161">
+                                    <span>페디</span>
+                                </a>
+                                <a class="" href="/product/list.html?cate_no=49">
+                                    <span>케어 &amp; 툴</span>
+                                </a>
+                                <!--<a class="" href="/event/event4.html">
+                                    <span>네일샵</span>
+                                </a>-->
+                                <a class="" href="/product/list.html?cate_no=335">
+                                    <span>크루추천</span>
+                                </a>
+                                <!--a class="" href="/product/list.html?cate_no=286">
+                                    <span>뮤즈</span>
+                                </a>
+                                <a class="" href="/product/list.html?cate_no=290">
+                                    <span>콜라보</span>
+                                </a-->
+                            </div>
+                        </div>
+                        <!-- //첫번째 줄 메뉴 -->
+                        <style>
+                            .big_txt:nth-of-type(1) > a{ margin:12.7px 0 !important;}
+                        </style>
+                        <!-- 두번째 줄 메뉴 -->
+                        <div class="cate_wrap">
+                            <!--div class="big_txt">
+                                <a class="big_" href="/product/list.html?cate_no=317">
+                                    <span class="eng_font">sale<span class="only_member">회원전용</span></span>
+                                </a>
+                            </div-->
+                            <div class="big_txt">
+                                <a class="big_ eng_font" href="/event/index.html">
+                                    <span>event</span>
+                                </a>
+                            </div>
+                            <div class="big_txt">
+                                <a class="big_ eng_font" href="/product/list.html?cate_no=341">
+                                    <span>gift</span>
+                                </a>
+                            </div>
+                            <div class="big_txt">
+                                <a class="big_ eng_font" href="/board/product/list.html?board_no=4">
+                                    <span>review</span>
+                                </a>
+                            </div>
+                            <div class="big_txt">
+                                <a class="big_ eng_font" href="#empty">
+                                    <span>brand</span>
+                                </a>
+                                <a class="" href="/brandstory/brandstory.html">
+                                    <span>about</span>
+                                </a>
+                                <a class="" href="/board/free/read.html?no=1&amp;board_no=1">
+                                    <span>membership</span>
+                                </a>
+                                <a class="" href="/board/gallery/list.html?board_no=8">
+                                    <span>magazine</span>
+                                </a>
+                                <a class="" href="/product/list.html?cate_no=290">
+                                    <span>collaboration</span>
+                                </a>
+                            </div>
+                        </div>
+                        <!-- //두번째 줄 메뉴 -->
+                        <!-- 세번째 줄 메뉴 -->
+                        <div class="cate_wrap crew">
+                            <!--오호라 크루 추천-->
+                            <div class="common_reco_section recommend_crew swiper-container swiper-container-initialized swiper-container-horizontal">
+                                <h3>오호라 크루 추천</h3>
+                                <div df-banner-code="common-recommend" class="recommend_banner_wrap swiper-wrapper df-bannermanager df-bannermanager-common-recommend" style="transition-duration: 0ms;">
+                                    <div df-banner-clone="" class="SP_eventBn_li swiper-slide">
+                                                <a href="/event/event8.html"><div class="imgBox"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" alt="커스텀젤 런칭 이벤트" data-src="/web/upload/NNEditor/20220228/2b926254ee64f5cab9878ec9b16f69d9.jpg"></div> <div class="txtBox">커스텀젤 런칭 이벤트</div>
+                                                </a>
+                                    </div>
+                                    <div df-banner-clone="" class="SP_eventBn_li swiper-slide">
+                                        <a href="/product/list.html?cate_no=335"><div class="imgBox"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" alt="이달의 네일 2+1" data-src="/web/upload/NNEditor/20211019/11ab539879e4473c6b4b1b57a3baadb7.jpg"></div> <div class="txtBox">이달의 네일 2+1</div>
+                                        </a>
+                                    </div>
+                                    <div df-banner-clone="" class="SP_eventBn_li swiper-slide">
+                                    <a href="/product/list.html?cate_no=49"><div class="imgBox"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" alt="더 완벽한 젤네일을 위해" data-src="/web/upload/NNEditor/20210910/45df9f1ab381c7bf496c619fc0cebc66.jpg"></div> <div class="txtBox">더 완벽한 젤네일을 위해</div>
+                                    </a>
+                                    </div>
+                                    <div df-banner-clone="" class="SP_eventBn_li swiper-slide">
+                                    <a href="/event/event6.html"><div class="imgBox"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" alt="신규회원을 위한 선물" data-src="/web/upload/NNEditor/20210910/9660e260786f967e52d56ddabd41c133.jpg"></div> <div class="txtBox">신규회원을 위한 선물</div></a>
+                                    </div>
+                                </div>
+                                <!-- Add Pagination -->
+                                <div class="swiper-scrollbar"><div class="swiper-scrollbar-drag" style="transition-duration: 0ms;"></div></div>
+                                <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
+                            </div>
+                                    <!--// 오호라 크루 추천-->
+                            <div class="third_cate">
+                                <a href="/board/free/list.html?board_no=3"><span>FAQ</span></a>
+                                <a href="/board/gallery/list.html?board_no=13">사용법</a>
+                            </div>
+                        </div>
+                        <!-- //세번째 줄 메뉴 -->
+                        <ul class="shop_zone displaynone">
+                            <li style="margin-bottom:80px;">
+                            <span class="tit"><a href="/event/index.html">event<span class="icon"></span></a></span>
+                            </li>
+                            <li style="margin-bottom:80px;">
+                                <span class="tit"><a href="/board/product/list.html?board_no=4">review<span class="icon"></span></a></span>
+                            </li>
+                            <li style="margin-bottom:60px;">
+                                <span class="tit"><a href="/board/gallery/list.html?board_no=13">how to<span class="icon"></span></a></span>
+                            </li>
+                        </ul>
+                        <ul class="shop_zone displaynone">
+                            <li>
+                                <span class="tit"><a href="#empty">membership<span class="icon"></span></a></span>
+                                <ul><li><a lang="ko" style="font-size:18px; font-weight:bold" href="/event/event6.html">신규멤버혜택</a></li>
+                                    <li><a lang="ko" style="font-size:18px; font-weight:bold" href="/board/free/read.html?no=1&amp;board_no=1">멤버십</a></li>
+                                    <li><a lang="ko" style="font-size:18px; font-weight:bold" href="/board/free/list.html?board_no=3">FAQ</a></li>
+                                    <li><a lang="ko" style="font-size:18px; font-weight:bold" href="/etc/CS.html">CS center</a></li>                                
+                                </ul>
+                            </li>
+                            <li>
+                                <span class="tit"><a href="#empty">brand<span class="icon"></span></a></span>
+                                <ul><li><a href="/brandstory/brandstory.html">about</a></li>
+                                    <li><a href="/board/gallery/list.html?board_no=8">magazine</a></li>
+                                    <li><a href="/product/list.html?cate_no=290">collaboration</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- //햄버거 메뉴 -->
+    </div>
+    <!-- //헤더 호출 -->
+
+    <div id="wrap" style="padding-top : 154px"!important;>
+        <div id="container">
+            <div id="contents">
+                <script>
+                    SMARTPC_GLOBAL_OBJECT.page = 'main';
+                </script>
+                <div class="main_container common_list_container">
+                    <!-- 메인배너 영역 -->
+                    <div class="mainBanner swiper-container swiper-container-initialized swiper-container-horizontal">
+                        <div class="mainBanner_wrapper swiper-wrapper df-bannermanager df-bannermanager-bannermanage2" df-banner-code="bannermanage2" style="transition-duration: 0ms; transform: translate3d(-4521.6px, 0px, 0px);">
+                            <div df-banner-clone="" class="mainBanner_slide swiper-slide swiper-slide-duplicate swiper-slide-duplicate-prev" data-swiper-slide-index="0"><a href="https://ohora.kr/event/event8.html"><img src="images/web/upload/launchingevent.jpg" alt="pc.main"><span class="pc.main shop_now">shop now &gt;</span></a></div>
+                            <div df-banner-clone="" class="mainBanner_slide swiper-slide swiper-slide-duplicate swiper-slide-duplicate-active" data-swiper-slide-index="1"><a href="https://ohora.kr/product/list.html?cate_no=121"><img src="images/web/upload/cherryblossom.jpg" alt="pc.main" class="swiper-lazy swiper-lazy-loaded"><span class="pc.main shop_now">shop now &gt;</span></a></div>
+                            <div df-banner-clone="" class="mainBanner_slide swiper-slide swiper-slide-duplicate swiper-slide-duplicate-next" data-swiper-slide-index="2"><a href="https://ohora.kr/event/event6.html"><img src="images/web/upload/welcomekit.jpg" alt="PC 빅배너.웰컴기프트 bk" class="swiper-lazy swiper-lazy-loaded"><span class="PC 빅배너.웰컴기프트 bk shop_now">shop now &gt;</span></a></div>
+                            <div df-banner-clone="" class="mainBanner_slide swiper-slide swiper-slide-duplicate" data-swiper-slide-index="3"><a href="https://www.ohora.kr/board/product/list.html?board_no=4"><img src="images/web/upload/ohorareview.jpg" alt="main_big_banner_5 bk" class="swiper-lazy swiper-lazy-loaded"><span class="main_big_banner_5 bk shop_now">shop now &gt;</span></a></div>
+                            <div df-banner-clone="" class="mainBanner_slide swiper-slide swiper-slide-duplicate" data-swiper-slide-index="4"><a href="https://ohora.kr/event/event1.html"><img src="images/web/upload/inviteyourfriends.jpg" alt="main_big_banner_6 bk" class="swiper-lazy swiper-lazy-loaded"><span class="main_big_banner_6 bk shop_now">shop now &gt;</span></a>
+                            </div>
+                            <div v df-banner-clone="" class="mainBanner_slide swiper-slide swiper-slide-prev" data-swiper-slide-index="0"><a href="https://ohora.kr/event/event8.html"><img src="images/web/upload/launchingevent.jpg" alt="pc.main"><span class="pc.main shop_now">shop now &gt;</span></a></div>
+                            <div df-banner-clone="" class="mainBanner_slide swiper-slide swiper-slide-active" data-swiper-slide-index="1"><a href="https://ohora.kr/product/list.html?cate_no=121"><img src="images/web/upload/cherryblossom.jpg" alt="pc.main" class="swiper-lazy swiper-lazy-loaded"><span class="pc.main shop_now">shop now &gt;</span></a></div>
+                            <div df-banner-clone="" class="mainBanner_slide swiper-slide swiper-slide-next" data-swiper-slide-index="2"><a href="https://ohora.kr/event/event6.html"><img src="images/web/upload/welcomekit.jpg" alt="PC 빅배너.웰컴기프트 bk" class="swiper-lazy swiper-lazy-loaded"><span class="PC 빅배너.웰컴기프트 bk shop_now">shop now &gt;</span></a></div>
+                            <div df-banner-clone="" class="mainBanner_slide swiper-slide" data-swiper-slide-index="3"><a href="https://www.ohora.kr/board/product/list.html?board_no=4"><img src="images/web/upload/ohorareview.jpg" alt="main_big_banner_5 bk" class="swiper-lazy swiper-lazy-loaded"><span class="main_big_banner_5 bk shop_now">shop now &gt;</span></a></div>
+                            <div df-banner-clone="" class="mainBanner_slide swiper-slide" data-swiper-slide-index="4"><a href="https://ohora.kr/event/event1.html"><img src="images/web/upload/inviteyourfriends.jpg" alt="main_big_banner_6 bk" class="swiper-lazy swiper-lazy-loaded"><span class="main_big_banner_6 bk shop_now">shop now &gt;</span></a></div>
+                            <div df-banner-clone="" class="mainBanner_slide swiper-slide swiper-slide-duplicate swiper-slide-duplicate-prev" data-swiper-slide-index="0"><a href="https://ohora.kr/event/event8.html"><img src="images/web/upload/launchingevent.jpg" alt="pc.main"><span class="pc.main shop_now">shop now &gt;</span></a></div>
+                            <div df-banner-clone="" class="mainBanner_slide swiper-slide swiper-slide-duplicate swiper-slide-duplicate-active" data-swiper-slide-index="1"><a href="https://ohora.kr/product/list.html?cate_no=121"><img src="images/web/upload/cherryblossom.jpg" alt="pc.main" class="swiper-lazy swiper-lazy-loaded"><span class="pc.main shop_now">shop now &gt;</span></a></div>
+                            <div df-banner-clone="" class="mainBanner_slide swiper-slide swiper-slide-duplicate swiper-slide-duplicate-next" data-swiper-slide-index="2"><a href="https://ohora.kr/event/event6.html"><img src="images/web/upload/welcomekit.jpg" alt="PC 빅배너.웰컴기프트 bk" class="swiper-lazy" data-src="/web/upload/NNEditor/20210916/4e4854142e9ee0a2f1904e9281f5a813.jpg"><span class="PC 빅배너.웰컴기프트 bk shop_now">shop now &gt;</span></a></div>
+                            <div df-banner-clone="" class="mainBanner_slide swiper-slide swiper-slide-duplicate" data-swiper-slide-index="3"><a href="https://www.ohora.kr/board/product/list.html?board_no=4"><img src="images/web/upload/ohorareview.jpg" alt="main_big_banner_5 bk" class="swiper-lazy" data-src="/web/upload/NNEditor/20210913/471d99586d5d00766d8704c66b0efd3d.jpg"><span class="main_big_banner_5 bk shop_now">shop now &gt;</span></a></div>
+                            <div df-banner-clone="" class="mainBanner_slide swiper-slide swiper-slide-duplicate" data-swiper-slide-index="4"><a href="https://ohora.kr/event/event1.html"><img src="images/web/upload/inviteyourfriends.jpg" alt="main_big_banner_6 bk" class="swiper-lazy" data-src="/web/upload/NNEditor/20210913/723a985ea946f331788e1aba2f4c7c19.jpg"><span class="main_big_banner_6 bk shop_now">shop now &gt;</span></a></div>
+                        </div>
+                        
+                        <div class="SMS_category_menu">
+                            <div class="SP_layoutFix">
+                                <ul>
+                                    <li><a href="/product/list.html?cate_no=121" class="eng_font" id="ga_new">new</a></li>
+                                    <li><a href="/product/list.html?cate_no=120" class="eng_font" id="ga_best">best</a></li>
+                                    <li><a href="/product/list.html?cate_no=160" class="eng_font" id="ga_nail">nail</a></li>
+                                    <li><a href="/product/list.html?cate_no=161" class="eng_font" id="ga_pedi">pedi</a></li>
+                                    <li><a href="/product/list.html?cate_no=49" class="eng_font" id="ga_care">care</a></li>
+                                    <li><a href="/event/index.html" class="eng_font" id="ga_event">event</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <!-- //메인배너 영역 -->
+                    <!-- 카테고리 아울 슬라이더 -->
+                </div>
+
+
+                <div class="crema-popup crema-apploed"></div>
+                    
+            </div>
+        </div>
+    </div>
+
+
+    <!-- 플로팅 버튼 호출 -->
+    <div id="floating" style="display: none;"></div>
+    <!-- //플로팅 버튼 호출 -->
+
+    <div id="wrap" style="padding-top: 154px !important;"></div>
+
+    <!-- 푸터 호출 -->
+    <div id="footer" class="xans-element- xans-layout xans-layout-footerpackage">
+        <div class="displaynone">
+            <input type="checkbox" class="displaynone" id="for_opt_select_chk">
+        </div>
+        <div id = "loginChk_nomember" class="xans-element- xans-layout-statelogoff displaynone">비회원</div>
+        <div class="inner">
+            <div class="xans-element- xans-layout xans-layout-footer cs_center">
+                <div class="top-left">
+                    <span class="center">고객센터 (1566-0554)</span>
+                    <span class="kakao_chat">
+                        <a href="#">카카오톡 상담 (@ohora)</a>
+                    </span>
+                </div>
+                <div class="top-right">
+                    <a href="#" target="_blank"><img src="images/web/upload/common/ft_facebook.png" alt=""></a>
+                    <a href="#" target="_blank"><img src="images/web/upload/common/ft_insta.png" alt=""></a>
+                    <a href="#" target="_blank"><img src="images/web/upload/common/ft_kakao.png" alt=""></a>
+                    <a href="#" target="_blank"><img src="images/web/upload/common/ft_naver.png" alt=""></a>
+                    <a href="#" target="_blank"><img src="images/web/upload/common/ft_youtube.png" alt=""></a>
+                </div>
+            </div>
+            <div class="footer_menu">
+                <ul>
+                    <li class = "list">
+                        <span>
+                            주문
+                            <a class="arr">
+                                <i class="fas fa-chevron-down"></i>
+                            </a>
+                        </span>
+                        <ul class="sub" style="overflow: hidden; display: none;">
+                            <li class="xans-element- xans-layout xans-layout-statelogoff "><a href="/member/login.html?returnUrl=/myshop/order/list.html">주문·배송내역</a>
+                            </li>
+                            <li class="xans-element- xans-layout xans-layout-statelogoff "><a href="/member/login.html?returnUrl=/myshop/order/list.html?mode=cs">취소/교환/반품내역</a>
+                            </li>
+                            <li><a href="/order/basket.html">장바구니</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class = "list">
+                        <span>회원
+                            <a class="arr">
+                                <i class="fas fa-chevron-down"></i>
+                            </a>
+                            <ul class="sub" style="overflow: hidden; display: none;">
+                                <li><a href="/article/notice/1/4609/">신규 혜택</a></li>
+                                <li><a href="/article/%EA%B3%B5%EC%A7%80%EC%82%AC%ED%95%AD/1/1">멤버십 혜택</a></li>
+                                <li class="xans-element- xans-layout xans-layout-statelogoff "><a href="/member/login.html?returnUrl=/myshop/index.html">마이페이지</a>
+                                </li>
+                                <li class="xans-element- xans-layout xans-layout-statelogoff "><a href="/member/login.html?returnUrl=/myshop/mileage/mileageList.html">적립금·쿠폰내역</a>
+                                </li>
+                                <li><a href="/member/modify.html">회원정보변경</a></li>
+                            </ul>
+                        </span>
+                        <ul class="sub"></ul>
+                    </li>
+                    <li class = "list">
+                        <span>
+                            서비스
+                            <a class="arr">
+                                <i class="fas fa-chevron-down"></i>
+                            </a>
+                        </span>
+                        <ul class="sub">
+                            <li><a href="/board/free/list.html?board_no=3">FAQ</a></li>
+                            <li><a href="javascript:void%20channel_chat()">상담톡</a></li>
+                            <li><a href="/board/gallery/list.html?board_no=13">사용법</a></li>
+                            <li><a href="/board/notice/1/">공지사항</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="ft_sns displaynone"></div>
+            <div class=company>
+                <li>
+                    <span>대표 : 유기현</span>회사 : 주식회사 글루가 서울지점
+                </li>
+                <li>주소 : 서울특별시 성동구 아차산로 38 (성수동1가) 개풍빌딩 10층</li>
+                <li>사업자등록번호 : 122-85-56140</li>
+                <li>
+                    <span>
+                        통신판매업신고번호 : 제2019-서울성동-415호
+                    </span>
+                    <a href="#none" class="co" onclick="window.open('http://www.ftc.go.kr/bizCommPop.do?wrkr_no=1228556140', 'bizCommPop', 'width=750, height=950;');return false;">사업자 정보 확인</a>
+                </li>
+                <li>개인정보처리담당자 : <a href="mailto:bong@ohora.kr">유태규</a>
+                </li>
+                <li>고객센터 : 1566-0554</li>
+                <li>( 365일 09:00 - 18:00, 점심시간 11:50 - 13:00)</li>
+                <li>영업문의 : ohora_official@ohora.com</li>
+            </div>
+            <div class="info_area"></div>
+            <div></div>
+        </div>
+    </div>
+    <!-- //푸터호출 -->
+        
+
+
+    </div>
+
+
+
+    
+</body>
+</html>

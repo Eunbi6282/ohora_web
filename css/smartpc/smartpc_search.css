@@ -1,0 +1,43 @@
+#SP_srhPageChk {  }
+
+.SP_searchForm_wrap {  }
+.SP_searchForm_wrap .SP_searchForm_inr { width:400px; margin:0 auto; }
+.SP_searchForm_inr legend { display:none; }
+.SP_searchForm_inr dl { padding-top:10px; font-size:0; }
+.SP_searchForm_inr dt { display:inline-block; vertical-align:middle; width:100px; font-size:15px; color:#111; }
+.SP_searchForm_inr dd { display:inline-block; vertical-align:middle; width:calc(100% - 100px); }
+
+.SP_searchForm_inr dd select { height:40px; border:1px solid #ddd; box-sizing:border-box; }
+.SP_searchForm_inr dd select#category_no { width:100%;  }
+.SP_searchForm_inr dd select#search_type { display:inline-block; vertical-align:middle; width:100px; }
+.SP_searchForm_inr dd select#order_by { width:100%; }
+
+.SP_searchForm_inr dd input { height:40px; border:1px solid #ddd; box-sizing:border-box; }
+.SP_searchForm_inr dd input#keyword { width:calc(100% - 105px); margin-left:5px;  }
+.SP_searchForm_inr dd input#exceptkeyword { width:100%; }
+
+/* ì¸ê¸°ê²€ìƒ‰ì–´ */
+.SP_searchForm_inr dl.BestPopular { padding:30px 0 20px; }
+.SP_searchForm_inr dl.BestPopular dt{ width:0; font-size:0; }
+.SP_searchForm_inr dl.BestPopular dd { width:100%; text-align:center; }
+.SP_searchForm_inr dl.BestPopular dd a { display:inline-block; vertical-align:middle; padding-left:10px; font-size:15px; color:#111; }
+.SP_searchForm_inr dl.BestPopular dd a:first-child { padding-left:0; }
+
+/* ìƒí’ˆê°€ê²© */
+.SP_searchForm_inr dl.SP_srhPriceitem { }
+.SP_searchForm_inr dl.SP_srhPriceitem #product_price1 { display:inline-block; vertical-align:middle; width:46%; }
+.SP_searchForm_inr dl.SP_srhPriceitem #product_price2 { display:inline-block; vertical-align:middle; width:46%; }
+.SP_searchForm_inr dl.SP_srhPriceitem span { display:inline-block; vertical-align:middle; width:8%; font-size:15px; text-align:center;}
+
+.SP_srhSubmitBtn_wrp { padding-top:10px;}
+.SP_srhSubmitBtn_wrp .SP_cm_btn { width:100%; }
+
+/* ê²€ìƒ‰ ì •ë ¬ */
+.SP_searchForm_wrap .SP_listAlignSort_wrap { margin-top:80px; }
+
+/* ê²€ìƒ‰ NO DATA */
+.SP_noData { padding-top:40px; text-align:center; line-height:150%; font-size:14px; color:#898989;}
+.SP_noData strong { display:block; padding-bottom:10px; font-size:16px; color:#111; }
+
+/* ê²€ìƒ‰íŽ˜ì´ì§€  - íŽ˜ì´ì§€ë„¤ì´ì…˜ */
+#SP_srhPageChk .SP_pagenation_wrap { padding-top:104px;  }

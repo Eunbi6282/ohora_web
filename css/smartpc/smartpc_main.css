@@ -1,0 +1,863 @@
+@charset "utf-8";
+
+/* 비쥬얼 배너 */
+.SP_visual_wrap {
+    position: relative;
+    min-width: 1200px;
+}
+
+.SP_visual_slide .SP_img_bg {
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.SP_visual_wrap img {
+    width: 100% !important;
+    height: auto !important;
+    min-width: 1200px;
+}
+
+.SP_visual_wrap .slick-arrow {
+    font-size: 0;
+}
+
+.SP_visual_wrap .slick-slider .slick-dots {
+    bottom: 75px;
+}
+
+/* 화살표 */
+
+.slick-arrow {
+    width: 27px;
+    height: 50px;
+    font-size: 0;
+    background-repeat: no-repeat;
+    /* border: 1px solid #f90; */
+    background-size: cover;
+}
+
+.slick-arrow.slick-next {
+    background-image: url('/smartpc/_img/icon/swp_right_arrow_gr.png');
+}
+
+.slick-arrow.slick-prev {
+    background-image: url('/smartpc/_img/icon/swp_left_arrow_gr.png');
+}
+
+.slick-slider .slick-dots {
+    position: absolute;
+    top: auto;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    text-align: center;
+    font-size: 0;
+    color: #000;
+    max-width: 1200px;
+}
+
+.slick-slider .slick-dots li {
+    display: inline-block;
+    margin: 0;
+    vertical-align: top;
+    width: 33.333%;
+    height: 3px;
+    background: #e0e0df;
+}
+
+.slick-slider .slick-dots li.slick-active {
+    background: #000;
+}
+
+.slick-slider .slick-dots li button {
+    display: block;
+    width: 100%;
+    height: 100%;
+    font-size: 0;
+}
+
+.SP_visual_wrap .slick-arrow.slick-next {
+    background-image: url('/smartpc/_img/icon/swp_right_arrow_wh.png');
+}
+
+.SP_visual_wrap .slick-arrow.slick-prev {
+    background-image: url('/smartpc/_img/icon/swp_left_arrow_wh.png');
+}
+
+
+/* ======  카테고리 배너  ====== */
+/*
+.SP_cateBanner_wrap {
+    padding-top: 100px;
+    text-align: center;
+}
+
+.SP_cateBanner_wrap ul {
+    font-size: 0;
+}
+
+.SP_cateBanner_wrap li {
+    display: inline-block;
+    vertical-align: top;
+    text-align: center;
+    margin-left: 60px;
+    width: 230px;
+    height: 230px;
+}
+
+.SP_cateBanner_wrap li:first-child {
+    margin-left: 0;
+}
+
+.SP_cateBanner_wrap li a {
+    display: block;
+}
+
+.SP_cateBanner_wrap li a img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.SP_cateBanner_wrap .SP_cateTitle {
+    font-size: 24px;
+    color: #111;
+    margin-top: 20px;
+}
+
+ss @media screen and (max-width: 1420px) {
+    .SP_cateBanner_wrap li {
+        margin-left: 40px;
+    }
+}
+
+@media screen and (max-width: 1330px) {
+    .SP_cateBanner_wrap li {
+        margin-left: 26px;
+    }
+}
+
+@media screen and (max-width: 1275px) {
+    .SP_cateBanner_wrap li {
+        margin-left: 23px;
+    }
+}
+*/
+/* ======  타임세일  ====== */
+.SP_timeSale_wrap {
+    padding-top: 145px;
+}
+
+.SP_timePrograssBar_wrap {
+    position: relative;
+    width: 100%;
+    height: 2px;
+    background-color: #f2f2f2;
+    display: inline-block;
+}
+
+.SP_timePrograssBar_wrap .SP_timePrograssBar {
+    position: absolute;
+    top: -1px;
+    left: 0;
+    width: 200px;
+    height: 4px;
+    background: #000;
+    transition: 1s;
+}
+
+.SP_timePrograssExtra_icon {
+    position: absolute;
+    top: -7px;
+    left: auto;
+    right: -9px;
+    width: 18px;
+    height: 18px;
+    border-radius: 100%;
+    background: #000;
+    box-sizing: border-box;
+}
+
+.SP_timeWork_wrap {
+    /* position: absolute; */
+    /* top: 20px; */
+    /* left: auto; */
+    /* right: -130px; */
+    font-size: 0;
+    padding: 5px 10px;
+    display:  inline-block;
+    width: 160px;
+    text-align: center;
+}
+
+.SP_timeWork_wrap span {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 26px;
+    color: #000;
+    font-style: italic;
+}
+
+.SP_timeWork_wrap span.SP_timeExtraTxt {
+    padding: 0px 3px;
+}
+
+.SP_timeSaleCustom_cont {
+    /* font-size: 0; */
+    margin-top: 70px;
+}
+
+.SP_timeSaleCustom_cont .SP_timeSaleTitle_wrap {
+    display: inline-block;
+    vertical-align: top;
+    width: calc(100% - 880px);
+    padding-top: 60px;
+    box-sizing: border-box;
+}
+
+.SP_timeSaleTitle_wrap {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.SP_timeSaleCustom_cont .SP_timeSaleSlide {
+    width: 1200px;
+}
+
+.SP_timeSaleCustom_cont .SP_timeSaleSlide .SP_prdList_item {
+    padding: 0 10px;
+    width: 50%;
+}
+
+/* ======  베스트&뉴 배너  ====== */
+.SP_bestSeller_wrap, .SP_newSeller_wrap {
+    padding-top: 150px;
+}
+
+.SP_bestSeller_wrap .SP_prdList_ul .SP_prdList_item,
+.SP_newSeller_wrap .SP_prdList_ul .SP_prdList_item {
+    /*margin-right: unset!important;*/
+    margin-right:0 !important;
+    padding: 10px;
+}
+
+.SP_newSeller_wrap .slick-arrow.slick-next,
+.SP_bestSeller_wrap .slick-arrow.slick-next,
+.SP_timeSaleCustom_cont .slick-arrow.slick-next {
+    right: -9%;
+    margin-top: 0;
+    top: 27%;
+}
+
+
+.SP_newSeller_wrap .slick-arrow.slick-prev,
+.SP_bestSeller_wrap .slick-arrow.slick-prev,
+.SP_timeSaleCustom_cont .slick-arrow.slick-prev {
+    left: -9%;
+    margin-top: 0;
+    top: 27%;
+}
+
+/*
+.SP_bestSeller_wrap .SP_bestNum {
+    position: absolute;
+    top: 19px;
+    left: 25px;
+    font-size: 24px;
+    color:#000;
+    z-index:10;
+    border-bottom: 3px solid #000;
+    font-weight: bold;
+    letter-spacing: -1px;
+    text-align: center;
+}
+*/
+.SP_newBn_wrap {
+    margin: 0 auto 40px;
+    text-align: center;
+}
+
+.SP_newBn_wrap img {
+    width: 100%;
+    height: auto;
+}
+.SP_cateMoreBtn_wrap {
+	display: inline-block;
+	float: right;
+}
+.SP_cateMoreBtn_wrap a {
+	font-size: 22px;
+	color: #000;
+	position:relative;
+	top:2px;
+}
+.SP_instaMoreBtn_wrap {
+    display: block;
+    position: relative;
+    float: right;
+}
+.SP_instaMoreBtn_wrap:before {
+    content:'';
+    display: inline-block;
+    width: 27px;
+    height: 27px;
+    position: absolute;
+    top: 7px;
+    left: -27px;
+    background: url('../_img/icon/icon_insta.png') no-repeat center center;
+    background-size: cover;
+}
+.SP_instaMoreBtn_wrap ul {
+    display: inline-block;
+}
+.SP_instaMoreBtn_wrap ul li {
+    display: inline-block;
+}
+.SP_instaMoreBtn_wrap ul li:last-child {
+    position: relative;
+}
+.SP_instaMoreBtn_wrap ul li:last-child:before {
+    content:'';
+    display: inline-block;
+    width: 1px;
+    height: 20px;
+    background:#999;
+    position: absolute;
+    top: 10px;
+}
+.SP_instaMoreBtn_wrap ul li a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding: 0 10px;
+    line-height: 1;
+    font-size: 20px;
+    color: #999;
+    margin: 9px 0;
+    font-weight: 300;
+}
+
+/* ======  이벤트 배너  ====== */
+
+.SP_eventBanner_wrap {
+    padding-top: 150px;
+}
+
+.SP_eventBnList_wrap .SP_eventBn_li img {
+    width: 100%;
+    height: auto;
+}
+.SP_eventBnList_wrap .slick-dots {
+    bottom: 55px;
+}
+
+.SP_eventBnList_wrap .slick-dots li {
+    height:5px;
+    background:rgba(255,255,255,.3);
+}
+
+.SP_eventBnList_wrap .slick-dots li.slick-active {
+    background: #fff;
+}
+
+.SP_eventBanner_wrap .slick-arrow.slick-next {
+    background-image: url('/smartpc/_img/icon/swp_right_arrow_wh.png');
+}
+.SP_eventBanner_wrap .slick-arrow.slick-prev {
+    background-image: url('/smartpc/_img/icon/swp_left_arrow_wh.png');
+}
+
+/*
+.SP_eventSlideBn_cont {
+    margin-top: 20px;
+}
+
+.SP_eventSlideBn_cont .SP_prdIcon_wrap img {
+    display: inline;
+    vertical-align: middle;
+}
+
+.SP_eventSlideBn_cont .slick-arrow.slick-prev {
+    top: 0;
+    left: -60px;
+}
+
+.SP_eventSlideBn_cont .slick-arrow.slick-next {
+    top: 0;
+    left: auto;
+    right: -60px;
+}
+*/
+
+/* ======  베스트 리뷰 배너  ====== */
+.SP_bestReview_wrap {
+    padding-top: 150px;
+}
+
+.SP_bestReviewSlide .SP_reviewBn_li img {
+    width: 100%;
+}
+
+.SP_bestReviewSlide .slick-dots li {
+    height:5px;
+}
+
+.SP_bestReview_wrap .slick-arrow.slick-next {
+    right: 3%;
+    margin-top: 0;
+    top: 44%;
+}
+.SP_bestReview_wrap .slick-arrow.slick-prev {
+    left: 3%;
+    margin-top:0;
+    top: 44%;
+}
+
+.SP_bestReview_wrap .slick-arrow.slick-next,
+.SP_bestReview_wrap .slick-arrow.slick-prev {
+    opacity:0;
+    transition: all 0.3s;
+}
+.SP_bestReviewSlide:hover .slick-arrow.slick-prev,
+.SP_bestReviewSlide:hover .slick-arrow.slick-next {
+    opacity:1;
+}
+
+/* ======  베스트 리뷰 배너  ====== */
+.SP_midBanner_wrap {
+    padding-top: 140px;
+    overflow-x: hidden;
+}
+
+/* ======  뉴스 배너  ====== */
+.SP_news_wrap {
+    padding-top: 140px;
+}
+
+.SP_gallBoardList_wrap ul {
+    font-size: 0;
+    text-align: center;
+}
+
+.SP_gallBoardList_wrap li {
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    width: 280px;
+    margin-left: 25px;
+    border: 1px solid #111111;
+    box-sizing: border-box;
+}
+
+.boardChk {
+    position: absolute;
+}
+
+.SP_gallBoardList_wrap li:first-child {
+    margin-left: 0;
+}
+
+.SP_gallBoardThumb {
+    width: 100%;
+    height: 280px;
+    overflow: hidden;
+}
+
+.SP_gallBoardThumb a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.SP_gallBoardThumb img {
+    display:block;
+    width: 100%;
+    transform: scale(1.02);
+}
+
+.SP_gallBoardCont {
+    padding: 32px 12px 20px;
+    text-align: center;
+}
+
+.SP_gallTitle {
+    font-size: 14px;
+    color: #111;
+    font-weight: 700;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.SP_gallcont {
+    padding-top: 12px;
+    font-size: 14px;
+    color: #555;
+    line-height: 1.5;
+    overflow: hidden;
+    display: box;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    height: 55px;
+    overflow: hidden;
+}
+
+.SP_gallMoreLink {
+    display: block;
+    width: 260px;
+    height: 38px;
+    padding-right: 33px;
+    font-size: 14px;
+    color: #111;
+    font-weight: 900;
+    line-height: 36px;
+    text-align: center;
+    border-top: 2px solid #111;
+    background: url('/smartpc/_img/icon/more-arrow.png')no-repeat 170px center;
+    box-sizing: border-box;
+}
+
+
+/* ======  뉴콜렉션  ====== */
+
+.SP_newCollection_wrap {
+    padding-top: 150px;
+}
+/*
+.SP_collection_wrap {
+    font-size: 0;
+}
+
+.SP_collectionBa_wrap {
+    display: inline-block;
+    vertical-align: top;
+    width: 588px;
+}
+
+.SP_collectionBa_wrap img {
+    max-width: 100%;
+}
+
+.SP_collectionList_wrap {
+    display: inline-block;
+    vertical-align: top;
+    width: calc(100% - 588px);
+    padding: 10px 0 0 24px;
+    box-sizing: border-box;
+}
+
+.SP_collectionListTop h4 {
+    position: relative;
+    display: inline-block;
+    font-size: 26px;
+    font-weight: 500;
+    color: #111;
+}
+
+.SP_collectionListTop h4 .SP_extraLine {
+    display: block;
+    position: absolute;
+    top: 34px;
+    left: auto;
+    right: 0;
+    width: 285px;
+    height: 2px;
+    background-color: #111;
+}
+
+.SP_collectionListTop p {
+    padding-top: 30px;
+    font-size: 16px;
+    color: #555;
+    line-height: 1.5;
+}
+
+.SP_collectionList {
+    padding-top: 32px;
+}
+
+.SP_collectionList .SP_cateMoreBtn_wrap {
+    margin: 0;
+    padding-top: 40px;
+    text-align: left;
+}
+
+.SP_collectionList .prd_icon_box {
+    padding-top: 0;
+}
+
+.SP_collectionList_wrap .SP_collectionList .SP_thumbHover_cont span {
+    margin-left: 10px;
+    width: 40px;
+    height: 40px;
+}
+
+.SP_collectionList_wrap .SP_collectionList .SP_thumbHover_cont span.SP_basketIconBtn {
+    margin-left: 0;
+}
+
+#SP_3x1PrdList[data-list-sort='1']>li {
+    width: 100%;
+    font-size: 0;
+    margin: 0;
+    padding: 0;
+    padding-top: 20px;
+}
+
+#SP_3x1PrdList[data-list-sort='1']>li:first-child {
+    padding-top: 0;
+}
+
+#SP_3x1PrdList[data-list-sort='1'] .SP_thumb_wrap {
+    display: inline-block;
+    vertical-align: middle;
+    width: 130px;
+    margin-bottom: 0;
+    border:1px solid #e5e5e5;
+}
+
+#SP_3x1PrdList[data-list-sort='1'] .SP_productInfo_wrap {
+    display: inline-block;
+    vertical-align: middle;
+    width: calc(100% - 130px);
+    padding-left: 20px;
+    box-sizing: border-box;
+}
+
+#SP_3x1PrdList[data-list-sort='1'] .SP_prdIcon_wrap {
+    margin-bottom: 5px;
+}
+
+#SP_3x1PrdList[data-list-sort='1'] .SP_summary_wrap {
+    padding-top: 0;
+}
+
+#SP_3x1PrdList .prd_icon_box {
+    padding-bottom: 15px;
+}
+
+#SP_3x1PrdList .prd_icon_box.displaynone {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+#SP_3x1PrdList .SP_prdName_wrap {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+#SP_3x1PrdList .SP_counsumerPrice_wrap {
+    padding-top: 0;
+}
+*/
+/* ======  중간배너  ====== */
+.SP_midBanner_wrap .midBanner_slide_block {
+    position: relative;
+}
+.SP_midBanner_wrap .midBanner_slide_inner {
+    position: relative;
+    width: 1950px;
+    left: 50%;
+    margin-left: -975px;
+}
+
+.SP_midBanner_wrap .SP_reviewBn_li {
+    position: relative;
+}
+
+.SP_midBanner_wrap .SP_reviewBn_li a {
+    display: block;
+}
+
+.SP_midBanner_wrap .SP_reviewBn_li a img {
+    display: block;
+    width: 100%;
+	height: auto;
+}
+/*
+.SP_midBanner_wrap .SP_reviewBn_li .text_wrapper {
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: auto;
+    right: auto;
+    width: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 178px 0 0 220px;
+}
+
+.SP_midBanner_wrap .SP_JS_midBanner .SP_reviewBn_li .text_wrapper .inner {
+    width: 1200px;
+    margin: 0 auto;
+    position: relative;
+    top: 20px;
+    opacity: 0;
+    transition: all 1s;
+    -webkit-transition: all 1s;
+}
+
+.SP_midBanner_wrap .SP_JS_midBanner .SP_reviewBn_li.slick-active .text_wrapper .inner {
+    top:0;
+    opacity: 1;
+}
+
+.SP_midBanner_wrap .SP_JS_midBanner .SP_reviewBn_li .text_wrapper .inner h4 {
+    font-size: 20px;
+    padding: 1px 0;
+    font-weight: bold;
+    color: #fff;
+    margin-bottom: 15px;
+}
+
+.SP_midBanner_wrap .SP_JS_midBanner .SP_reviewBn_li .text_wrapper .inner span {
+    font-size:14px;
+    line-height: 1.4;
+    color:#fff
+}
+
+.SP_midBanner_wrap .arrow_btn_wrap {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 1200px;
+    height: 59px;
+    margin-left: -625px;
+    margin-top: -29.5px;
+    z-index: 90;
+}
+
+.SP_midBanner_wrap .arrow_btn_wrap .arrow_com {
+    position: absolute;
+    top: 0;
+    width: 31px;
+    height: 59px;
+    font-size: 0;
+    background-repeat: no-repeat;
+    background-position: top left;
+    z-index: 99;
+}
+
+.SP_midBanner_wrap .arrow_btn_wrap .arrow_prev {
+    left: -60px;
+    background-image: url('/smartpc/_img/icon/swp_left_arrow_wh.svg');
+}
+
+.SP_midBanner_wrap .arrow_btn_wrap .arrow_next {
+    left: auto;
+    right: -60px;
+    background-image: url('/smartpc/_img/icon/swp_right_arrow_wh.svg');
+}
+
+@media screen and (max-width: 1400px) {
+    .SP_midBanner_wrap .arrow_btn_wrap .arrow_prev {
+        left: 0;
+    }
+
+    .SP_midBanner_wrap .arrow_btn_wrap .arrow_next {
+        right: 0;
+    }
+}
+*/
+/* ======  룩북  ====== */
+.SP_lookBook_wrap {
+    padding-top: 140px;
+}
+
+.SP_lookBook_wrap ul {
+    position: relative;
+    font-size: 0;
+}
+
+.SP_lookBook_wrap li {
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+}
+
+.SP_lookBook_wrap li a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.SP_lookBook_wrap li a img {
+    /* max-width: 100%; */
+    display: block;
+    width: 100%;
+    height: auto;
+    transform: scale(1.02);
+}
+
+.SP_lookBook_wrap li:first-child {
+    width: 420px;
+    margin-right: 20px;
+}
+
+.SP_lookBook_wrap li:nth-child(2) {
+    width: 600px;
+}
+
+.SP_lookBook_wrap li:nth-child(3) {
+    position: absolute;
+    top: 50%;
+    left: auto;
+    right: 0;
+    width: 500px;
+    transform: translateY(-50%);
+}
+
+.SP_lookBook_wrap li .SP_gallLookTitle {
+    position: absolute;
+    top: auto;
+    left: 20px;
+    bottom: 39px;
+    font-size: 40px;
+    color: #fff;
+}
+
+.SP_lookBook_wrap li:nth-child(2) .SP_gallLookTitle {
+    left: 40px;
+    font-size: 50px;
+}
+
+@media only screen and (max-width:1480px) {
+    .SP_lookBook_wrap {
+        width: 1200px;
+        margin:0 auto
+    }
+    .SP_lookBook_wrap li:first-child {
+        width: 340px;
+        margin-right: 20px;
+    }
+
+    .SP_lookBook_wrap li:nth-child(2) {
+        width: 520px;
+    }
+
+    .SP_lookBook_wrap li:nth-child(3) {
+        position: absolute;
+        top: 50%;
+        left: auto;
+        right: 0;
+        width: 410px;
+        transform: translateY(-50%);
+    }
+}
+
+
+/* ======  인스타그램  ====== */
+.SP_instagram_wrap {
+    padding-top: 140px;
+}
+
+.SP_instagram_wrap .SP_instagram_list li {
+    display: inline-block;
+    vertical-align: top;
+}

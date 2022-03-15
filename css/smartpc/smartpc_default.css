@@ -1,0 +1,50 @@
+@charset "utf-8";
+
+/* ======================================================================================================= 
+
+* SMARTPC CSS파일
+# 저작자 : SMART SKIN | (주)스마트스킨 스마트PC 사업부
+# 최초 작성일 : 2016 - 01 - 01
+
+* 고객센터: 1577-3364
+* 본 문서의 소스와 정보에 대한 모든 권리는 (주)스마트스킨에게 있습니다.
+* 사전 동의없이는 동일,유사의 수준에서 어떠한 형식과 방법으로든 무단 도용을 금합니다.
+* 만일 위와 같은 권고에도 불구하고 무단 도용시 저작권법에 의거하여 법적인 제재를 받으실 수 있습니다. 
+* IE하위버전 제어 => body태그에 .IE_7, .IE_8, .IE_9 class명이 붙습니다.
+
+======================================================================================================= */
+
+html, body, div, span, applet, object, iframe,h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var,
+b, u, i, center,dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, input,
+article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video,fieldset {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	vertical-align: baseline;
+	outline:0;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, main {display: block;}
+a { text-decoration:none; }
+ul,li,ol,dl,dt,dd{ list-style:none;}
+table {	border-collapse: collapse; border-spacing: 0;}
+button { background:transparent; border:0; outline:0; padding:0; margin:0; cursor:pointer; }
+img{vertical-align: top;}
+
+
+/* MAKE SHOP RESET */
+body, h1, h2, h3, h4, h5, h6, table, pre, xmp, plaintext, listing, input, textarea, select, button, a { font-family:inherit; line-height:normal; }
+
+
+/* CAFE24 RESET */
+
+/* 관리자 로그인 경우 스킨 URL페이지에서 디자인편집창 감추기 */
+#wrap {padding-top: 115px !important;}
+#container {border-top:1px solid #e5e5e5;}
+#front-linker { display:none !important; }
+#atl-bg { display:none !important; }
+#atl-ghost { display:none !important; }
+#modalContainer { display:none; }
+#SmartPC { margin:0 !important; }

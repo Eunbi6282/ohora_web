@@ -1,0 +1,635 @@
+#SMS_marketingCustom .SP_table_wrap, #SMS_marketingCustom .SP_joinsubmit_wrap {display: none;margin-top: 20px;}
+.SP_table_wrap input[type="text"] { margin-right:5px; }
+/*=====================================================================
+======================= SNS ê°„íŽ¸ê°€ìž… ë¡œê·¸ì¸ ì‹œìž‘  =====================
+=====================================================================*/
+.SP_joinIntroContainer {text-align: center;}
+.SP_joinIntroContainer .SP_joinIntroinner {display: inline-block; vertical-align: top; width: 390px; margin-bottom: 30px; }
+.SP_joinIntro_Top { margin-top:28px; }
+.SP_join_snsList {}
+.SP_join_snsList ul {font-size:0;}
+.SP_join_snsList li {display: block;vertical-align:middle;border: 1px solid #a0a0a0;display: inline-block;width:100%;margin-bottom: 10px;}
+.SP_join_snsList li:first-child {margin-top:10px; border: 1px solid #a0a0a0;}
+
+.SP_join_snsList li a {position: relative; display: block;width: 100%;height: 100%;text-align: center;}
+.SP_join_snsList li a .txt {font-size: 18px;color:#000;display: inline-block;vertical-align: top;height: 60px;line-height: 60px;margin-left: 0;}
+.SP_join_snsList li a:before {content:'';display: inline-block;width: 27px;height: 26px;position:absolute;top: 50%;left: 28px;transform: translateY(-50%);background: url('/smartpc/_img/icon/icon_naver.svg') no-repeat center center;background-size: 80%;}
+.SP_join_snsList li.lg_kakao a:before {background-image: url('/smartpc/_img/icon/icon_kakao.png');background-size: 90%;}
+.SP_join_snsList li.lg_facebook a:before {background-image:url('/smartpc/_img/icon/icon_facebook.svg');background-size: 45%;}
+
+.login_bnr_zone {}
+.login_bnr_zone a { display: block; width:100%; height:100%;  }
+.login_bnr_zone img {display: inline-block;width:100%;height:auto;margin-bottom: 20px;}
+
+/*=====================================================================
+======================= SNS ê°„íŽ¸ê°€ìž… ë¡œê·¸ì¸ ë  =======================
+=====================================================================*/
+/*=====================================================================
+======================= ë§ˆì¼€íŒ… ìˆ˜ì‹ ë™ì˜ ì‹œìž‘  =========================
+=====================================================================*/
+/* input style */
+#SMS_marketingInner input[type=checkbox]:focus,#SMS_marketingInner input[type=radio]:focus {
+    outline: none;
+}
+
+/*
+#SMS_marketingInner input[type=checkbox],#SMS_marketingInner input[type=radio] {
+    -webkit-appearance: button !important;
+    width: 21px !important;
+    height: 21px !important;
+    margin-bottom: 1px !important;
+    border-radius: 0 !important;
+    transition: .4s !important;
+    background-image: url('data:image/png;base64,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') !important;
+    background-color: #fff !important;
+    background-position: center !important;
+    background-size: 50% !important;
+	background-repeat:no-repeat !important;
+    border: 2px solid #8e8e8e !important;
+    border-radius: 100px !important;
+	opacity:0.6;
+	margin:0;
+}
+
+#SMS_marketingInner input[type=checkbox]:checked,#SMS_marketingInner input[type=radio]:checked {
+    background-image: url('data:image/png;base64,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') !important;
+    background-color: #000000 !important;
+    border-color: #000000 !important;
+}
+
+#SMS_marketingInner .checkbox{
+	background:none;
+}
+*/
+/*=====================================================================
+============================= ìž…ë ¥í¼ =================================
+=====================================================================*/
+#SMS_marketingCustom {
+    padding: 0 20px;
+}
+#SMS_marketingCustom .titleArea {
+    height: auto;
+    min-height: unset;
+    text-align: center;
+    border-bottom: none;
+    margin: 0 0 20px;
+}
+#SMS_marketingCustom .titleArea h2 {
+    display: block;
+    position: relative;
+    font-size: 22px;
+    font-weight: bold;
+    line-height: 20px;
+    background: none;
+	margin:0 0 40px;
+    padding: 0 0 45px;
+    color: #000000;
+}
+#SMS_marketingCustom .titleArea h2:after,#SMS_marketingCustom .titleArea h2:before {
+    content: '';
+    position: absolute;
+    background: #000000;
+}
+
+#SMS_marketingCustom .titleArea h2:after {
+    width: 10px;
+    height: 10px;
+    bottom: 0;
+    left: 50%;
+    margin-left: -5px;
+    border-radius: 10px;
+}
+
+#SMS_marketingCustom .titleArea h2:before {
+    width: 60%;
+    height: 1px;
+    bottom: 5px;
+    left: 50%;
+    margin-left: -30%;
+    display: none;
+}
+#SMS_marketingCustom #joinForm {
+	text-align:center;
+}
+#SMS_marketingCustom #joinForm h3 {
+    font-size: 15px;
+    text-align: center;
+    color: #111;
+    padding: 0;
+}
+#SMS_marketingCustom #joinForm .required {
+    color: #f24443;
+    text-align: center;
+    margin: 15px 0;
+	font-size:13px;
+}
+#SMS_marketingCustom #joinForm .ec-base-table {
+    background: #f3f3f3;
+    border: none;
+    padding: 20px;
+}
+#SMS_marketingCustom #joinForm .ec-base-table table {
+    padding: 0;
+    margin: 0;
+    border: none;
+    background: #fff;
+}
+#SMS_marketingCustom #joinForm .ec-base-table table tr {
+    border-top: 1px solid #f3f3f3;
+}
+#SMS_marketingCustom #joinForm .ec-base-table table tr:first-child {
+    border-top: none;
+}
+#SMS_marketingCustom #joinForm .ec-base-table table:before {
+    display: none;
+}
+#SMS_marketingCustom #joinForm .ec-base-table table th,#SMS_marketingCustom #joinForm .ec-base-table table td {
+    border: none;
+    background: none;
+    display: inline-block;
+    vertical-align: top;
+    padding: 20px;
+}
+#SMS_marketingCustom #joinForm .ec-base-table table th {
+    font-size: 13px;
+    line-height:  24px;
+    width: 150px !important;
+    position: relative;
+	color:#000;
+}
+#SMS_marketingCustom #joinForm .ec-base-table table th img {
+    display: inline-block;
+	vertical-align:middle;
+    margin-top: -4px;
+}
+#SMS_marketingCustom #joinForm .ec-base-table table th:after {
+    content: '/';
+    position: absolute;
+    right: 10px;
+    top: 19px;
+    display: block;
+    font-size: 13px;
+    font-weight: lighter;
+    color: #ccc;
+}
+#SMS_marketingCustom #joinForm .ec-base-table table td {
+}
+#SMS_marketingCustom #joinForm .ec-base-table table td input,
+#SMS_marketingCustom #joinForm .ec-base-table table td select{
+	border:1px solid #ccc;
+}
+#SMS_marketingCustom #joinForm .ec-base-table table td select{
+    box-sizing: border-box;
+}
+#SMS_marketingCustom #joinForm .ec-base-table table tr td div ul li:first-child{
+	padding-left:30px;
+}
+
+/*=====================================================================
+============================= ì•½ê´€ë™ì˜ ===============================
+=====================================================================*/
+#SMS_marketingCustom #SMS_marketingInner {
+    box-sizing: border-box;
+    text-align: left;
+    position:relative;
+    display: inline-block;
+    width:390px;
+}
+
+#SMS_marketingCustom #SMS_marketingInner .SMS_agreeTitle {
+    height: auto;
+    margin: 0 0 30px;
+}
+
+#SMS_marketingCustom #SMS_marketingInner .SMS_agreeTitle:before,#SMS_marketingCustom #SMS_marketingInner .SMS_agreeTitle:after {
+    content: '';
+    position: absolute;
+    background: #000000;
+	display:none;
+}
+
+#SMS_marketingCustom #SMS_marketingInner .SMS_agreeTitle:after {
+    width: 10px;
+    height: 10px;
+    bottom: 0;
+    left: 50%;
+    margin-left: -5px;
+    border-radius: 10px;
+}
+
+#SMS_marketingCustom #SMS_marketingInner .SMS_agreeTitle:before {
+    width: 60%;
+    height: 1px;
+    bottom: 5px;
+    left: 50%;
+    margin-left: -30%;
+    display: none;
+}
+
+#SMS_marketingCustom #SMS_marketingInner .SMS_agreeTitle span {
+    font-size: 13px;
+    font-weight: normal;
+    display: block;
+    margin-top: 5px;
+    color: #555;
+}
+
+#SMS_marketingCustom #SMS_marketingInner .SMS_agreeAllWrap {
+    position: relative;
+    border: 2px solid #111;
+    height: 60px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+#SMS_marketingCustom #SMS_marketingInner .SMS_agreeAllWrap .SMS_agTitleWrap {padding: 0;}
+
+#SMS_marketingCustom #SMS_marketingInner .SMS_agreeAllWrap .SMS_agTitleWrap .check {
+    float: right;
+    margin: 0;
+    color: #111;
+    position: inherit;
+}
+
+#SMS_marketingCustom #SMS_marketingInner .SMS_agreeAllWrap .SMS_agTitleWrap h3 {
+    font-size: 18px;
+    line-height: 55px;
+    color: #000;
+    padding: 0;
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+#SMS_marketingCustom #SMS_marketingInner .SMS_agreeAllWrap .ec-base-box {
+    display: block;
+}
+
+#SMS_marketingCustom #SMS_marketingInner .SMS_agreeAllWrap .ec-base-box:hover{
+	
+}
+
+#SMS_marketingCustom #SMS_marketingInner .SMS_agreeAllWrap .SMS_agTitleWrap .check .ec-base-chk {
+    margin: 0;
+    position: absolute;
+    right: 15px;
+    top: 48%;
+    transform: translateY(-50%);
+}
+
+#SMS_marketingCustom #SMS_marketingInner .SMS_agreeAllWrap .SMS_agTitleWrap .check input {width: 24px;height: 24px;}
+
+#SMS_marketingCustom #SMS_marketingInner .agreeArea {
+    text-align: left;
+}
+
+#SMS_marketingCustom #SMS_marketingInner .ec-base-box {
+}
+
+#SMS_marketingCustom #SMS_marketingInner #ad_checkWrap  {}
+
+#SMS_marketingCustom #SMS_marketingInner .SMS_agTitleWrap {padding: 20px 0;border-bottom: 1px solid #999;}
+
+#SMS_marketingCustom #SMS_marketingInner .SMS_agTitleWrap h3 {
+    font-size: 16px;
+    margin: 0;
+    display: inline-block;
+    vertical-align: top;
+    font-weight: normal;
+}
+
+#SMS_marketingCustom #SMS_marketingInner .SMS_agTitleWrap h3 span {
+	color:#999;
+}
+
+#SMS_marketingCustom #SMS_marketingInner .SMS_agTitleWrap .check {
+    font-size: 0;
+    padding: 0;
+    display: inline-block;
+    float: right;
+}
+
+#SMS_marketingCustom #SMS_marketingInner .SMS_agTitleWrap .btn {
+    display: inline-block;
+    vertical-align: middle;
+    color: #111;
+    text-decoration: underline;
+    font-size: 12px;
+    float: right;
+    padding-right: 30px;
+}
+
+#SMS_marketingCustom #SMS_marketingInner .content {
+    font-size: 12px;
+    display: none;
+    margin: 15px 0 0;
+	padding: 15px 0;
+	border-bottom:2px solid #ddd;
+	border-top:2px solid #ddd;
+	max-height: 150px;
+	overflow-y: scroll;
+}
+
+#SMS_marketingCustom #SMS_marketingInner #ad_checkWrap > .checkList {
+    padding-top: 20px;
+    min-height: 85px;
+}
+
+#SMS_marketingCustom #SMS_marketingInner #ad_checkWrap > .checkList li {
+    position: relative;
+    display: inline-block;
+    width: 50%;
+    vertical-align: top;
+    float: left;
+}
+
+#SMS_marketingCustom #SMS_marketingInner #ad_checkWrap > .checkList li > span {
+	display: inline-block;
+	font-size: 13px;
+	color: #111;
+	min-width: unset;
+}
+
+#SMS_marketingCustom #SMS_marketingInner #ad_checkWrap > .checkList li:last-child {
+    float: right;
+    padding-left: 15px;
+}
+
+#SMS_marketingCustom #SMS_marketingInner #ad_checkWrap > .checkList li input {
+}
+
+#SMS_marketingCustom #SMS_marketingInner #ad_checkWrap > .checkList li label {
+	font-size:0;
+	display: inline-block;
+	float: right;
+	vertical-align: top;
+}
+#SMS_marketingCustom #SMS_marketingInner #ad_checkWrap > .checkList li:first-child label {
+	margin-right: 20px;
+}
+#SMS_marketingCustom #SMS_marketingInner #ad_checkWrap > .checkList li > span.point {
+	position: absolute;
+	display: block;
+	left:0;
+	right: auto;
+	bottom: auto;
+	top: 30px;
+	min-width: 250px;
+	color: #d22323;
+}
+#SMS_marketingCustom #SMS_marketingInner .ec-base-button {
+    margin: 0 0 30px;
+    padding: 30px 0 0;
+    border-top: 20px solid #f3f3f3;
+	border-radius:3px;
+}
+
+#SMS_marketingCustom #SMS_marketingInner .ec-base-button a {
+    background: #000000;
+    color: #fff;
+    width: 160px;
+    height: 45px;
+    line-height: 45px;
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+	border-radius:5px;
+}
+
+#SMS_marketingCustom #SMS_marketingInner .ec-base-button a:after {
+    content: 'íšŒì›ê°€ìž…';
+    font-size: 18px;
+    font-weight: bold;
+    display: block;
+	box-shadow:0px 0px 20px #ccc;
+}
+
+#SMS_marketingCustom #SMS_marketingInner .ec-base-button a img {
+    display: none;
+}
+
+/*=====================================================================
+============================= íŒì—…ì˜ì—­ ===============================
+=====================================================================*/
+#addEventSection .marketingPopupWrap {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: 1000;
+}
+
+#addEventSection .marketingPopupWrap .close {
+	font-size: 0;
+	width: 25px;
+	height: 25px;
+	position: absolute;
+	right: 15px;
+	left: auto;
+	bottom: auto;
+	top: 20px;
+	background: url(/smartpc/_img/icon/icon_close_bl.png) no-repeat center center;
+	background-size: 90%;
+	border: none!important;
+	padding: 0;
+	margin-top: 0!important;
+}
+
+#addEventSection .marketingPopupWrap div {
+    display: block;
+}
+
+#addEventSection .marketingPopup {
+    position: fixed;
+    left: 50%;
+    top: 48%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    height: auto;
+    background: #fff;
+    text-align: center;
+    overflow: hidden;
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+#addEventSection .marketingPopup p {
+    font-size: 18px;
+    color: #111;
+}
+
+#addEventSection .marketingPopup p:first-child {
+	margin-top: 40px;
+}
+
+#addEventSection .marketingPopup p > b {
+    color: #000000;
+}
+
+#addEventSection .marketingPopup .marketingPopupYes {
+    margin-top: 35px;
+    background: #000000;
+    color: #fff;
+    display: inline-block;
+    font-size: 16px;
+    letter-spacing: 1px;
+    width: 100%;
+    height: 45px;
+    line-height: 45px;
+    cursor: pointer;
+}
+
+#addEventSection .marketingPopup .marketingPopupClose {
+    display: inline-block;
+    margin: 15px 0;
+    font-size: 14px;
+    color: #000;
+    padding: 0;
+    line-height: 1;
+    padding: 7px 0;
+    border-bottom: 1px solid #000;
+    cursor: pointer;
+}
+
+#addEventSection .marketingImgWrap {
+    position: relative;
+    overflow: hidden;
+}
+
+#addEventSection .marketingImgWrap img {
+    width: 45%;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+#addEventSection .marketingImgWrap > span {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 60%;
+    width: 10%;
+    height: 50px;
+    display: inline-block;
+    vertical-align: middle;
+    opacity: 0.8;
+}
+
+/*=====================================================================
+============================= ì¡°í•­íŒì—… ===============================
+=====================================================================*/
+
+#confirmAgreementSection {
+	position:fixed;
+	display: none;
+	width: 550px;
+	height: 250px;
+	top: 50%;
+	left:50%;
+	transform: translate(-50%, -50%);
+	word-break: keep-all;
+	font-size: 12px;
+	line-height: 1.5;
+	background: #fff;
+	/* border: 1px solid #111; */
+	border-raius: 5px;
+	padding: 15px 10px 15px 15px;
+	z-index: 1001;
+}
+
+#confirmAgreementSection .close_btn {
+	width:30px;
+	height: 30px;
+	position: absolute;
+	top: -35px;
+	right:0;
+	left: auto;
+	bottom: auto;
+	background: url('/smartpc/_img/icon/icon_close_bl.png') no-repeat center center;
+}
+
+#confirmAgreementSection .txt {
+	height: 100%;
+	overflow: auto;
+	overflow-x: hidden;
+}
+
+#background_zone {
+	position: fixed;
+	left:0;
+	right:0;
+	top:0;
+	bottom:0;
+	z-index: 10;
+	background-size: 110%;
+	background-color: rgba(0, 0, 0, 0.7);
+	display: none;
+}
+
+#confirmAgreementSection .txt::-webkit-scrollbar-track{ -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); background-color: #e5e5e5; }
+#confirmAgreementSection .txt::-webkit-scrollbar { width:5px; background-color:#e5e5e5; }
+#confirmAgreementSection .txt::-webkit-scrollbar-thumb { background-color:#000000; }
+
+/*=====================================================================
+============================= ì¿ í°ì˜ì—­ ===============================
+=====================================================================*/
+#addEventSection .marketingCouponWrap{
+    margin-top: 20px;
+}
+#addEventSection .marketingCouponWrap h4{
+    text-align:center;
+    font-size: 12px;
+    font-weight:bold;
+    color: #000;
+}
+#addEventSection .marketingCouponWrap .marketingImgWrap{
+    margin: 10px 2px 0;
+}
+#addEventSection .marketingImgWrap .couponBlind{
+    position:absolute;
+    right:0;
+    top:0;
+    background-color:rgba(0,0,0,0.6);
+    width: 45%;
+    height:100%;
+}
+
+/* ì¶”ê°€ */
+.typeUpper{
+	display:none;
+}
+#SMS_marketingCustom #joinForm .xans-member-join > h3{
+	margin:30px 0 10px;
+}
+#SMS_marketingCustom .btn_next_step {
+	width:100%;
+	height: 60px;
+	text-align: center;
+	line-height: 60px;
+	background: #111;
+	/* box-shadow: 6px 6px 12px 0 rgba(0, 0, 0, 0.3); */
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+#SMS_marketingCustom .btn_next_step span {
+	color:#fff;
+	font-size: 18px;
+}
+
+.ov_hidden {
+	width: 100% !important;
+    height: 100% !important;
+    overflow: hidden !important;
+}
+
+#SMS_marketingCustom .SP_joinsubmit_wrap .SP_cm_btn.SP_btn_black_bg {
+    max-width: 390px;
+    width: 100%;
+    height: 60px;
+    text-align: center;
+    line-height: 60px;
+    background: #111;
+    margin-top: 30px;
+    font-size: 18px;
+}

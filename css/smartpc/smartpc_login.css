@@ -1,0 +1,325 @@
+@charset "utf-8";
+/* ============================================ JOIN MEMBER PAGE ============================================ */
+.SP_memberChked_tr td { font-size:0; }
+.SP_memberChked_tr input {display:inline-block;vertical-align:middle;/* margin-left:10px; */margin-right: 5px;}
+.SP_memberChked_tr input:first-child { margin-left:0; }
+.SP_memberChked_tr label { display:inline-block; vertical-align:middle; font-size:12px; color:#333; }
+
+
+/* 전체 동의하기 */
+.SP_totalAgree_wrap label {display:inline-block;vertical-align:middle;padding-left: 9px;font-size:14px;font-weight: 700;}
+.SP_privacyAgree_wrap {padding-top: 50px;}
+.SP_privacyAgree_wrap .SP_privacyTitle { font-size:13px; color:#333; }
+
+.SP_privacyAgree_wrap .content {margin-top:10px;padding:30px;font-size:13px;color:#333;border:1px solid #ddd;height: 100px;overflow-y: scroll;}
+.SP_privacyAgree_wrap .content p { line-height:150%; }
+
+.SP_privacyAgree_wrap .check {padding-top: 15px;text-align: right;}
+.SP_privacyAgree_wrap .check li { padding-top:5px; }
+.SP_privacyAgree_wrap .check li:first-child { padding-top:0; }
+.SP_privacyAgree_wrap .check span { display:inline-block; vertical-align:middle; font-size:13px; color:#333; }
+.SP_privacyAgree_wrap .check label { display:inline-block; vertical-align:middle; padding-left:5px; font-size:13px; color:#333; }
+.SP_privacyAgree_wrap .check label input[type="checkbox"] { vertical-align:top; margin-right:3px; }
+
+/* 서브밋 */
+.SP_joinsubmit_wrap {margin-top: 60px;text-align:center;}
+
+/* 입력창 INPUT & SELECT STYLE */
+.SP_table_wrap #member_id {width: 300px;}
+.SP_table_wrap #passwd {width: 300px;}
+.SP_table_wrap #user_passwd_confirm {width: 300px;}
+.SP_table_wrap #hint { width:200px; }
+.SP_table_wrap #hint_answer { width:200px; }
+.SP_table_wrap #nameContents input {width: 300px;}
+
+/* 아이디입력 */
+.SP_table_wrap #idMsg { font-size:11px; color:#dc0000; }
+.SP_table_wrap .SP_stxt {font-size:11px;color:#666;margin-top: 10px;}
+
+/* 비밀번호입력 */
+.SP_table_wrap #passwd:focus + .SP_pwGuideBox_wrap { display:inline-block; }
+.SP_pwGuideBox_wrap { display:none; vertical-align:top; }
+.SP_pwGuideBox .SP_pwGuideBox_tt { font-size:12px; color:#333; }
+.SP_pwGuideBox_list { padding-top:5px; font-size:11px; color:#666; line-height:150%; }
+.SP_pwTypeDesc, #emailMsg { padding-top:10px; font-size:11px; color:#666; }
+#pwConfirmMsg { font-size:11px; color:#dc0000; margin-left:5px; }
+
+/* 우편입력 */
+.SP_table_wrap #postcode1 {width:100px;font-size: 15px;color:#333;padding: 10px;}
+.SP_table_wrap #addr1,.SP_table_wrap #addr2 {width:300px;margin-right: 10px!important;font-size: 15px;color:#333;}
+.SP_table_wrap .SP_address { padding-top:5px; }
+.SP_table_wrap .SP_address a {height: 30px;line-height: 29px;width: 70px;font-size: 11px;border: 1px solid #ddd;color: #666;background: #f1f1f1;}
+.SP_table_wrap .SP_address:first-child { padding-top:0; }
+
+/* 전화번호 */
+.SP_table_wrap #phone1 {width: 80px;margin-right:5px;}
+.SP_table_wrap #phone2 {width: 80px;margin:0 5px;}
+.SP_table_wrap #phone3 {width: 80px;margin-left:5px;}
+.SP_table_wrap #mobile1 {width: 80px!important;margin-right:5px;margin-bottom: 0;vertical-align: top;}
+.SP_table_wrap #mobile2 {width: 80px!important;margin:0 5px;}
+.SP_table_wrap #mobile3 {width: 80px!important;margin-left:5px;}
+
+/* 이메일 */
+.SP_table_wrap #email1 {width: 300px;margin-right:5px;}
+.SP_table_wrap #email2 { width:150px; margin:0 5px;}
+
+/* 생일 */
+.SP_table_wrap #birth_year {width: 80px;}
+.SP_table_wrap #birth_month {width: 80px;}
+.SP_table_wrap #birth_day {width: 80px;}
+
+/* 추가정보 */
+.SP_table_wrap .SP_tableContainer_wrap td input[type="radio"] {position:relative;top: 2px;margin-right:5px;}
+.SP_table_wrap .SP_tableContainer_wrap td label {margin-right:5px;}
+.SP_table_wrap .SP_tableContainer_wrap .gIndent20 { margin-left:10px; }
+
+/**/
+.SP_joinCompleteUserInfo {margin-top: 70px;}
+.SP_joinCompleteUserInfo dl {
+    height: 42px;
+    line-height: 42px;
+    border-bottom: 1px solid #ddd;
+    font-size: 16px;
+    color: #000;
+    margin-top: 23px;
+    padding: 0 30px;
+}
+.SP_joinCompleteUserInfo dl:first-child {padding-top:0;}
+.SP_joinCompleteUserInfo dt {display:inline-block;vertical-align:middle;width:70px;font-size: 15px;}
+.SP_joinCompleteUserInfo dd {display:inline-block;vertical-align:middle;font-size:13px;text-align: right;float: right;}
+.SP_joinCompleteUserInfo dd span {font-size: 15px;color:#000;font-weight: bold;}
+.SP_joinsubmit_wrap .SP_cm_btn.SP_btn_black_bg {max-width: 240px;}
+
+/* ============================================ // JOIN MEMBER PAGE ============================================ */
+
+/* ============================================  JOIN MEMBER COMPLATE PAGE  ============================================ */
+/* JOIN MEMBER COMPLETE */
+.SP_joinComplete_wrap {width: 320px;margin:0 auto;}
+.SP_Ohora_msg {text-align: center;padding-top: 85px;}
+.SP_Ohora_msg span {display: block;font-size: 15px;color: #000;line-height: 1.5;}
+.SP_Ohora_msg .main_msg {margin-top: 25px;margin-bottom: 17px;font-size: 27px;color:#000;}
+.memberSpecial {text-align: center;margin: 30px 0;font-size: 15px;font-weight: bold;color: #000;}
+/* SMS 수신동의 */
+.SP_RadioBox input { display:inline-block; vertical-align:middle; }
+.SP_RadioBox label:nth-child(2) { margin-right:10px; }
+.SP_RadioBox label { display:inline-block; vertical-align:middle; margin-left:5px; font-size:12px; }
+
+/* 회원탈퇴 팝업 */
+.layerLeave { display:none; }
+
+/* 회원인증 */
+.SP_member_chk_td .certifForm {padding-top: 15px;}
+.SP_member_chk_td .certifForm:first-child { padding-top:0; }
+.SP_member_chk_td .SP_cm_btn { width: 180px; }
+.SP_member_chk_td .SP_cm_btn span { display:inline-block; vertical-align:middle;}
+.SP_member_chk_td .SP_cm_btn span:first-child { padding-right:5px }
+.SP_member_chk_td .certifInfo {padding-top: 5px;font-size:12px;color:#666;line-height: 1.5;}
+
+/* ============================================  // JOIN MEMBER COMPLATE PAGE  ============================================ */
+
+
+/* ============================================  LOGIN PAGE  ============================================ */
+.SP_loginContainer {position:relative;width: 700px;margin:0 auto;text-align: center;}
+.SP_loginBox_wrap {font-size:0; text-align:center; -o-transition: all 1s; -ms-transition: all 1s; -moz-transition: all 1s; -webkit-transition: all 1s; left: 0; right: auto; top: auto; bottom: auto;}
+.SP_loginBox_wrap.moveleft {position: relative;left: -50%;opacity: 0;}
+/* .SP_lg_title { font-size:12px; color:#333; text-align:left; } */
+
+/* ============================================  BANNER ZONE  ============================================ */
+.SP_loginContainer .login_bnr_zone {text-align: center;display: inline-block;border-top:1px solid #999;}
+.SP_loginContainer .login_bnr_zone_extra  {width: 390px; text-align: center;display: inline-block; }
+.SP_loginContainer .login_bnr_zone a, .SP_loginContainer .login_bnr_zone_extra a { display: inline-block; width:100%;height: 100%; }
+.SP_loginContainer .login_bnr_zone img, .SP_loginContainer .login_bnr_zone_extra img {display: inline-block;width:100%;height: auto;}
+ 
+
+/* ====== LOGIN BOX ====== */
+.SP_loginBox {display:inline-block;vertical-align:top;width: 390px;margin-top: 28px;margin-bottom: 30px;}
+.SP_loginBox legend {display:none;}
+
+
+.SP_loginInput_wrap {background-color: white;}
+/* ID INPUT */
+.SP_idInput {/* padding-top:5px; */}
+.SP_idInput #member_id {width: 390px;height: 40px;border: none;border-bottom: 1px solid #999;padding-left: 30px;}
+
+/* PW INPUT */
+.SP_pwInput {padding-top: 25px;}
+.SP_pwInput #member_passwd {width: 390px;height: 40px;border: none;border-bottom: 1px solid #999;box-sizing:border-box;padding-left:  30px;}
+/* ID SAVE */
+.SP_security {padding: 20px 30px 30px;text-align: right;}
+.SP_security > div {display: inline-block;}
+.SP_security > div:last-child { margin-right: 0; }
+.SP_security .SP_saveId_chk { float:left; }
+.SP_security .SP_saveId_chk, .SP_security .SP_keepConnect {vertical-align:top;/* text-align:left; */font-size: 14px;margin-right: 15px;}
+.SP_security input {
+    display: inline-block;
+    vertical-align: middle;
+    cursor: pointer;
+    appearance: none;
+    -webkit-appearance: none;
+    box-sizing: border-box;
+    background-size: cover;
+    border-color: #000;
+    position: relative;
+    width: 11px;
+    height: 11px;
+    border-radius: inherit;
+    background: none;
+    border: 1px solid #000;
+    }
+.SP_security input:checked { background: url(/smartpc/_img/icon/input_chked.png) no-repeat center center; background-size: 85%; background-color: #000; border-color: #000;}
+.SP_security label {display:inline-block;vertical-align:middle;padding-left: 5px;font-size: 12px;color: #000;min-width: 100px;}
+
+/* SECRET CONNECT */
+.SP_security .SP_secretConnect {display:inline-block;vertical-align:top;line-height: 20px;font-size: 12px;}
+.SP_security .SP_secretConnect span {display: inline-block;vertical-align: middle;line-height: 20px;text-align: right;}
+.SP_security .SP_secretConnect span:first-child {}
+.SP_security .SP_secretConnect img { width: 10px; height: auto; position: relative; top: 3px; }
+
+.SP_loginSubmit {}
+.SP_cm_btn.type2 {width:100%;height: 60px;line-height: 60px;font-size: 18px;background: #fff;border: solid 1px #ddd;font-weight: normal;padding-right: 0;}
+.SP_cm_btn.SP_btn_black_bg {background-color: #000;border-color: #000;color: #fff;}
+
+/* LOGIN SNS */
+.SP_snsLogin_wrap {text-align:left;}
+.SP_snsList_wrap ul {font-size:0;}
+.SP_snsList_wrap li {display: block;vertical-align:middle;border: 1px solid #999;margin-top: 10px;display: inline-block;width: calc(50% - 5px);}
+.SP_snsList_wrap li:first-child {background: #fff; border: 1px solid #999999; width:100%; }
+.SP_snsList_wrap li.lg_naver { margin-right:5px; }
+.SP_snsList_wrap li.lg_facebook { margin-left:5px; }
+
+.SP_snsList_wrap li a {position: relative; display: block;width: 100%;height: 100%;text-align: center;}
+.SP_snsList_wrap li a .txt {font-size: 13px;color:#000;display: inline-block;vertical-align: top;height: 45px;line-height: 45px;margin-left: 15px;}
+.SP_snsList_wrap li.lg_kakao .txt {height: 60px;line-height: 60px;font-size: 18px;margin-left: 0;}
+.SP_snsList_wrap li a:before {content:'';display: inline-block;width: 18px;height: 17px;position:absolute;top: 50%;left: 17px;transform: translateY(-50%);background: url('/smartpc/_img/icon/icon_naver.svg') no-repeat center center;background-size: 95%;}
+.SP_snsList_wrap li.lg_kakao a:before {left: 28px;width: 27px;height: 26px;background-image: url('/smartpc/_img/icon/icon_kakao.png');}
+.SP_snsList_wrap li.lg_facebook a:before {background-image:url('/smartpc/_img/icon/icon_facebook.svg');width: 21px;height: 21px;background-size: 45%;left: 12px;}
+/*
+.SP_utility_Wrap ul { padding-top:10px; font-size:0; }
+.SP_utility_Wrap li { display:inline-block; vertical-align:middle; width:49%; margin-left:2%; }
+.SP_utility_Wrap li:first-child { margin-left:0; }
+.SP_utility_Wrap li .SP_cm_btn { width:100%; }
+*/
+
+/* ====== LOGIN UTILITY ====== */
+/*
+.SP_loginUtility {  display:inline-block; vertical-align:top; width:300px; padding:30px 0; }
+.SP_loginUtility li { padding-top:30px; }
+.SP_loginUtility li:first-child { padding-top:0; }
+.SP_loginUtility .SP_cm_btn { width:100%; height:40px; margin-top:5px; line-height:40px; }
+*/
+/* NO MEMBER ORDER SEARCH */
+.SP_noMemberOrderSearch {  margin-bottom:30px; }
+.SP_noMemberOrder_wrap {/* position:absolute; *//* top: 200px; *//* left: auto; *//* right: -390px; */width: 390px;background:#fff;z-index:1;transition: all 1s;-ms-transition: all ease 1s;transition-delay: 0.1s;display: inline-block;}
+.SP_noMemberOrder_wrap.active {left: 50%;right: auto;transform: translateX(-50%);opacity:1;}
+.SP_noMemberOrder_stt {padding: 20px 0 30px;font-size: 12px;color: #000;text-align: center;}
+
+.SP_noMemberOrderInput {}
+.SP_noMemberOrderInput dl {padding-top: 25px;}
+.SP_noMemberOrderInput dl:first-child { padding-top:0; }
+.SP_noMemberOrderInput dd {font-size: 11px;}
+.SP_noMemberOrderInput #order_name {width:100%;height: 40px;border: none;border-bottom: 1px solid #999;box-sizing:border-box;}
+.SP_noMemberOrderInput #order_id1 {width: calc(50% - 6px);height: 40px;margin-right: 4px;border: none;border-bottom: 1px solid #999;box-sizing: border-box;}
+.SP_noMemberOrderInput #order_id2 {width: calc(50% - 6px);height: 40px;margin-left: 4px;border: none;border-bottom: 1px solid #999;box-sizing: border-box;}
+.SP_noMemberOrderInput #order_password {width:100%;height: 40px;border: none;border-bottom: 1px solid #999;box-sizing: border-box;padding-left: 30px;font-size: 16px;color: #555;}
+.SP_noMemberOrderInput input { padding-left:30px!important; }
+.SP_noMemberOrderInput input::placeholder { color:#000; font-size:15px; }
+
+
+/* ============================================  // LOGIN PAGE  ============================================ */
+
+/* ============================================  ID FIND PAGE  ============================================ */
+/* ----- ID FIND PAGE ----- */
+.SP_findId_wrap {  }
+.SP_findeGuideTxt {text-align:center;margin-bottom: 20px;}
+.SP_findeGuideTxt .SP_findeGuideTxt_tt { font-size:16px; color:#333;  }
+.SP_findeGuideTxt p {font-size:12px;color:#777;line-height: 1.5;}
+.SP_findeGuideTxt p:first-child { padding-top:0; }
+
+.SP_findIdContainer {width:500px;margin:0 auto;}
+.SP_findId .SP_lg_title { display: none; }
+.SP_findId fieldset > p { padding-top:10px; }
+.SP_findId fieldset > ul > li { padding-top:10px;  }
+.SP_findId fieldset > ul > li:first-child { padding-top:0;  }
+
+.SP_findId legend { display:none; }
+.SP_findId input[type="text"] { height:34px; border:1px solid #ddd; box-sizing:border-box; }
+.SP_findId select {width:100%;height:34px;font-size:12px;border:1px solid #ddd;box-sizing:border-box;background: #fff url(/smartpc/_img/icon/arrow_select.svg) no-repeat 95% center;}
+.SP_findId strong { display:inline-block; vertical-align:top; width:160px; height:34px; margin:0; padding:0 0 0 10px; font-size:12px; font-weight:normal; line-height:34px; background:#f1f1f1; box-sizing:border-box; }
+.SP_findId strong.SP_findIdInput_tt { vertical-align:middle; }
+.SP_findId .SP_findIdInput_cont { display:inline-block; vertical-align:top; width:calc(100% - 160px); padding-left:10px; box-sizing:border-box; }
+.SP_findId .SP_answerCont { vertical-align:middle; font-size:12px; color:#666;}
+
+.SP_findId #member_id{ width:100%; }
+.SP_findId .check { padding:15px 0; }
+.SP_findId .check input[type="radio"] { display:inline-block; vertical-align:middle;}
+.SP_findId .check label { display:inline-block; vertical-align:middle; font-size:12px; padding-left:3px; }
+.SP_findId #check_method0 + label { padding-right:10px; }
+.SP_findId #check_method1 + label { padding-right:10px; }
+
+
+.SP_findId #name_view #name { width:100%; }
+.SP_findId #email_view #email { width:100%; }
+.SP_findId #mobile_view input[type="text"] {width: calc(33.333% - 10px);}
+.SP_findId #ssn_view #ssn { width:100%; height:30px; border:1px solid #ddd; box-sizing:border-box; }
+.SP_findId #ssn_view #ssn1 { width:calc(50% - 7.44px); }
+.SP_findId #ssn_view #ssn2 { width:calc(50% - 7.44px); height:30px; border:1px solid #ddd; box-sizing:border-box; }
+.SP_findId #ssn_view .txtInfo { display:block; padding-top:5px; font-size:12px; color:#666; }
+.SP_findId #passwd_answer {width:100%; height:30px; border:1px solid #ddd; box-sizing:border-box; }
+
+.SP_findIdBtn_wrap {padding-top: 50px;text-align: center;}
+
+/* ----- PASSWORD FIND 인증 PAGE ----- */
+.SP_findPwContent {}
+.SP_findPwContent .SP_information .SP_information_list li {margin-top:10px;}
+.SP_findPwContent .SP_information .SP_information_list li:first-child {margin-top:0;}
+.SP_findPwContent .SP_information .SP_information_list li .term {display: inline-block;vertical-align: top;width: 160px;height: 34px;margin: 0;padding: 0 0 0 10px;font-size: 12px;font-weight: normal;line-height: 34px;background: #f1f1f1;box-sizing: border-box;text-align: left;}
+.SP_findPwContent .SP_information .SP_information_list li label {vertical-align: middle; font-size: 12px; padding-left: 3px; padding-right:10px;  }
+.SP_findPwContent .SP_information .SP_information_list li input[type="radio"] {display:inline-block;vertical-align: middle;}
+.SP_findPwContent .SP_information .SP_information_list li input[type="password"] {display: inline-block;vertical-align: middle;height: 34px;width: 100%;float: right;}
+.SP_findPwContent .SP_information .SP_information_list li #verification_code {width: 99%;display: inline-block;float: right;}
+.SP_findPwContent .SP_information .SP_information_list li .desc {display: inline-block;vertical-align: top;width: calc(100% - 165px);padding-left: 5px;box-sizing: border-box;font-size: 12px;text-align: left;line-height: 34px;min-height: 34px;}
+.SP_findPwContent .SP_information .SP_information_list li .desc .txtEm { padding-left:5px; }
+.SP_findPwContent .SP_information .SP_information_list li:last-child .desc {}
+.SP_findPwContent .SP_information .SP_information_list li .desc .btnNormal { color: #000; font-weight: bold; margin-left: 10px; border: 1px solid #000; padding: 2px 5px; font-size: 11px;}
+.SP_findPwContent .SP_information .SP_information_list .txtInfo { font-size: 11px; text-align: left; line-height: 1.5; display: block; margin-top: 40px;}
+/* ----- ID FIND RESULT PAGE ----- */
+.SP_information {font-size:0;}
+.SP_findIdContainer .SP_thumbnail {display:inline-block;vertical-align:top;height: auto;}
+.SP_findIdContainer .SP_infomation_list {display:inline-block;vertical-align:top;padding-left: 15px;}
+
+.SP_findIdContent { margin:20px 0; padding:20px; border:1px solid #ddd; background:#efefef; }
+.SP_infomation_list li {padding-top: 10px;font-size: 12px;color:#333;}
+.SP_infomation_list li:first-child { padding-top:0; }
+.SP_infomation_list li label {display: block;}
+.SP_infomation_list li label:first-child { margin-bottom: 10px; }
+.SP_infomation_list li br {display: none;}
+.SP_infomation_list li strong { display:inline-block; vertical-align:middle; }
+.SP_infomation_list li span { display:inline-block; vertical-align:middle; }
+.SP_infomation_list li input[type="radio"] { display:inline-block; vertical-align:middle; }
+.SP_findResult_btn {padding-top: 50px;text-align:center;}
+
+.SP_findId .SP_findIdInput_cont input[type="radio"] { display:inline-block; vertical-align:middle; }
+.SP_findId .SP_findIdInput_cont label { display:inline-block; vertical-align:middle; font-size:12px; }
+
+.SP_findPwResult_info { display:inline-block; vertical-align:top; padding-left:10px; font-size:12px; color:#333; text-align:left;  }
+
+/* ============================================  ID FIND PAGE  ============================================ */
+/* ============================================   CUSTOM _ BY VICKY  ============================================ */
+#contents {min-height: 670px;}
+.SP_subContHeader .SP_subTitle.type2 {text-align: left;}
+.SP_loginInput_wrap label {display: inline-block;text-align: left;font-size: 12px;color: #000;overflow: hidden;line-height: 20px;}
+.SP_loginInput_wrap label input::placeholder {color:#000;}
+
+/* JOIN BUTTON */
+.SP_join_Wrap li {margin-bottom:10px;}
+.SP_join_Wrap li a {display: block;width: 100%;height: 60px;line-height: 60px;font-size: 18px;color: #000;border: 1px solid #000;}
+
+/* ID/PW SEARCH */
+.SP_utility_Wrap, .SP_gologin_Wrap {padding: 30px 0;color: #000;}
+.SP_utility_Wrap .SP_findinfo { font-size:0; }
+.SP_utility_Wrap .SP_findinfo li {display: inline-block;}
+.SP_utility_Wrap .SP_findinfo li a {display: inline-block;position: relative;font-size: 12px;color: #000;vertical-align: top;padding: 0 13px;}
+.SP_utility_Wrap .SP_findinfo li a:before {content:'';display: inline-block;width: 1px;height: 11px;background: #000;position: absolute;left: 0;top: 54%;transform: translateY(-50%);}
+.SP_utility_Wrap .SP_findinfo li:first-child a:before { display:none; }
+.SP_gologin_Wrap a { display: inline-block; font-size: 12px; color: #000;vertical-align: top;  }
+/* ============================================  // TIRR RIRR CUSTOM _ BY VICKY  ============================================ */
