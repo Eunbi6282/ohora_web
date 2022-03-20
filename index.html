@@ -21,7 +21,7 @@
 
     <!-- 서브공통css -->
     <link rel="stylesheet" href="css/smartpc/smartpc_subcommon.css">
-    <link rel="stylesheet" href="css/inclued/floatingLayout_css/floatingLayout.css">
+    <link rel="stylesheet" href="css/floatingLayout.css">
 
     <!-- 스마트pc추가 css -->
     <!-- 인스타그램 -->
@@ -105,62 +105,61 @@
             </div>
             <!-- 상품 관련 페이지에서 노출되는 헤더 -->
             <div class="prd_cate_container" style="display: none;">
-            <ul class="prd_cate_wrap">
-                <li class="eng_font">
-                    <a href="#">product</a>
-                    <ul class="prd_cate_sub">
-                        <li style="min-width: 5px;">
-                        <a class href="#"><span>신상품</span></a>
-                        </li>
-                        <li style="min-width: 5px;">
-                            <a class href="#"><span>베스트</span></a>
-                        </li>
-                        <li style="min-width: 5px;">
-                            <a class href="#"><span>네일</span></a>
-                        </li>
-                        <li style="min-width: 5px;">
-                            <a class href="#"><span>페디</span></a>
-                        </li>
-                        <li style="min-width: 5px;">
-                            <a class href="#"><span>케어&툴</span></a>
-                        </li>
-                        <li style="min-width: 5px;">
-                            <a class href="#"><span>네일샵</span></a>
-                        </li>
-                        <li style="min-width: 5px;">
-                            <a class href="#"><span>크루추천</span></a>
-                        </li>
-                    </ul>
-                </li>
-                <li class="eng_font">
-                    <a href="#">event</a>
-                </li>
-                <li class="eng_font">
-                    <a href="#">review</a>
-                </li>
-                <li class="eng_font">
-                    <a href="#">brand</a>
-                    <ul class="prd_cate_sub">
-                        <li style="min-width: 5px;">
-                        <a class href="#"><span>about</span></a>
-                        </li>
-                        <li style="min-width: 5px;">
-                            <a class href="#"><span>membership</span></a>
-                        </li>
-                        <li style="min-width: 5px;">
-                            <a class href="#"><span>magazine</span></a>
-                        </li>
-                        <li style="min-width: 5px;">
-                            <a class href="#"><span>collaboration</span></a>
-                        </li>
-                    </ul>
-                </li>
-            </ul>
+                <ul class="prd_cate_wrap">
+                    <li class="eng_font">
+                        <a href="#">product</a>
+                        <ul class="prd_cate_sub">
+                            <li style="min-width: 5px;">
+                            <a class href="#"><span>신상품</span></a>
+                            </li>
+                            <li style="min-width: 5px;">
+                                <a class href="#"><span>베스트</span></a>
+                            </li>
+                            <li style="min-width: 5px;">
+                                <a class href="#"><span>네일</span></a>
+                            </li>
+                            <li style="min-width: 5px;">
+                                <a class href="#"><span>페디</span></a>
+                            </li>
+                            <li style="min-width: 5px;">
+                                <a class href="#"><span>케어&툴</span></a>
+                            </li>
+                            <li style="min-width: 5px;">
+                                <a class href="#"><span>네일샵</span></a>
+                            </li>
+                            <li style="min-width: 5px;">
+                                <a class href="#"><span>크루추천</span></a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="eng_font">
+                        <a href="#">event</a>
+                    </li>
+                    <li class="eng_font">
+                        <a href="#">review</a>
+                    </li>
+                    <li class="eng_font">
+                        <a href="#">brand</a>
+                        <ul class="prd_cate_sub">
+                            <li style="min-width: 5px;">
+                            <a class href="#"><span>about</span></a>
+                            </li>
+                            <li style="min-width: 5px;">
+                                <a class href="#"><span>membership</span></a>
+                            </li>
+                            <li style="min-width: 5px;">
+                                <a class href="#"><span>magazine</span></a>
+                            </li>
+                            <li style="min-width: 5px;">
+                                <a class href="#"><span>collaboration</span></a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
             </div>
             <!-- //상품 관련 페이지에서 노출되는 헤더 -->
-
             <!-- 검색 레이아웃 -->
-            <div class="hd_search_container" style="overflow: hidden;display: block;">
+            <div class="hd_search_container">
                 <div class="SP_search_wrap">
                     <div class="SP_utilListSearch_inner">
                         <form name action="" id="searchBarForm" method="get" target="_self" enctype="multipart/form-data">
@@ -169,7 +168,8 @@
                                 <fieldset>
                                     <legend style="display: none;">검색</legend>
                                     <input id="keyword" name="keyword" fw-filter="" fw-label="검색어" fw-msg="" class="inputTypeText" placeholder="" onkeyup="SEARCH_HASHTAG.getHashtag($(this)); " autocomplete="off" onmousedown="SEARCH_BANNER.clickSearchForm(this)" value="" type="text">
-                                    <button type="button" class="SP_srh_submit_btn" onclick="SEARCH_BANNER.submitSearchBanner(this); return false;"><span class="SP_cm_icon SP_black_search_icon"></span>
+                                    <button type="button" class="SP_srh_submit_btn" onclick="SEARCH_BANNER.submitSearchBanner(this); return false;">
+                                        <span class="SP_cm_icon SP_black_search_icon"></span>
                                     </button>
                                 </fieldset>
                             </div>
@@ -353,6 +353,39 @@
     </div>
     <!-- //헤더 호출 -->
 
+    <!-- 플로팅 버튼 호출 -->
+    <div id="floating" style="display: block;">
+        <div class="go_top"><span class="icon"></span></div>
+    </div>
+    <script>
+        //SP$(document).ready(function(){
+            document.addEventListener("DOMContentLoaded", function(){
+            // floating scroll Event
+            var floatingFlag = true;
+            SP$(window).on('scroll',function(){
+                var nowTop = SP$(this).scrollTop();
+                if(nowTop > 0) {
+                    if(floatingFlag){
+                        SP$('#floating').fadeIn();
+                        floatingFlag = !floatingFlag;
+                    }
+                }else {
+                    if(!floatingFlag) {
+                        SP$('#floating').fadeOut();
+                        floatingFlag = !floatingFlag;
+                    }
+                }
+            });
+            
+            // scroll Top Click Event
+            SP$('#floating .go_top').on('click',function(){
+                SP$('body, html').animate({scrollTop: 0}, 500);
+            });
+                });
+        //});
+        </script>
+    <!-- //플로팅 버튼 호출 -->
+
     <div id="wrap" style="padding-top : 154px"!important;>
         <div id="container">
             <div id="contents">
@@ -506,7 +539,7 @@
                                                         </div>
                                                     </div>
                                                     <div class="Prev_Cart" onclick="basketConfirmShow(this);">
-                                                        <img src="//img.echosting.cafe24.com/design/skin/admin/ko_KR/btn_list_cart.gif" onclick="CAPP_SHOP_NEW_PRODUCT_OPTIONSELECT.selectOptionCommon(1420,  121, 'basket', '')" alt="장바구니 담기" class="ec-admin-icon cart">
+                                                        <img src="images/icon/btn_list_cart.gif" onclick="CAPP_SHOP_NEW_PRODUCT_OPTIONSELECT.selectOptionCommon(1420,  121, 'basket', '')" alt="장바구니 담기" class="ec-admin-icon cart">
                                                     </div>
                                                     <div class="rv_icon">
                                                         <a href="/product/detail.html?product_no=1420&amp;cate_no=121&amp;display_group=1"><img src="web/upload/rv_icon1.png"><span class="count crema-product-reviews-count crema-applied" data-product-code="1420" data-format="{{{count}}}" data-hide-if-zero="1">43</span></a>
@@ -702,7 +735,7 @@
                                                         <div class="hash_wrap"></div>
                                                     </div>
                                                     <div class="Prev_Cart" onclick="basketConfirmShow(this);">
-                                                        <img src="//img.echosting.cafe24.com/design/skin/admin/ko_KR/btn_list_cart.gif" onclick="category_add_basket('1413','121', '1', 'A0000', false, '1', 'P0000CCJ', 'A', 'F', '0');" alt="장바구니 담기" class="ec-admin-icon cart">
+                                                        <img src="images/icon/btn_list_cart.gif" onclick="category_add_basket('1413','121', '1', 'A0000', false, '1', 'P0000CCJ', 'A', 'F', '0');" alt="장바구니 담기" class="ec-admin-icon cart">
                                                     </div>
                                                     <div class="rv_icon">
                                                         <a href="/product/detail.html?product_no=1413&amp;cate_no=121&amp;display_group=1"><img src="web/upload/rv_icon1.png"><span class="count crema-product-reviews-count crema-applied" data-product-code="1413" data-format="{{{count}}}" data-hide-if-zero="1">3</span></a>
@@ -987,7 +1020,7 @@
                                                         <div class="hash_wrap"></div>
                                                     </div>
                                                     <div class="Prev_Cart" onclick="basketConfirmShow(this);">
-                                                        <img src="//img.echosting.cafe24.com/design/skin/admin/ko_KR/btn_list_cart.gif" onclick="category_add_basket('1407','121', '1', 'A0000', false, '1', 'P0000CCD', 'A', 'F', '0');" alt="장바구니 담기" class="ec-admin-icon cart">
+                                                        <img src="images/icon/btn_list_cart.gif" onclick="category_add_basket('1407','121', '1', 'A0000', false, '1', 'P0000CCD', 'A', 'F', '0');" alt="장바구니 담기" class="ec-admin-icon cart">
                                                     </div>
                                                     <div class="rv_icon">
                                                         <a href="/product/detail.html?product_no=1407&amp;cate_no=121&amp;display_group=1"><img src="web/upload/rv_icon1.png">
@@ -1130,7 +1163,7 @@
                                                         </div>
                                                     </div>
                                                     <div class="Prev_Cart" onclick="basketConfirmShow(this);">
-                                                        <img src="//img.echosting.cafe24.com/design/skin/admin/ko_KR/btn_list_cart.gif" onclick="CAPP_SHOP_NEW_PRODUCT_OPTIONSELECT.selectOptionCommon(1420,  121, 'basket', '')" alt="장바구니 담기" class="ec-admin-icon cart">
+                                                        <img src="images/icon/btn_list_cart.gif" onclick="CAPP_SHOP_NEW_PRODUCT_OPTIONSELECT.selectOptionCommon(1420,  121, 'basket', '')" alt="장바구니 담기" class="ec-admin-icon cart">
                                                     </div>
                                                     <div class="rv_icon">
                                                         <a href="/product/detail.html?product_no=1420&amp;cate_no=121&amp;display_group=1"><img src="web/upload/rv_icon1.png"><span class="count crema-product-reviews-count crema-applied" data-product-code="1420" data-format="{{{count}}}" data-hide-if-zero="1">43</span></a>
@@ -1234,7 +1267,7 @@
                                                         </div>
                                                     </div>
                                                     <div class="Prev_Cart" onclick="basketConfirmShow(this);">
-                                                        <img src="//img.echosting.cafe24.com/design/skin/admin/ko_KR/btn_list_cart.gif" onclick="CAPP_SHOP_NEW_PRODUCT_OPTIONSELECT.selectOptionCommon(1420,  121, 'basket', '')" alt="장바구니 담기" class="ec-admin-icon cart">
+                                                        <img src="images/icon/btn_list_cart.gif" onclick="CAPP_SHOP_NEW_PRODUCT_OPTIONSELECT.selectOptionCommon(1420,  121, 'basket', '')" alt="장바구니 담기" class="ec-admin-icon cart">
                                                     </div>
                                                     <div class="rv_icon">
                                                         <a href="/product/detail.html?product_no=1420&amp;cate_no=121&amp;display_group=1">
@@ -1344,7 +1377,7 @@
                                                         <div class="hash_wrap"></div>
                                                     </div>
                                                     <div class="Prev_Cart" onclick="basketConfirmShow(this);">
-                                                        <img src="//img.echosting.cafe24.com/design/skin/admin/ko_KR/btn_list_cart.gif" onclick="category_add_basket('1413','121', '1', 'A0000', false, '1', 'P0000CCJ', 'A', 'F', '0');" alt="장바구니 담기" class="ec-admin-icon cart">
+                                                        <img src="images/icon/btn_list_cart.gif" onclick="category_add_basket('1413','121', '1', 'A0000', false, '1', 'P0000CCJ', 'A', 'F', '0');" alt="장바구니 담기" class="ec-admin-icon cart">
                                                     </div>
                                                     <div class="rv_icon">
                                                         <a href="/product/detail.html?product_no=1413&amp;cate_no=121&amp;display_group=1"><img src="web/upload/rv_icon1.png"><span class="count crema-product-reviews-count crema-applied" data-product-code="1413" data-format="{{{count}}}" data-hide-if-zero="1">252</span></a>
@@ -1430,7 +1463,7 @@
                                                         </div>
                                                     </div>
                                                     <div class="Prev_Cart" onclick="basketConfirmShow(this);">
-                                                        <img src="//img.echosting.cafe24.com/design/skin/admin/ko_KR/btn_list_cart.gif" onclick="CAPP_SHOP_NEW_PRODUCT_OPTIONSELECT.selectOptionCommon(1238,  120, 'basket', '')" alt="장바구니 담기" class="ec-admin-icon cart">
+                                                        <img src="images/icon/btn_list_cart.gif" onclick="CAPP_SHOP_NEW_PRODUCT_OPTIONSELECT.selectOptionCommon(1238,  120, 'basket', '')" alt="장바구니 담기" class="ec-admin-icon cart">
                                                     </div>
                                                     <div class="rv_icon">
                                                         <a href="/product/detail.html?product_no=1238&amp;cate_no=120&amp;display_group=1">
@@ -1522,7 +1555,7 @@
                                                 </div>
                                                 <div class="hash_container done"><div class="hash_wrap"></div></div>
                                                 <div class="Prev_Cart" onclick="basketConfirmShow(this);">
-                                                    <img src="//img.echosting.cafe24.com/design/skin/admin/ko_KR/btn_list_cart.gif" onclick="category_add_basket('615','120', '1', 'A0000', false, '1', 'P00000XR', 'A', 'F', '0');" alt="장바구니 담기" class="ec-admin-icon cart">
+                                                    <img src="images/icon/btn_list_cart.gif" onclick="category_add_basket('615','120', '1', 'A0000', false, '1', 'P00000XR', 'A', 'F', '0');" alt="장바구니 담기" class="ec-admin-icon cart">
                                                 </div>
                                                 <div class="rv_icon">
                                                     <a href="/product/detail.html?product_no=615&amp;cate_no=120&amp;display_group=1">
@@ -1586,7 +1619,7 @@
                                                     </div>
                                                     <div class="hash_container done"><div class="hash_wrap"></div></div>
                                                     <div class="Prev_Cart" onclick="basketConfirmShow(this);">
-                                                        <img src="//img.echosting.cafe24.com/design/skin/admin/ko_KR/btn_list_cart.gif" onclick="category_add_basket('769','120', '1', 'A0000', false, '1', 'P0000BDP', 'A', 'F', '0');" alt="장바구니 담기" class="ec-admin-icon cart">
+                                                        <img src="images/icon/btn_list_cart.gif" onclick="category_add_basket('769','120', '1', 'A0000', false, '1', 'P0000BDP', 'A', 'F', '0');" alt="장바구니 담기" class="ec-admin-icon cart">
                                                     </div>
                                                     <div class="rv_icon">
                                                         <a href="/product/detail.html?product_no=769&amp;cate_no=120&amp;display_group=1"><img src="web/upload/rv_icon1.png"><span class="count crema-product-reviews-count crema-applied" data-product-code="769" data-format="{{{count}}}" data-hide-if-zero="1">4,402</span>
@@ -1730,15 +1763,504 @@
                         <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
                     </div>
                     <!-- //EVENT -->
-                    
-
-
-
-
+                    <!-- INSTA REVIEW -->
+                    <div class="mainSection insta_section">
+                        <!-- 타이틀 -->
+                        <h3>
+                            <strong>오호라와 함께한 순간</strong>
+                            <a href="/instagram/index.html" class="tit_moreBtn more_btn">+ 전체보기<span class="more displaynone"></span></a>
+                        </h3>
+                        <!-- //타이틀 -->
+                        <!-- 인스타그램 리뷰 -->
+                        <div class="insta_reivew">
+                            <div class="insta_review_wrap swiper-container swiper-container-initialized swiper-container-horizontal swiper-container-multirow">
+                                <div class="items swiper-wrapper" style="width: 3550px;">
+                                    <div class="insta_review_li swiper-slide swiper-slide-active" data-id="2841" data-swiper-column="0" data-swiper-row="0" style="order: 0; width: 340px; margin-right: 15px;">
+                                        <a href="#none">
+                                            <div class="insta_img_wrap">
+                                                <div class="thumb_img"><img src="https://www.devohora.kr/download/274134423_3020644781519312_3577454839628665373_n.jpg" alt="인스타그램 이미지" class="insta_img"></div>
+                                                <div class="text_area"><span class="insta_id"><img src="web/upload/common/ico_insta_w.png" alt="인스타그램"> @limo_ovv</span><span class="insta_date">33 days ago </span></div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="insta_review_li swiper-slide swiper-slide-next" data-id="2796" data-swiper-column="0" data-swiper-row="1" style="-webkit-box-ordinal-group: 10; order: 10; margin-top: 15px; width: 340px; margin-right: 15px;">
+                                        <a href="#none">
+                                            <div class="insta_img_wrap">
+                                                <div class="thumb_img"><img src="https://www.devohora.kr/download/274599237_668210980888491_2748614327266222547_n.webp" alt="인스타그램 이미지" class="insta_img"></div>
+                                                <div class="text_area"><span class="insta_id"><img src="web/upload/common/ico_insta_w.png" alt="인스타그램"> @yj_selfnail</span><span class="insta_date">28 days ago </span></div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="insta_review_li swiper-slide" data-id="2803" data-swiper-column="1" data-swiper-row="0" style="-webkit-box-ordinal-group: 1; order: 1; width: 340px; margin-right: 15px;">
+                                        <a href="#none">
+                                            <div class="insta_img_wrap">
+                                                <div class="thumb_img"><img src="https://www.devohora.kr/download/274492259_4586695061457875_7029491686298331790_n.jpg" alt="인스타그램 이미지" class="insta_img"></div>
+                                                <div class="text_area"><span class="insta_id"><img src="web/upload/common/ico_insta_w.png" alt="인스타그램"> @jiineww</span><span class="insta_date">29 days ago </span></div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="insta_review_li swiper-slide" data-id="1533" data-swiper-column="1" data-swiper-row="1" style="-webkit-box-ordinal-group: 11; order: 11; margin-top: 15px; width: 340px; margin-right: 15px;">
+                                        <a href="#none">
+                                            <div class="insta_img_wrap">
+                                                <div class="thumb_img"><img src="https://www.devohora.kr/download/270006397_181797300797558_3738964063766601890_n.jpg" alt="인스타그램 이미지" class="insta_img"></div>
+                                                <div class="text_area"><span class="insta_id"><img src="web/upload/common/ico_insta_w.png" alt="인스타그램"> @handtop_1122</span><span class="insta_date">83 days ago </span></div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="insta_review_li swiper-slide" data-id="2810" data-swiper-column="2" data-swiper-row="0" style="-webkit-box-ordinal-group: 2; order: 2; width: 340px; margin-right: 15px;">
+                                        <a href="#none">
+                                            <div class="insta_img_wrap">
+                                                <div class="thumb_img"><img src="https://www.devohora.kr/download/274474149_1000449177553433_2210440813028239826_n.jpg" alt="인스타그램 이미지" class="insta_img"></div>
+                                                <div class="text_area"><span class="insta_id"><img src="web/upload/common/ico_insta_w.png" alt="인스타그램"> @nail.seul</span><span class="insta_date">30 days ago </span></div>
+                                        </div>
+                                        </a>
+                                    </div>
+                                    <div class="insta_review_li swiper-slide" data-id="448" data-swiper-column="2" data-swiper-row="1" style="-webkit-box-ordinal-group: 12; order: 12; margin-top: 15px; width: 340px; margin-right: 15px;">
+                                        <a href="#none">
+                                            <div class="insta_img_wrap">
+                                                <div class="thumb_img"><img src="https://www.devohora.kr/download/257554120_428677925419850_8090607221545096658_n.jpg" alt="인스타그램 이미지" class="insta_img"></div>
+                                                <div class="text_area"><span class="insta_id"><img src="web/upload/common/ico_insta_w.png" alt="인스타그램"> @feliii_j</span><span class="insta_date">123 days ago </span></div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="insta_review_li swiper-slide" data-id="2823" data-swiper-column="3" data-swiper-row="0" style="-webkit-box-ordinal-group: 3; order: 3; width: 340px; margin-right: 15px;">
+                                        <a href="#none">
+                                            <div class="insta_img_wrap">
+                                                <div class="thumb_img"><img src="https://www.devohora.kr/download/274256343_162644069438161_7828553465421139427_n.jpg" alt="인스타그램 이미지" class="insta_img"></div>
+                                                <div class="text_area"><span class="insta_id"><img src="web/upload/common/ico_insta_w.png" alt="인스타그램"> @love3ims</span><span class="insta_date">31 days ago </span></div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="insta_review_li swiper-slide" data-id="2802" data-swiper-column="3" data-swiper-row="1" style="-webkit-box-ordinal-group: 13; order: 13; margin-top: 15px; width: 340px; margin-right: 15px;">
+                                        <a href="#none">
+                                            <div class="insta_img_wrap">
+                                                <div class="thumb_img"><img src="https://www.devohora.kr/download/274486821_422100136381074_7928322481257905152_n.jpg" alt="인스타그램 이미지" class="insta_img"></div>
+                                                <div class="text_area"><span class="insta_id"><img src="web/upload/common/ico_insta_w.png" alt="인스타그램"> @supercooliz</span><span class="insta_date">29 days ago </span></div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="insta_review_li swiper-slide" data-id="2876" data-swiper-column="4" data-swiper-row="0" style="-webkit-box-ordinal-group: 4; order: 4; width: 340px; margin-right: 15px;">
+                                        <a href="#none">
+                                            <div class="insta_img_wrap">
+                                                <div class="thumb_img"><img src="https://www.devohora.kr/download/274628163_347452497279304_4979330928301289928_n.jpg" alt="인스타그램 이미지" class="insta_img"></div>
+                                                <div class="text_area"><span class="insta_id"><img src="web/upload/common/ico_insta_w.png" alt="인스타그램"> @hwee_makeup</span><span class="insta_date">26 days ago </span></div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="insta_review_li swiper-slide" data-id="766" data-swiper-column="4" data-swiper-row="1" style="-webkit-box-ordinal-group: 14; order: 14; margin-top: 15px; width: 340px; margin-right: 15px;">
+                                        <a href="#none">
+                                            <div class="insta_img_wrap">
+                                                <div class="thumb_img"><img src="https://www.devohora.kr/download/251270164_3056406931308918_5957612320458841782_n.jpg" alt="인스타그램 이미지" class="insta_img">
+                                                </div><div class="text_area"><span class="insta_id"><img src="web/upload/common/ico_insta_w.png" alt="인스타그램"> @feliii_j</span><span class="insta_date">138 days ago </span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="insta_review_li swiper-slide" data-id="1597" data-swiper-column="5" data-swiper-row="0" style="-webkit-box-ordinal-group: 5; order: 5; width: 340px; margin-right: 15px;">
+                                        <a href="#none">
+                                            <div class="insta_img_wrap">
+                                                <div class="thumb_img"><img src="https://www.devohora.kr/download/270188525_115272664347356_4234826114653843804_n.jpg" alt="인스타그램 이미지" class="insta_img"></div>
+                                                <div class="text_area"><span class="insta_id"><img src="web/upload/common/ico_insta_w.png" alt="인스타그램"> @j.so_ok</span><span class="insta_date">80 days ago </span></div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="insta_review_li swiper-slide" data-id="650" data-swiper-column="5" data-swiper-row="1" style="-webkit-box-ordinal-group: 15; order: 15; margin-top: 15px; width: 340px; margin-right: 15px;">
+                                        <a href="#none">
+                                            <div class="insta_img_wrap">
+                                                <div class="thumb_img"><img src="https://www.devohora.kr/download/253947385_1232547597256171_5831795895027388933_n.jpg" alt="인스타그램 이미지" class="insta_img"></div>
+                                                <div class="text_area"><span class="insta_id"><img src="web/upload/common/ico_insta_w.png" alt="인스타그램"> @gleam._.mirimi</span><span class="insta_date">133 days ago </span></div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="insta_review_li swiper-slide" data-id="1223" data-swiper-column="6" data-swiper-row="0" style="-webkit-box-ordinal-group: 6; order: 6; width: 340px; margin-right: 15px;">
+                                        <a href="#none">
+                                            <div class="insta_img_wrap">
+                                                <div class="thumb_img"><img src="https://www.devohora.kr/download/268323409_686374399405824_957078071613567141_n.jpg" alt="인스타그램 이미지" class="insta_img"></div>
+                                                <div class="text_area"><span class="insta_id"><img src="web/upload/common/ico_insta_w.png" alt="인스타그램"> @shalala_jj</span><span class="insta_date">92 days ago </span></div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="insta_review_li swiper-slide" data-id="896" data-swiper-column="6" data-swiper-row="1" style="-webkit-box-ordinal-group: 16; order: 16; margin-top: 15px; width: 340px; margin-right: 15px;">
+                                        <a href="#none">
+                                            <div class="insta_img_wrap">
+                                                <div class="thumb_img"><img src="https://www.devohora.kr/download/249120963_1502775450094787_2776449444746549006_n.jpg" alt="인스타그램 이미지" class="insta_img"></div>
+                                                <div class="text_area"><span class="insta_id"><img src="web/upload/common/ico_insta_w.png" alt="인스타그램"> @shalala_jj</span><span class="insta_date">144 days ago </span></div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="insta_review_li swiper-slide" data-id="1786" data-swiper-column="7" data-swiper-row="0" style="-webkit-box-ordinal-group: 7; order: 7; width: 340px; margin-right: 15px;">
+                                        <a href="#none">
+                                            <div class="insta_img_wrap">
+                                                <div class="thumb_img"><img src="https://www.devohora.kr/download/271288345_639433440511382_6081852845902245265_n.jpg" alt="인스타그램 이미지" class="insta_img"></div>
+                                                <div class="text_area"><span class="insta_id"><img src="web/upload/common/ico_insta_w.png" alt="인스타그램"> @j.so_ok</span><span class="insta_date">74 days ago </span></div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="insta_review_li swiper-slide" data-id="1893" data-swiper-column="7" data-swiper-row="1" style="-webkit-box-ordinal-group: 17; order: 17; margin-top: 15px; width: 340px; margin-right: 15px;">
+                                        <a href="#none">
+                                            <div class="insta_img_wrap">
+                                                <div class="thumb_img"><img src="https://www.devohora.kr/download/271393969_531132481191669_5099288531657614880_n.jpg" alt="인스타그램 이미지" class="insta_img"></div>
+                                                <div class="text_area"><span class="insta_id"><img src="web/upload/common/ico_insta_w.png" alt="인스타그램"> @shalala_jj</span><span class="insta_date">71 days ago </span></div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="insta_review_li swiper-slide" data-id="426" data-swiper-column="8" data-swiper-row="0" style="-webkit-box-ordinal-group: 8; order: 8; width: 340px; margin-right: 15px;">
+                                        <a href="#none"><div class="insta_img_wrap">
+                                            <div class="thumb_img"><img src="https://www.devohora.kr/download/258516917_3164107207064017_3262756814991043362_n.jpg" alt="인스타그램 이미지" class="insta_img"></div>
+                                            <div class="text_area"><span class="insta_id"><img src="web/upload/common/ico_insta_w.png" alt="인스타그램"> @feliii_j</span><span class="insta_date">122 days ago </span></div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="insta_review_li swiper-slide" data-id="92" data-swiper-column="8" data-swiper-row="1" style="-webkit-box-ordinal-group: 18; order: 18; margin-top: 15px; width: 340px; margin-right: 15px;">
+                                        <a href="#none">
+                                            <div class="insta_img_wrap">
+                                                <div class="thumb_img"><img src="https://www.devohora.kr/download/262840716_3067718343441714_2641207031244334652_n.jpg" alt="인스타그램 이미지" class="insta_img"></div>
+                                                <div class="text_area"><span class="insta_id"><img src="web/upload/common/ico_insta_w.png" alt="인스타그램"> @shalala_jj</span><span class="insta_date">107 days ago </span></div>
+                                                </div>
+                                            </a>
+                                    </div>
+                                    <div class="insta_review_li swiper-slide" data-id="210" data-swiper-column="9" data-swiper-row="0" style="-webkit-box-ordinal-group: 9; order: 9; width: 340px; margin-right: 15px;">
+                                        <a href="#none">
+                                            <div class="insta_img_wrap">
+                                                <div class="thumb_img"><img src="https://www.devohora.kr/download/261479749_462388108641576_5863075615031598647_n.jpg" alt="인스타그램 이미지" class="insta_img"></div>
+                                                <div class="text_area"><span class="insta_id"><img src="web/upload/common/ico_insta_w.png" alt="인스타그램"> @feliii_j</span><span class="insta_date">113 days ago </span></div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="insta_review_li swiper-slide" data-id="568" data-swiper-column="9" data-swiper-row="1" style="-webkit-box-ordinal-group: 19; order: 19; margin-top: 15px; width: 340px; margin-right: 15px;">
+                                        <a href="#none">
+                                            <div class="insta_img_wrap">
+                                                <div class="thumb_img"><img src="https://www.devohora.kr/download/255334298_127003759729341_2461024397246972105_n.jpg" alt="인스타그램 이미지" class="insta_img"></div>
+                                                <div class="text_area"><span class="insta_id"><img src="web/upload/common/ico_insta_w.png" alt="인스타그램"> @feliii_j</span><span class="insta_date">129 days ago </span></div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                </div>
+                                <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
+                            </div>
+                            <!-- <div class="insta_review_popup">
+                                <div class="popup_inner">
+                                    <p class="popup_title">오호라와 함께한 순간</p>
+                                    <button type="button" class="close"><span>닫기</span></button>
+                                    <div class="insta_info">
+                                        <div class="insta_img_wrap">
+                                            <div class="thumb_img"><img src="" alt="" class="insta_img"></div>
+                                            <div class="text_area">
+                                                <span><img src="/web/upload/common/ico_insta_w.png" alt="인스타그램"> &nbsp;<i class="insta_id"></i></span>
+                                                <span class="insta_date"></span>
+                                            </div>
+                                        </div>
+                                        <div class="navigation_wrap">
+                                            <span class="prev_btn">이전</span>
+                                            <span class="next_btn">다음</span>
+                                        </div>
+                                    </div>
+                                    <div class="insta_items">
+                                        <p class="sub_title">관련디자인</p>
+                                        <div class="insta_prd_wrapper swiper-container">
+                                            <!-- 관련디자인 호출 -->
+                                        <!-- </div>
+                                    </div>
+                                </div>
+                            </div> --> 
+                        </div>
+                        <div class="swiper-scrollbar">
+                            <div class="swiper-scrollbar-drag" style="width: 311.881px; transform: translate3d(0px, 0px, 0px);"></div>
+                        </div>
+                        <!-- //인스타그램 리뷰 -->
+                    </div>
+                    <!-- INSTA REVIEW -->
+                    <!-- MAGAZINE -->
+                    <div class="mainSection magazine_section">
+                        <!-- 타이틀 -->
+                        <h3>
+                            <strong>오호라 매거진</strong>
+                            <a href="/board/gallery/list.html?board_no=8" class="tit_moreBtn more_btn">+ 전체보기<span class="more displaynone"></span></a>
+                        </h3>
+                        <!-- //타이틀 -->
+                        <!-- 매거진 -->
+                        <div class="xans-element- xans-board xans-board-listpackage-8 xans-board-listpackage xans-board-8 magazine ">
+                            <div class="xans-element- xans-board xans-board-list-8 xans-board-list xans-board-8 swiper-container magazine-container swiper-container-initialized swiper-container-horizontal swiper-container-autoheight">
+                                <!--
+                                    $count = 8
+                                    $login_page_url = /member/login.html
+                                    $deny_access_url = /index.html
+                                -->
+                                <ul class="swiper-wrapper slide-2-wrapper" style="transition-duration: 0ms; transform: translate3d(-853.6px, 0px, 0px); height: 258px;">
+                                    <li class="swiper-slide mov03 xans-record- swiper-slide-duplicate" data-swiper-slide-index="2" style="width: 196.4px; margin-right: 17px;">
+                                        <div class="boardCnt slide-inner">    
+                                            <a href="/board/gallery/read.html?no=153092&amp;board_no=8" class="boardThumb imgLink mov03">
+                                                <img onerror="this.src='https://img.echosting.cafe24.com/skin/base_ko_KR/board/@img_gallery.gif'" alt="" src="//www.ohora.kr/file_data/ohora2019//2022/02/23/1610ca71e42f10456780a5835fbd72fd.jpg">
+                                            </a>
+                                            <div class="boardTxt">
+                                                <p class="tit">cream pastel collection</p>
+                                                <p class="txt">봄처럼 생기 넘치는 파스텔 네일로그날의 기분에 따라 다양한 스타일로 나를 표현해 보세요.</p>
+                                            </div>
+                                            <a href="/board/gallery/read.html?no=153092&amp;board_no=8" class="boardMore">더보기</a>
+                                        </div>
+                                    </li>
+                                    <li class="swiper-slide mov03 xans-record- swiper-slide-duplicate" data-swiper-slide-index="3" style="width: 196.4px; margin-right: 17px;">
+                                        <div class="boardCnt slide-inner">    
+                                            <a href="/board/gallery/read.html?no=152571&amp;board_no=8" class="boardThumb imgLink mov03"><img onerror="this.src='https://img.echosting.cafe24.com/skin/base_ko_KR/board/@img_gallery.gif'" alt="" src="//www.ohora.kr/file_data/ohora2019//2022/02/16/76d73896b3fdc5dde2f798560503c90a.jpg">
+                                            </a>
+                                            <div class="boardTxt">
+                                                <p class="tit">midnight collection</p>
+                                                <p class="txt">깊은 밤 창문 틈으로 비치는 달빛처럼차분함과 부드러움을 담은 컬렉션입니다.</p>
+                                            </div>
+                                            <a href="/board/gallery/read.html?no=152571&amp;board_no=8" class="boardMore">더보기</a>
+                                        </div>
+                                    </li>
+                                    <li class="swiper-slide mov03 xans-record- swiper-slide-duplicate" data-swiper-slide-index="4" style="width: 196.4px; margin-right: 17px;">
+                                        <div class="boardCnt slide-inner">    
+                                            <a href="/board/gallery/read.html?no=151488&amp;board_no=8" class="boardThumb imgLink mov03"><img onerror="this.src='https://img.echosting.cafe24.com/skin/base_ko_KR/board/@img_gallery.gif'" alt="" src="//www.ohora.kr/file_data/ohora2019//2022/01/28/deaa114fb60fbe0aa349670fa66b2b19.jpg">
+                                            </a>
+                                            <div class="boardTxt">
+                                                <p class="tit">heritage collection</p>
+                                                <p class="txt">heritage collection</p>
+                                            </div>
+                                            <a href="/board/gallery/read.html?no=151488&amp;board_no=8" class="boardMore">더보기</a>
+                                        </div>
+                                    </li>
+                                    <li class="swiper-slide mov03 xans-record- swiper-slide-duplicate" data-swiper-slide-index="5" style="width: 196.4px; margin-right: 17px;">
+                                        <div class="boardCnt slide-inner">    
+                                            <a href="/board/gallery/read.html?no=151427&amp;board_no=8" class="boardThumb imgLink mov03"><img onerror="this.src='https://img.echosting.cafe24.com/skin/base_ko_KR/board/@img_gallery.gif'" alt="" src="//www.ohora.kr/file_data/ohora2019//2022/01/27/77a65d6f9f5603491a5d87a483917799.jpg">
+                                            </a>
+                                            <div class="boardTxt">
+                                                <p class="tit">my favorite snack collection</p>
+                                                <p class="txt">my favorite snack collection </p>
+                                            </div>
+                                            <a href="/board/gallery/read.html?no=151427&amp;board_no=8" class="boardMore">더보기</a>
+                                        </div>
+                                    </li>
+                                    <li class="swiper-slide mov03 xans-record- swiper-slide-duplicate" data-swiper-slide-index="6" style="width: 196.4px; margin-right: 17px;">
+                                        <div class="boardCnt slide-inner">    
+                                            <a href="/board/gallery/read.html?no=150155&amp;board_no=8" class="boardThumb imgLink mov03"><img onerror="this.src='https://img.echosting.cafe24.com/skin/base_ko_KR/board/@img_gallery.gif'" alt="" src="//www.ohora.kr/file_data/ohora2019//2022/01/11/0529ba114c54fdde9ca842a2d373b3c1.jpg">
+                                            </a>
+                                            <div class="boardTxt">
+                                                <p class="tit">korean chic collection</p>
+                                                <p class="txt">오호라가 새로운 한 해를 맞이하며 준비한우리나라 고유의 멋이 담긴 첫 컬렉션을 만나보세요.</p>
+                                            </div>
+                                            <a href="/board/gallery/read.html?no=150155&amp;board_no=8" class="boardMore">더보기</a>
+                                        </div>
+                                    </li>
+                                    <li class="swiper-slide mov03 xans-record- swiper-slide-duplicate swiper-slide-prev" data-swiper-slide-index="7" style="width: 196.4px; margin-right: 17px;">
+                                        <div class="boardCnt slide-inner">    
+                                            <a href="/board/gallery/read.html?no=148229&amp;board_no=8" class="boardThumb imgLink mov03"><img onerror="this.src='https://img.echosting.cafe24.com/skin/base_ko_KR/board/@img_gallery.gif'" alt="" src="//www.ohora.kr/file_data/ohora2019//2021/12/15/60deca45bad32960f586e4d3c4003b4d.jpg">
+                                            </a>
+                                            <div class="boardTxt">
+                                                <p class="tit">파티 컬렉션</p>
+                                                <p class="txt">2022년을 맞이하는 기쁜 마음으로오호라와 함께 파티 컬렉션을 즐겨요!</p>
+                                            </div>
+                                            <a href="/board/gallery/read.html?no=148229&amp;board_no=8" class="boardMore">더보기</a>
+                                        </div>
+                                    </li>
+                                    <li class="swiper-slide mov03 xans-record- swiper-slide-active" data-swiper-slide-index="0" style="width: 196.4px; margin-right: 17px;">
+                                        <div class="boardCnt slide-inner">
+                                            <a href="/board/gallery/read.html?no=153959&amp;board_no=8" class="boardThumb imgLink mov03"><img onerror="this.src='https://img.echosting.cafe24.com/skin/base_ko_KR/board/@img_gallery.gif'" alt="" src="//www.ohora.kr/file_data/ohora2019//2022/03/08/051f90ad1bdcf3be4e7ff1c562a6f420.jpg">
+                                            </a>
+                                            <div class="boardTxt">
+                                                <p class="tit">cherry blossom collection</p>
+                                                <p class="txt">바람에 흩날리는 아름다운 꽃잎을 네일에 담아봄 분위기가 물씬 풍기는 벚꽃 컬렉션을 만나보세요.</p>
+                                            </div>
+                                            <a href="/board/gallery/read.html?no=153959&amp;board_no=8" class="boardMore">더보기</a>
+                                        </div>
+                                    </li>
+                                    <li class="swiper-slide mov03 xans-record- swiper-slide-next" data-swiper-slide-index="1" style="width: 196.4px; margin-right: 17px;">
+                                        <div class="boardCnt slide-inner">    
+                                            <a href="/board/gallery/read.html?no=153351&amp;board_no=8" class="boardThumb imgLink mov03"><img onerror="this.src='https://img.echosting.cafe24.com/skin/base_ko_KR/board/@img_gallery.gif'" alt="" src="//www.ohora.kr/file_data/ohora2019//2022/02/28/2c5736c7e340e8ed4fd101fbcdeb1911.jpg">
+                                            </a>
+                                            <div class="boardTxt">
+                                                <p class="tit">DIY collection</p>
+                                                <p class="txt">내가 선택한 디자인에 나만의 개성 있는 드로잉을 더해세상에 하나뿐인 네일을 완성할 수 있는 diy 컬렉션입니다.</p>
+                                            </div>
+                                            <a href="/board/gallery/read.html?no=153351&amp;board_no=8" class="boardMore">더보기</a>
+                                        </div>
+                                    </li>
+                                    <li class="swiper-slide mov03 xans-record-" data-swiper-slide-index="2" style="width: 196.4px; margin-right: 17px;">
+                                        <div class="boardCnt slide-inner">    
+                                            <a href="/board/gallery/read.html?no=153092&amp;board_no=8" class="boardThumb imgLink mov03"><img onerror="this.src='https://img.echosting.cafe24.com/skin/base_ko_KR/board/@img_gallery.gif'" alt="" src="//www.ohora.kr/file_data/ohora2019//2022/02/23/1610ca71e42f10456780a5835fbd72fd.jpg">
+                                            </a>
+                                            <div class="boardTxt">
+                                                <p class="tit">cream pastel collection</p>
+                                                <p class="txt">봄처럼 생기 넘치는 파스텔 네일로그날의 기분에 따라 다양한 스타일로 나를 표현해 보세요.</p>
+                                            </div>
+                                            <a href="/board/gallery/read.html?no=153092&amp;board_no=8" class="boardMore">더보기</a>
+                                        </div>
+                                    </li>
+                                    <li class="swiper-slide mov03 xans-record-" data-swiper-slide-index="3" style="width: 196.4px; margin-right: 17px;">
+                                        <div class="boardCnt slide-inner">    
+                                            <a href="/board/gallery/read.html?no=152571&amp;board_no=8" class="boardThumb imgLink mov03"><img onerror="this.src='https://img.echosting.cafe24.com/skin/base_ko_KR/board/@img_gallery.gif'" alt="" src="//www.ohora.kr/file_data/ohora2019//2022/02/16/76d73896b3fdc5dde2f798560503c90a.jpg">
+                                            </a>
+                                            <div class="boardTxt">
+                                                <p class="tit">midnight collection</p>
+                                                <p class="txt">깊은 밤 창문 틈으로 비치는 달빛처럼차분함과 부드러움을 담은 컬렉션입니다.</p>
+                                            </div>
+                                            <a href="/board/gallery/read.html?no=152571&amp;board_no=8" class="boardMore">더보기</a>
+                                        </div>
+                                    </li>
+                                    <li class="swiper-slide mov03 xans-record-" data-swiper-slide-index="4" style="width: 196.4px; margin-right: 17px;">
+                                        <div class="boardCnt slide-inner">    
+                                            <a href="/board/gallery/read.html?no=151488&amp;board_no=8" class="boardThumb imgLink mov03"><img onerror="this.src='https://img.echosting.cafe24.com/skin/base_ko_KR/board/@img_gallery.gif'" alt="" src="//www.ohora.kr/file_data/ohora2019//2022/01/28/deaa114fb60fbe0aa349670fa66b2b19.jpg">
+                                            </a>
+                                            <div class="boardTxt">
+                                                <p class="tit">heritage collection</p>
+                                                <p class="txt">heritage collection</p>
+                                            </div>
+                                            <a href="/board/gallery/read.html?no=151488&amp;board_no=8" class="boardMore">더보기</a>
+                                        </div>
+                                    </li>
+                                    <li class="swiper-slide mov03 xans-record-" data-swiper-slide-index="5" style="width: 196.4px; margin-right: 17px;">
+                                        <div class="boardCnt slide-inner">    
+                                            <a href="/board/gallery/read.html?no=151427&amp;board_no=8" class="boardThumb imgLink mov03"><img onerror="this.src='https://img.echosting.cafe24.com/skin/base_ko_KR/board/@img_gallery.gif'" alt="" src="//www.ohora.kr/file_data/ohora2019//2022/01/27/77a65d6f9f5603491a5d87a483917799.jpg"></a>
+                                            <div class="boardTxt">
+                                                <p class="tit">my favorite snack collection</p>
+                                                <p class="txt">my favorite snack collection </p>
+                                            </div>
+                                            <a href="/board/gallery/read.html?no=151427&amp;board_no=8" class="boardMore">더보기</a>
+                                        </div>
+                                    </li>
+                                    <li class="swiper-slide mov03 xans-record-" data-swiper-slide-index="6" style="width: 196.4px; margin-right: 17px;">
+                                        <div class="boardCnt slide-inner">    
+                                            <a href="/board/gallery/read.html?no=150155&amp;board_no=8" class="boardThumb imgLink mov03"><img onerror="this.src='https://img.echosting.cafe24.com/skin/base_ko_KR/board/@img_gallery.gif'" alt="" src="//www.ohora.kr/file_data/ohora2019//2022/01/11/0529ba114c54fdde9ca842a2d373b3c1.jpg">
+                                            </a>
+                                            <div class="boardTxt">
+                                                <p class="tit">korean chic collection</p>
+                                                <p class="txt">오호라가 새로운 한 해를 맞이하며 준비한우리나라 고유의 멋이 담긴 첫 컬렉션을 만나보세요.</p>
+                                            </div>
+                                            <a href="/board/gallery/read.html?no=150155&amp;board_no=8" class="boardMore">더보기</a>
+                                        </div>
+                                    </li>
+                                    <li class="swiper-slide mov03 xans-record- swiper-slide-duplicate-prev" data-swiper-slide-index="7" style="width: 196.4px; margin-right: 17px;">
+                                        <div class="boardCnt slide-inner">    
+                                            <a href="/board/gallery/read.html?no=148229&amp;board_no=8" class="boardThumb imgLink mov03"><img onerror="this.src='https://img.echosting.cafe24.com/skin/base_ko_KR/board/@img_gallery.gif'" alt="" src="//www.ohora.kr/file_data/ohora2019//2021/12/15/60deca45bad32960f586e4d3c4003b4d.jpg">
+                                            </a>
+                                            <div class="boardTxt">
+                                                <p class="tit">파티 컬렉션</p>
+                                                <p class="txt">2022년을 맞이하는 기쁜 마음으로오호라와 함께 파티 컬렉션을 즐겨요!</p>
+                                            </div>
+                                            <a href="/board/gallery/read.html?no=148229&amp;board_no=8" class="boardMore">더보기</a>
+                                        </div>
+                                    </li>
+                                    <li class="swiper-slide mov03 xans-record- swiper-slide-duplicate swiper-slide-duplicate-active" data-swiper-slide-index="0" style="width: 196.4px; margin-right: 17px;">
+                                        <div class="boardCnt slide-inner">
+                                            <a href="/board/gallery/read.html?no=153959&amp;board_no=8" class="boardThumb imgLink mov03"><img onerror="this.src='https://img.echosting.cafe24.com/skin/base_ko_KR/board/@img_gallery.gif'" alt="" src="//www.ohora.kr/file_data/ohora2019//2022/03/08/051f90ad1bdcf3be4e7ff1c562a6f420.jpg">
+                                            </a>
+                                            <div class="boardTxt">
+                                                <p class="tit">cherry blossom collection</p>
+                                                <p class="txt">바람에 흩날리는 아름다운 꽃잎을 네일에 담아봄 분위기가 물씬 풍기는 벚꽃 컬렉션을 만나보세요.</p>
+                                            </div>
+                                            <a href="/board/gallery/read.html?no=153959&amp;board_no=8" class="boardMore">더보기</a>
+                                        </div>
+                                    </li>
+                                    <li class="swiper-slide mov03 xans-record- swiper-slide-duplicate swiper-slide-duplicate-next" data-swiper-slide-index="1" style="width: 196.4px; margin-right: 17px;">
+                                        <div class="boardCnt slide-inner">    
+                                            <a href="/board/gallery/read.html?no=153351&amp;board_no=8" class="boardThumb imgLink mov03"><img onerror="this.src='https://img.echosting.cafe24.com/skin/base_ko_KR/board/@img_gallery.gif'" alt="" src="//www.ohora.kr/file_data/ohora2019//2022/02/28/2c5736c7e340e8ed4fd101fbcdeb1911.jpg">
+                                            </a>
+                                            <div class="boardTxt">
+                                                <p class="tit">DIY collection</p>
+                                                <p class="txt">내가 선택한 디자인에 나만의 개성 있는 드로잉을 더해세상에 하나뿐인 네일을 완성할 수 있는 diy 컬렉션입니다.</p>
+                                            </div>
+                                            <a href="/board/gallery/read.html?no=153351&amp;board_no=8" class="boardMore">더보기</a>
+                                        </div>
+                                    </li>
+                                    <li class="swiper-slide mov03 xans-record- swiper-slide-duplicate" data-swiper-slide-index="2" style="width: 196.4px; margin-right: 17px;">
+                                        <div class="boardCnt slide-inner">    
+                                            <a href="/board/gallery/read.html?no=153092&amp;board_no=8" class="boardThumb imgLink mov03"><img onerror="this.src='https://img.echosting.cafe24.com/skin/base_ko_KR/board/@img_gallery.gif'" alt="" src="//www.ohora.kr/file_data/ohora2019//2022/02/23/1610ca71e42f10456780a5835fbd72fd.jpg">
+                                            </a>
+                                            <div class="boardTxt">
+                                                <p class="tit">cream pastel collection</p>
+                                                <p class="txt">봄처럼 생기 넘치는 파스텔 네일로그날의 기분에 따라 다양한 스타일로 나를 표현해 보세요.</p>
+                                            </div>
+                                            <a href="/board/gallery/read.html?no=153092&amp;board_no=8" class="boardMore">더보기</a>
+                                        </div>
+                                    </li>
+                                    <li class="swiper-slide mov03 xans-record- swiper-slide-duplicate" data-swiper-slide-index="3" style="width: 196.4px; margin-right: 17px;">
+                                        <div class="boardCnt slide-inner">    
+                                            <a href="/board/gallery/read.html?no=152571&amp;board_no=8" class="boardThumb imgLink mov03"><img onerror="this.src='https://img.echosting.cafe24.com/skin/base_ko_KR/board/@img_gallery.gif'" alt="" src="//www.ohora.kr/file_data/ohora2019//2022/02/16/76d73896b3fdc5dde2f798560503c90a.jpg"></a>
+                                            <div class="boardTxt">
+                                                <p class="tit">midnight collection</p>
+                                                <p class="txt">깊은 밤 창문 틈으로 비치는 달빛처럼차분함과 부드러움을 담은 컬렉션입니다.</p>
+                                            </div>
+                                            <a href="/board/gallery/read.html?no=152571&amp;board_no=8" class="boardMore">더보기</a>
+                                        </div>
+                                    </li>
+                                    <li class="swiper-slide mov03 xans-record- swiper-slide-duplicate" data-swiper-slide-index="4" style="width: 196.4px; margin-right: 17px;">
+                                        <div class="boardCnt slide-inner">    
+                                            <a href="/board/gallery/read.html?no=151488&amp;board_no=8" class="boardThumb imgLink mov03"><img onerror="this.src='https://img.echosting.cafe24.com/skin/base_ko_KR/board/@img_gallery.gif'" alt="" src="//www.ohora.kr/file_data/ohora2019//2022/01/28/deaa114fb60fbe0aa349670fa66b2b19.jpg">
+                                            </a>
+                                            <div class="boardTxt">
+                                                <p class="tit">heritage collection</p>
+                                                <p class="txt">heritage collection</p>
+                                            </div>
+                                            <a href="/board/gallery/read.html?no=151488&amp;board_no=8" class="boardMore">더보기</a>
+                                        </div>
+                                    </li>
+                                    <li class="swiper-slide mov03 xans-record- swiper-slide-duplicate" data-swiper-slide-index="5" style="width: 196.4px; margin-right: 17px;">
+                                        <div class="boardCnt slide-inner">    
+                                            <a href="/board/gallery/read.html?no=151427&amp;board_no=8" class="boardThumb imgLink mov03"><img onerror="this.src='https://img.echosting.cafe24.com/skin/base_ko_KR/board/@img_gallery.gif'" alt="" src="//www.ohora.kr/file_data/ohora2019//2022/01/27/77a65d6f9f5603491a5d87a483917799.jpg">
+                                            </a>
+                                            <div class="boardTxt">
+                                                <p class="tit">my favorite snack collection</p>
+                                                <p class="txt">my favorite snack collection </p>
+                                            </div>
+                                            <a href="/board/gallery/read.html?no=151427&amp;board_no=8" class="boardMore">더보기</a>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <div class="swiper-button-next slide_2_next" tabindex="0" role="button" aria-label="Next slide"></div>
+                                <div class="swiper-button-prev slide_2_prev" tabindex="0" role="button" aria-label="Previous slide"></div>
+                                <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
+                            </div>
+                        </div>
+                        <!-- //매거진 -->
+                    </div>
+                    <!-- //MAGAZINE -->
+                    <!-- 하단 띠 배너 -->
+                    <div class="banner_container">
+                        <a href="/brandstory/brandstory.html" class="about banner displayblock">
+                            <div class="">
+                                <h1 class="eng_font">ohora, beyond extraordinary</h1>
+                                <p>나를 위한 시간, <span class="">Time to ohora</span></p>
+                                <span>자세히 보기 &gt; </span>
+                            </div>
+                        </a>
+                        <a href="/board/free/read.html?no=1&amp;board_no=1" class="membership banner displayblock">
+                            <div class="">
+                                <h1>오호라 멤버십</h1>
+                                <p>오호라 멤버십에 조인하고 혜택을 받아보세요.</p>
+                                <span>자세히 보기 &gt;</span>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- //하단 띠 배너 -->
                 </div>
 
-
+                
                 <div class="crema-popup crema-apploed"></div>
+                <script>(function(i,s,o,g,r,a,m){if(s.getElementById(g)){return};a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.id=g;a.async=1;a.src=r;m.parentNode.insertBefore(a,m)})(window,document,'script','crema-jssdk','https://widgets.cre.ma/ohora.kr/init.js');</script>
+                <script>
+                    (function(i,s,o,g,r,a,m){if(s.getElementById(g)){return};a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.id=g;a.async=1;a.src=r;m.parentNode.insertBefore(a,m)})(window,document,'script','crema-jssdk','https://widgets.cre.ma/ohora.kr/init.js');
+                    function UpdateCountAndScore() {
+                        if (typeof crema == "object" && typeof crema.run == "function") {
+                            crema.run();
+                        }
+                        console.log("%c[CREMA]%c REVIEWS COUNT AND SCORE WAS UPDATED.", "font-weight: bold; color: black;", "color: green");
+                    }
+                    // Ajax Callback
+                    var oldXHR = window.XMLHttpRequest;
+                    function newXHR() {
+                        var realXHR = new oldXHR();
+                        realXHR.addEventListener("readystatechange", function() {
+                            if (realXHR.readyState == 4 && realXHR.status == 200) {
+                                setTimeout(function() {
+                                    UpdateCountAndScore()
+                                }, 500);
+                            }
+                        }, false);
+                        return realXHR;
+                    }
+                    window.XMLHttpRequest = newXHR;
+                </script>
                     
             </div>
         </div>
@@ -1874,8 +2396,12 @@
                 <li>( 365일 09:00 - 18:00, 점심시간 11:50 - 13:00)</li>
                 <li>영업문의 : ohora_official@ohora.com</li>
             </div>
-            <div class="info_area"></div>
-            <div></div>
+            <div class="info_area">
+                <a href="/about_ohora/index.html">브랜드 소개</a>
+                <a href="/member/agreement.html">이용약관</a>
+                <a href="/member/privacy.html" style="color:#fffec7;">개인정보처리방침</a>
+                <a href="/board/free/list.html?board_no=14">공지</a>
+            </div>
         </div>
     </div>
     <!-- //푸터호출 -->

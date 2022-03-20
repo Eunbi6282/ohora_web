@@ -1,0 +1,55 @@
+@chartset "utf-8";
+#floating {
+	position: fixed;
+	bottom: 70px;
+	right: 55px;
+	left: auto;
+	top: auto;
+	z-index: 100;
+	display: none;
+}
+#floating > div:not(.go_top) {
+	margin-bottom: 10px;
+	width: 135px;
+	height: 50px;
+	border-radius: 25px;
+	box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.2);
+	background-color: #ffffff;
+	position: relative;
+}
+#floating > div .icon {
+	display: inline-block;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	right: auto;
+	bottom: auto;
+	width: 50px;
+	height: 50px;
+	border-radius: 100%;
+}
+#floating > div .txt {
+	display: block;
+	margin-left: 45px;
+	text-align: center;
+	line-height: 50px;
+	font-size: 14px;
+	font-weight: 900;
+	color:#111;
+}
+#floating .kakao_talk .icon {
+	background: url('/smartpc/_img/icon/kakao_icon_no.svg') no-repeat center center;
+	background-size: cover;
+}
+#floating .kakao_channel .icon {
+	background: url('/smartpc/_img/icon/kakao_icon_ch.svg') no-repeat center center;
+	background-size: cover;
+}
+#floating .go_top {
+	margin-top: 15px;
+	width: 36px;
+	height :50px;
+	float:right;
+	background: url('../smartpc/icon/arrow_top.png') no-repeat center center;
+	background-size:90%;
+}
