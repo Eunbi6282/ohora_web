@@ -1,6 +1,4 @@
 $(document).ready(function(){
-
-
     var scrollChk_main = false;
 
     var pageSt = $(window).scrollTop();

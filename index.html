@@ -1,14 +1,18 @@
 <!DOCTYPE html>
 <html xml:lang="ko" lang="ko" id="ivStyle" class="main">
 <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- PG크로스브라우징필수내용 -->
+    <meta http-equiv="Cache-Control" content="no-cache">
+    <meta http-equiv="Expires" content="0"><meta http-equiv="Pragma" content="no-cache">
+    <!-- // PG크로스브라우징필수내용 -->
+    <meta name="google-site-verification" content="_oaznpOmYgZ9avxvEyaup82d9C7VGilHDjS72nvLW6k">
     <meta charset='utf-8'>
-    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <title>ohora</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
-    <script src='main.js'></script>
-    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/optimizer.css">
+    <link rel="stylesheet" href="css/optimizer_display.css">
     <!-- 스마트 pc 기본 css-->
     <link rel="stylesheet" href="css/smartpc/smartpc_default.css">
     <link rel="stylesheet" href="css/smartpc/smartpc_common2.css">
@@ -44,28 +48,50 @@
     <!-- //스마트pc추가 css  -->
 
     <!--  -->
-    <link rel="stylesheet" type="text/css" href="ind-script/optimizer=rd.php">
+    <script rel="stylesheet" type="text/css" href="ind-script/optimizer=rd.php"></script>
 
+    <!-- 배너 스와이퍼 -->
     
+    <!-- <link rel="stylesheet" href="css/swiper-bundle.css"> -->
+
 </head>
 <body id="smartpc">
     <!-- 탑배너 -->
-    <div class="sp_topbanner" style="display: block;">
+    <div class="SP_topBanner" style="display: block;">
         <div class = "SP_layoutMin">
-            <div class="SP_topBn_inner"></div>
+            <div class="SP_topBn_inr"></div>
             <!-- 상단띠 배너 -->
             <div class="xans-element- xans-layout xans-layout-statelogoff">
                 <div class="slide_banner_top slick-initialized slick-slider" id="sltop_ban">
                     <div class="slick-list draggable">
-                        <div class="slick-track">
-                            <a href=""><img src="images/banner/banner_top.jpg" alt="탑베너"></a>
+                        <div class="slick-track" style="opacity: 1; width: 6000px; transform: translate3d(-2400px, 0px, 0px);">
+                            <div class="slick-slide" data-slick-index="0" aria-hidden="true" style="width: 1200px;" tabindex="-1">
+                                <a href="/event/event6.html" style="display:block;" tabindex="-1"><img src="images/banner/banner_top2.jpg" style="width:100%; display:block;"></a>
+                            </div>
+                            <div class="slick-slide slick-current slick-active" data-slick-index="1" aria-hidden="false" style="width: 1200px;" tabindex="0">
+                                <a href="/event/event8.html" style="display:block;" tabindex="0"><img src="images/banner/banner_top.jpg"width:100%; display:block;"></a>
+                            </div>
+                            <div class="slick-slide slick-cloned" data-slick-index="-1" aria-hidden="true" style="width: 1200px;" tabindex="-1">
+                                <a href="/event/event8.html" style="display:block;" tabindex="-1"><img src="images/banner/banner_top2.jpg" style="width:100%; display:block;">
+                                </a>
+                            </div>
+                            <div class="slick-slide slick-cloned" data-slick-index="2" aria-hidden="true" style="width: 1200px;" tabindex="-1">
+                                <a href="/event/event6.html" style="display:block;" tabindex="-1"><img src="images/banner/banner_top.jpg" style="width:100%; display:block;">
+                                </a>
+                            </div>
+                            <div class="slick-slide slick-cloned" data-slick-index="3" aria-hidden="true" style="width: 1200px;" tabindex="-1">
+                                <a href="/event/event8.html" style="display:block;" tabindex="-1"><img src="images/banner/banner_top2.jpg" style="width:100%; display:block;">
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+
     <!-- //탑배너 -->
+
     
     <!-- 헤더 호출 -->
     <div id="fix_position" class = modify>
@@ -386,7 +412,7 @@
         </script>
     <!-- //플로팅 버튼 호출 -->
 
-    <div id="wrap" style="padding-top : 154px"!important;>
+    <div id="wrap" style="padding-top : 154px !important;">
         <div id="container">
             <div id="contents">
                 <script>
@@ -461,7 +487,7 @@
                         <!-- 타이틀 -->
                         <h3>
                             <strong>이 달의 신상품</strong>
-                            <a class="tit_moreBtn more_btn" href="/product/list.html?cate_no=121">+ 더보기<span class="more displaynone"></span></a>
+                            <a class="tit_moreBtn more_btn" href="/new.html">+ 더보기<span class="more displaynone"></span></a>
                         </h3>
                         <!-- //타이틀 -->
                         <!-- 배너 이미지 -->
@@ -2265,43 +2291,6 @@
             </div>
         </div>
     </div>
-
-
-    <!-- 플로팅 버튼 호출 -->
-    <div id="floating" style="display: none;">
-        <div class="go_top">
-            <span class="icon"></span>
-        </div>
-    </div>
-    <script>
-        //SP$(document).ready(function(){
-            document.addEventListener("DOMContentLoaded", function(){
-            // floating scroll Event
-            var floatingFlag = true;
-            SP$(window).on('scroll',function(){
-                var nowTop = SP$(this).scrollTop();
-                if(nowTop > 0) {
-                    if(floatingFlag){
-                        SP$('#floating').fadeIn();
-                        floatingFlag = !floatingFlag;
-                    }
-                }else {
-                    if(!floatingFlag) {
-                        SP$('#floating').fadeOut();
-                        floatingFlag = !floatingFlag;
-                    }
-                }
-            });
-            
-            // scroll Top Click Event
-            SP$('#floating .go_top').on('click',function(){
-                SP$('body, html').animate({scrollTop: 0}, 500);
-            });
-                });
-        //});
-        </script>
-    <!-- //플로팅 버튼 호출 -->
-
     <div id="wrap" style="padding-top: 154px !important;"></div>
 
     <!-- 푸터 호출 -->
@@ -2388,7 +2377,7 @@
                     <span>
                         통신판매업신고번호 : 제2019-서울성동-415호
                     </span>
-                    <a href="#none" class="co" onclick="window.open('http://www.ftc.go.kr/bizCommPop.do?wrkr_no=1228556140', 'bizCommPop', 'width=750, height=950;');return false;">사업자 정보 확인</a>
+                    <a href="#none" class="co" onclick="window.open('">사업자 정보 확인</a>
                 </li>
                 <li>개인정보처리담당자 : <a href="mailto:bong@ohora.kr">유태규</a>
                 </li>
@@ -2406,9 +2395,61 @@
     </div>
     <!-- //푸터호출 -->
         
+    <!-- JS호출 -->
+    <!-- swiper 배너 -->
+    <script src="js/swiper.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+            // Optional parameters
+            direction: 'vertical',
+            loop: true,
+
+            // If we need pagination
+            pagination: {
+                el: '.swiper-pagination',
+            },
+
+            // Navigation arrows
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+
+            // And if we need scrollbar
+            scrollbar: {
+                el: '.swiper-scrollbar',
+            },
+        });
+    </script>
+        // const swiper2 = new Swiper('.mainBanner .swiper-container .swiper-container-initialized .swiper-container-horizontall', {
+        //     // Optional parameters
+        //     direction: 'vertical',
+        //     loop: true,
+
+        //     autoplay: {
+        //     delay: 5000,
+        //     },
+            
+        //     // If we need pagination
+        //     pagination: {
+        //         el: '.swiper-pagination',
+        //     },
+            
+        //     // Navigation arrows
+        //     navigation: {
+        //         nextEl: '.swiper-button-next',
+        //         prevEl: '.swiper-button-prev',
+        //     },
+            
+        //     // And if we need scrollbar
+        //     scrollbar: {
+        //         el: '.swiper-scrollbar',
+        //     },
+        // });
+    <!-- swiper 배너 -->
 
 
-    </div>
+
 
 
 
