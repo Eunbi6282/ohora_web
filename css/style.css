@@ -90,9 +90,6 @@ ul {
     height: 50px;
 } */
 
-#ivStyle *{
-    letter-spacing: -0.5px;
-}
 
 #fix_position{
     position: sticky;
@@ -158,6 +155,7 @@ ul {
     color: #000;
     letter-spacing: -.25px;
 }
+
 
 
 
