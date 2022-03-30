@@ -1,24 +1,10 @@
 @charset "utf-8";    
-/* *{
-    margin: 0 auto;
-    padding: 0;
-    list-style: none;
-    font-family: "맑은 고딕";
-    color: #333333;
-}
+/* slick */
 
-body{
-    width: 100%;
-    background-color: #ffffff;
-    font-size: 20px;
-}
 
-a{
-    text-decoration: none;
-    display: block;
-    /* 영역 차지를 보이게 함 */
-/* }  */
- 
+
+
+
 
 span, a {
     font-family: inherit;

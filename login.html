@@ -9,10 +9,6 @@
     <meta http-equiv="Pragma" content="no-cache">
     <!-- // PG크로스브라우징필수내용 -->
     <title>ohora 오호라 공식몰</title>
-    <link rel="stylesheet" href="css/optimizer.css">
-    <!-- <link rel="stylesheet" href="css/optimizer_join.css"> -->
-    <link rel="stylesheet" href="css/optimizer_display.css">
-    <link rel="stylesheet" href="css/optimizer_login2.css">
 
     <!-- ======== 스마트PC 기본 CSS LOAD ======== -->
     <link rel="stylesheet" href="css/smartpc/smartpc_default.css">
@@ -48,42 +44,66 @@
     <link rel="stylesheet" href="css/smartpc/smartpc_order.css">
     <!-- //스마트pc추가 css  -->
 
+    <link rel="stylesheet" type="text/css" href="//img.echosting.cafe24.com/editors/froala/css/froala_style_ec.min.css?vs=2203281309" charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="https://www.ohora.kr/ind-script/optimizer.php?filename=nc1LCoAwDIThfXHrOYLeqC3xAU2mpCno7RW8gHQ7zMdPB4RpWY2qYbcoZNzQLTPl1mgzqFOGCHR6h5n-_DmHhtL9hIaEaxB299FoiTfbGPWYCg9S1FBO5ZCi6td_AA&type=css&k=37c9481ac0212340e132f81eba4d1049fee7f18e&t=1635315871">
+    <link rel="stylesheet" type="text/css" href="https://www.ohora.kr/ind-script/optimizer.php?filename=rdGxDsJACAbg3br6HKibs4uTS5-gpaRHPI4L9DR9e6-mT2A7EULyAfkhqBAQNsXJHDSoddfz5Qa59JGxCZNE8IGagZzHBP7idAV-A7rX0kQdOR1rc4K_pIURHUokEJKeDPYUZw-aQW0ge7BPavNTt_rr73IvFZQWTWPsO9t4sX84k20_q0aCKqJbPozdrGWCvnPGH0p4qA0d6oBsn2jWHVLixEtIbeCcOY276qjpXQHWlHGBvw&type=css&k=f674fcd0ae99c08bfa52763d511b0dbd402eeadd&t=1639557519&user=T">
+
+    <!-- slide -->
+    <!-- <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/> -->
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <!-- //slide -->
+
 
 </head>
-<body>
+<body id="SmartPC">
     <!-- 탑배너 -->
-    <div class="SP_topBanner" style="display: block;">
-        <div class = "SP_layoutMin">
-            <div class="SP_topBn_inr"></div>
-            <!-- 상단띠 배너 -->
-            <div class="xans-element- xans-layout xans-layout-statelogoff">
-                <div class="slide_banner_top slick-initialized slick-slider" id="sltop_ban">
-                    <div class="slick-list draggable">
-                        <div class="slick-track" style="opacity: 1; width: 6000px; transform: translate3d(-2400px, 0px, 0px);">
-                            <div class="slick-slide" data-slick-index="0" aria-hidden="true" style="width: 1200px;" tabindex="-1">
-                                <a href="/event/event6.html" style="display:block;" tabindex="-1"><img src="images/banner/banner_top2.jpg" style="width:100%; display:block;"></a>
-                            </div>
-                            <div class="slick-slide slick-current slick-active" data-slick-index="1" aria-hidden="false" style="width: 1200px;" tabindex="0">
-                                <a href="/event/event8.html" style="display:block;" tabindex="0"><img src="images/banner/banner_top.jpg"width:100%; display:block;"></a>
-                            </div>
-                            <div class="slick-slide slick-cloned" data-slick-index="-1" aria-hidden="true" style="width: 1200px;" tabindex="-1">
-                                <a href="/event/event8.html" style="display:block;" tabindex="-1"><img src="images/banner/banner_top2.jpg" style="width:100%; display:block;">
-                                </a>
-                            </div>
-                            <div class="slick-slide slick-cloned" data-slick-index="2" aria-hidden="true" style="width: 1200px;" tabindex="-1">
-                                <a href="/event/event6.html" style="display:block;" tabindex="-1"><img src="images/banner/banner_top.jpg" style="width:100%; display:block;">
-                                </a>
-                            </div>
-                            <div class="slick-slide slick-cloned" data-slick-index="3" aria-hidden="true" style="width: 1200px;" tabindex="-1">
-                                <a href="/event/event8.html" style="display:block;" tabindex="-1"><img src="images/banner/banner_top2.jpg" style="width:100%; display:block;">
-                                </a>
-                            </div>
-                        </div>
+    <div class="xans-element- xans-layout xans-layout-statelogoff">
+        <div class="swiper" >
+            <div class="swiper-container" id="test-slide_top">
+                <ul class="swiper-wrapper" style=" width:100%; opacity: 1">
+                    <div class="swiper-slide" data-slick-index="0" aria-hidden="true" style="width:100%; " tabindex="-1">
+                        <a href="/event/event6.html" style="display:block;" tabindex="-1"><img src="images/banner/banner_top2.jpg" style="width:100%; display:block; height: 50px;"></a>
                     </div>
-                </div>
+                    <div class="swiper-slide" data-slick-index="1" aria-hidden="false" style="width: 100% ;"tabindex="0">
+                        <a href="/event/event8.html" style="display:block;" tabindex="0"><img src="images/banner/banner_top.jpg" style="width:100%; display:block; height: 50px;"></a>
+                    </div>
+                    
+                </ul>
             </div>
-        </div>
+        </div> 
     </div>
+    <script>
+        const slide_top = new Swiper('#test-slide_top', {
+            slidesPerView : 'auto',
+            spaceBetwwen : 1,
+
+            // Optional parameters
+            direction: 'horizontal',
+            loop: true,// 슬라이드 반복 여부
+            loopAdditionalSlides : 1, // 슬라이드 반복 시 마지막 슬라이드에서 다음 슬라이드가 보여지지 않는 현상 수정
+            
+            // If we need pagination
+            pagination: {
+                el: '.swiper-pagination',
+            },
+            
+            // Navigation arrows
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            
+            // And if we need scrollbar
+            scrollbar: {
+                el: '.swiper-scrollbar',
+            },
+
+            autoplay :{
+                delay : 3000,   // 3초후 자동 넘김
+                disableOnInteraction : false
+            }
+        });
+    </script>
     <!-- //탑배너 -->
 
     <!-- 헤더 호출 -->
@@ -164,7 +184,7 @@
                                 <fieldset>
                                     <legend style="display: none;">검색</legend>
                                     <input id="keyword" name="keyword" fw-filter="" fw-label="검색어" fw-msg="" class="inputTypeText" placeholder="" onkeyup="SEARCH_HASHTAG.getHashtag($(this)); " autocomplete="off" onmousedown="SEARCH_BANNER.clickSearchForm(this)" value="" type="text">
-                                    <button type="button" class="SP_srh_submit_btn" onclick="SEARCH_BANNER.submitSearchBanner(this); return false">
+                                    <button type="button" class="SP_srh_submit_btn" onclick="">
                                         <span class="SP_cm_icon SP_black_search_icon"></span>
                                     </button>
                                 </fieldset>
@@ -561,7 +581,7 @@
                     <li>주소 : 서울특별시 성동구 아차산로 38 (성수동1가) 개풍빌딩 10층</li>
                     <li>사업자등록번호 : 122-85-56140</li>
                     <li>
-                    <span>통신판매업신고번호 : 제2019-서울성동-415호</span><a href="#none" class="co" onclick="window.open('http://www.ftc.go.kr/bizCommPop.do?wrkr_no=1228556140', 'bizCommPop', 'width=750, height=950;');return false;">사업자 정보 확인</a>
+                    <span>통신판매업신고번호 : 제2019-서울성동-415호</span><a href="#none" class="co" onclick="">사업자 정보 확인</a>
                     </li>
                     <!-- <a href="#none" onclick="window.open('http://www.ftc.go.kr/bizCommPop.do?wrkr_no=1228556140', 'bizCommPop', 'width=750, height=950;');return false;">[사업자정보확인]</a> 사업자정보 호출어 -->
                     <li>개인정보처리담당자 : <a href="mailto:bong@ohora.kr">유태규</a></li>
@@ -580,6 +600,9 @@
             </div>
         </div>
     </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 
 
 

@@ -11,8 +11,8 @@
     <title>ohora</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/optimizer.css">
-    <link rel="stylesheet" href="css/optimizer_display.css">
+    
+
     <!-- 스마트 pc 기본 css-->
     <link rel="stylesheet" href="css/smartpc/smartpc_default.css">
     <link rel="stylesheet" href="css/smartpc/smartpc_common2.css">
@@ -47,47 +47,84 @@
     <link rel="stylesheet" href="css/smartpc/smartpc_order.css">
     <!-- //스마트pc추가 css  -->
 
+    <link rel="stylesheet" type="text/css" href="//img.echosting.cafe24.com/editors/froala/css/froala_style_ec.min.css?vs=2203281309" charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="https://www.ohora.kr/ind-script/optimizer.php?filename=nZBBCkIxEEP3xa3nCHoEj-ANpnXUD-2kTKegt9edbgTpNuTlQXBnUxyOju68uTS4Dk4vijIGrk4LFLZG272DPf7pa0mDdcZGS5mPRXBGrEqrPNXX0JBcdRFlT3UzTVnMfvqld5wofsH5e-7z8Qs&type=css&k=a052fbc291df183c9caddf6aefc2c6be24ab00a6&t=1635315871">
+    <link rel="stylesheet" type="text/css" href="https://www.ohora.kr/ind-script/optimizer.php?filename=rdBBEsIwCAXQvXXrOVB3rr2BniClTMMYQiYk7Xh7Y9UL2C4Z4DEf8CoEhF01ygbqNbvz8XSBVPvA2PkiAWygbiDjMYI9OJ4_Y4D2XejEcdy38gB_cTwtFk8bQXKtVlTumDWE3uUV4puzmRPlTfKhiuiahME9tRbonTEuKOGuFbRrDVobVHSogX43pIbC5jXdPafEcdxUR41TA1hjwk1ey9GKu9HENL-9Fw&type=css&k=23167fd2f5d97f95de608610b30390ab53367da5&t=1641534122&user=T">
+   
+
+
+
+    <!-- slide -->
+    <!-- <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/> -->
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <!-- //slide -->
 
     
-    <!-- <link rel="stylesheet" href="css/swiper-bundle.css"> -->
+
+    <!-- slick -->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    
+    <!-- //slick -->
+
+
+    
+
+    
+    
 
 </head>
-<body id="smartpc">
+<body id="SmartPC">
+    
     <!-- 탑배너 -->
-    <div class="SP_topBanner" style="display: block;">
-        <div class = "SP_layoutMin">
-            <div class="SP_topBn_inr"></div>
-            <!-- 상단띠 배너 -->
-            <div class="xans-element- xans-layout xans-layout-statelogoff">
-                <div class="slide_banner_top slick-initialized slick-slider" id="sltop_ban">
-                    <div class="slick-list draggable">
-                        <div class="slick-track" style="opacity: 1; width: 6000px; transform: translate3d(-2400px, 0px, 0px);">
-                            <div class="slick-slide" data-slick-index="0" aria-hidden="true" style="width: 1200px;" tabindex="-1">
-                                <a href="/event/event6.html" style="display:block;" tabindex="-1"><img src="images/banner/banner_top2.jpg" style="width:100%; display:block;"></a>
-                            </div>
-                            <div class="slick-slide slick-current slick-active" data-slick-index="1" aria-hidden="false" style="width: 1200px;" tabindex="0">
-                                <a href="/event/event8.html" style="display:block;" tabindex="0"><img src="images/banner/banner_top.jpg"width:100%; display:block;"></a>
-                            </div>
-                            <div class="slick-slide slick-cloned" data-slick-index="-1" aria-hidden="true" style="width: 1200px;" tabindex="-1">
-                                <a href="/event/event8.html" style="display:block;" tabindex="-1"><img src="images/banner/banner_top2.jpg" style="width:100%; display:block;">
-                                </a>
-                            </div>
-                            <div class="slick-slide slick-cloned" data-slick-index="2" aria-hidden="true" style="width: 1200px;" tabindex="-1">
-                                <a href="/event/event6.html" style="display:block;" tabindex="-1"><img src="images/banner/banner_top.jpg" style="width:100%; display:block;">
-                                </a>
-                            </div>
-                            <div class="slick-slide slick-cloned" data-slick-index="3" aria-hidden="true" style="width: 1200px;" tabindex="-1">
-                                <a href="/event/event8.html" style="display:block;" tabindex="-1"><img src="images/banner/banner_top2.jpg" style="width:100%; display:block;">
-                                </a>
-                            </div>
-                        </div>
+    <div class="xans-element- xans-layout xans-layout-statelogoff">
+        <div class="swiper" >
+            <div class="swiper-container" id="test-slide_top">
+                <ul class="swiper-wrapper" style=" width:100%; opacity: 1">
+                    <div class="swiper-slide" data-slick-index="0" aria-hidden="true" style="width:100%; " tabindex="-1">
+                        <a href="/event/event6.html" style="display:block;" tabindex="-1"><img src="images/banner/banner_top2.jpg" style="width:100%; display:block; height: 50px;"></a>
                     </div>
-                </div>
+                    <div class="swiper-slide" data-slick-index="1" aria-hidden="false" style="width: 100% ;"tabindex="0">
+                        <a href="/event/event8.html" style="display:block;" tabindex="0"><img src="images/banner/banner_top.jpg" style="width:100%; display:block; height: 50px;"></a>
+                    </div>
+                    
+                </ul>
             </div>
-        </div>
+        </div> 
     </div>
+    <script>
+        const slide_top = new Swiper('#test-slide_top', {
+            slidesPerView : 'auto',
+            spaceBetwwen : 1,
 
+            // Optional parameters
+            direction: 'horizontal',
+            loop: true,// 슬라이드 반복 여부
+            loopAdditionalSlides : 1, // 슬라이드 반복 시 마지막 슬라이드에서 다음 슬라이드가 보여지지 않는 현상 수정
+            
+            // If we need pagination
+            pagination: {
+                el: '.swiper-pagination',
+            },
+            
+            // Navigation arrows
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            
+            // And if we need scrollbar
+            scrollbar: {
+                el: '.swiper-scrollbar',
+            },
+
+            autoplay :{
+                delay : 3000,   // 3초후 자동 넘김
+                disableOnInteraction : false
+            }
+        });
+    </script>
     <!-- //탑배너 -->
+
 
     
     <!-- 헤더 호출 -->
@@ -127,7 +164,7 @@
                 </div>
             </div>
             <!-- 상품 관련 페이지에서 노출되는 헤더 -->
-            <div class="prd_cate_container" style="display: none;">
+            <div class="prd_cate_container no-hover" style="display: none;">
                 <ul class="prd_cate_wrap">
                     <li class="eng_font">
                         <a href="#">product</a>
@@ -380,88 +417,34 @@
     <div id="floating" style="display: block;">
         <div class="go_top"><span class="icon"></span></div>
     </div>
-    <script>
-        //SP$(document).ready(function(){
-            document.addEventListener("DOMContentLoaded", function(){
-            // floating scroll Event
-            var floatingFlag = true;
-            SP$(window).on('scroll',function(){
-                var nowTop = SP$(this).scrollTop();
-                if(nowTop > 0) {
-                    if(floatingFlag){
-                        SP$('#floating').fadeIn();
-                        floatingFlag = !floatingFlag;
-                    }
-                }else {
-                    if(!floatingFlag) {
-                        SP$('#floating').fadeOut();
-                        floatingFlag = !floatingFlag;
-                    }
-                }
-            });
-            
-            // scroll Top Click Event
-            SP$('#floating .go_top').on('click',function(){
-                SP$('body, html').animate({scrollTop: 0}, 500);
-            });
-                });
-        //});
-        </script>
+    
+
     <!-- //플로팅 버튼 호출 -->
 
     <div id="wrap" style="padding-top : 154px !important;">
         <div id="container">
             <div id="contents">
-                <script>
-                    SMARTPC_GLOBAL_OBJECT.page = 'main';
-                </script>
                 <div class="main_container common_list_container">
                     <!-- 메인배너 영역 -->
-                    <div class="mainBanner swiper-container swiper-container-initialized swiper-container-horizontal">
-                        <div class="mainBanner_wrapper swiper-wrapper df-bannermanager df-bannermanager-bannermanage2" df-banner-code="bannermanage2" style="transition-duration: 0ms; transform: translate3d(-4521.6px, 0px, 0px);">
-                            <div df-banner-clone="" class="mainBanner_slide swiper-slide swiper-slide-duplicate swiper-slide-duplicate-prev" data-swiper-slide-index="0">
-                                <a href="https://ohora.kr/event/event8.html"><img src="images/web/upload/launchingevent.jpg" alt="pc.main"><span class="pc.main shop_now">shop now &gt;</span></a>
-                            </div>
-                            <div df-banner-clone="" class="mainBanner_slide swiper-slide swiper-slide-duplicate swiper-slide-duplicate-active" data-swiper-slide-index="1">
-                                <a href="https://ohora.kr/product/list.html?cate_no=121"><img src="images/web/upload/cherryblossom.jpg" alt="pc.main" class="swiper-lazy swiper-lazy-loaded"><span class="pc.main shop_now">shop now &gt;</span></a>
-                            </div>
-                            <div df-banner-clone="" class="mainBanner_slide swiper-slide swiper-slide-duplicate swiper-slide-duplicate-next" data-swiper-slide-index="2">
-                                <a href="https://ohora.kr/event/event6.html"><img src="images/web/upload/welcomekit.jpg" alt="PC 빅배너.웰컴기프트 bk" class="swiper-lazy swiper-lazy-loaded"><span class="PC 빅배너.웰컴기프트 bk shop_now">shop now &gt;</span></a>
-                            </div>
-                            <div df-banner-clone="" class="mainBanner_slide swiper-slide swiper-slide-duplicate" data-swiper-slide-index="3">
-                                <a href="https://www.ohora.kr/board/product/list.html?board_no=4"><img src="images/web/upload/ohorareview.jpg" alt="main_big_banner_5 bk" class="swiper-lazy swiper-lazy-loaded"><span class="main_big_banner_5 bk shop_now">shop now &gt;</span></a>
-                            </div>
-                            <div df-banner-clone="" class="mainBanner_slide swiper-slide swiper-slide-duplicate" data-swiper-slide-index="4">
-                                <a href="https://ohora.kr/event/event1.html"><img src="images/web/upload/inviteyourfriends.jpg" alt="main_big_banner_6 bk" class="swiper-lazy swiper-lazy-loaded"><span class="main_big_banner_6 bk shop_now">shop now &gt;</span></a>
-                            </div>
-                            <div v df-banner-clone="" class="mainBanner_slide swiper-slide swiper-slide-prev" data-swiper-slide-index="0">
-                                <a href="https://ohora.kr/event/event8.html"><img src="images/web/upload/launchingevent.jpg" alt="pc.main"><span class="pc.main shop_now">shop now &gt;</span></a></div>
-                            <div df-banner-clone="" class="mainBanner_slide swiper-slide swiper-slide-active" data-swiper-slide-index="1"><a href="https://ohora.kr/product/list.html?cate_no=121"><img src="images/web/upload/cherryblossom.jpg" alt="pc.main" class="swiper-lazy swiper-lazy-loaded"><span class="pc.main shop_now">shop now &gt;</span></a>
-                            </div>
-                            <div df-banner-clone="" class="mainBanner_slide swiper-slide swiper-slide-next" data-swiper-slide-index="2">
-                                <a href="https://ohora.kr/event/event6.html"><img src="images/web/upload/welcomekit.jpg" alt="PC 빅배너.웰컴기프트 bk" class="swiper-lazy swiper-lazy-loaded"><span class="PC 빅배너.웰컴기프트 bk shop_now">shop now &gt;</span></a>
-                            </div>
-                            <div df-banner-clone="" class="mainBanner_slide swiper-slide" data-swiper-slide-index="3">
-                                <a href="https://www.ohora.kr/board/product/list.html?board_no=4"><img src="images/web/upload/ohorareview.jpg" alt="main_big_banner_5 bk" class="swiper-lazy swiper-lazy-loaded"><span class="main_big_banner_5 bk shop_now">shop now &gt;</span></a>
-                            </div>
-                            <div df-banner-clone="" class="mainBanner_slide swiper-slide" data-swiper-slide-index="4">
-                                <a href="https://ohora.kr/event/event1.html"><img src="images/web/upload/inviteyourfriends.jpg" alt="main_big_banner_6 bk" class="swiper-lazy swiper-lazy-loaded"><span class="main_big_banner_6 bk shop_now">shop now &gt;</span></a>
-                            </div>
-                            <div df-banner-clone="" class="mainBanner_slide swiper-slide swiper-slide-duplicate swiper-slide-duplicate-prev" data-swiper-slide-index="0">
-                                <a href="https://ohora.kr/event/event8.html"><img src="images/web/upload/launchingevent.jpg" alt="pc.main"><span class="pc.main shop_now">shop now &gt;</span></a>
-                            </div>
-                            <div df-banner-clone="" class="mainBanner_slide swiper-slide swiper-slide-duplicate swiper-slide-duplicate-active" data-swiper-slide-index="1">
-                                <a href="https://ohora.kr/product/list.html?cate_no=121"><img src="images/web/upload/cherryblossom.jpg" alt="pc.main" class="swiper-lazy swiper-lazy-loaded"><span class="pc.main shop_now">shop now &gt;</span></a>
-                            </div>
-                            <div df-banner-clone="" class="mainBanner_slide swiper-slide swiper-slide-duplicate swiper-slide-duplicate-next" data-swiper-slide-index="2">
-                                <a href="https://ohora.kr/event/event6.html"><img src="images/web/upload/welcomekit.jpg" alt="PC 빅배너.웰컴기프트 bk" class="swiper-lazy" data-src="/web/upload/NNEditor/20210916/4e4854142e9ee0a2f1904e9281f5a813.jpg"><span class="PC 빅배너.웰컴기프트 bk shop_now">shop now &gt;</span></a>
-                            </div>
-                            <div df-banner-clone="" class="mainBanner_slide swiper-slide swiper-slide-duplicate" data-swiper-slide-index="3">
-                                <a href="https://www.ohora.kr/board/product/list.html?board_no=4"><img src="images/web/upload/ohorareview.jpg" alt="main_big_banner_5 bk" class="swiper-lazy" data-src="/web/upload/NNEditor/20210913/471d99586d5d00766d8704c66b0efd3d.jpg"><span class="main_big_banner_5 bk shop_now">shop now &gt;</span></a>
-                            </div>
-                            <div df-banner-clone="" class="mainBanner_slide swiper-slide swiper-slide-duplicate" data-swiper-slide-index="4">
-                                <a href="https://ohora.kr/event/event1.html"><img src="images/web/upload/inviteyourfriends.jpg" alt="main_big_banner_6 bk" class="swiper-lazy" data-src="/web/upload/NNEditor/20210913/723a985ea946f331788e1aba2f4c7c19.jpg"><span class="main_big_banner_6 bk shop_now">shop now &gt;</span></a>
-                            </div>
+                    <div class="swiper">
+                        <div id = "test-slide" class="swiper-container">
+                            <ul class="swiper-wrapper">
+                                <div class ="swiper-slide">
+                                <a href="#"><img src="images/web/upload/launchingevent.jpg" alt="pc.main"><span class="pc.main shop_now">shop now &gt;</span></a>
+                                </div>
+                                <div class="swiper-slide" >
+                                    <a href="#"><img src="images/web/upload/cherryblossom.jpg" alt="pc.main" class="swiper-lazy swiper-lazy-loaded"><span class="pc.main shop_now">shop now &gt;</span></a>
+                                </div>
+                                <div class="swiper-slide" >
+                                    <a href="#"><img src="images/web/upload/welcomekit.jpg" alt="PC 빅배너.웰컴기프트 bk" class="swiper-lazy swiper-lazy-loaded"><span class="PC 빅배너.웰컴기프트 bk shop_now">shop now &gt;</span></a>
+                                </div>
+                                <div class="swiper-slide" >
+                                    <a href="#"><img src="images/web/upload/ohorareview.jpg" alt="main_big_banner_5 bk" class="swiper-lazy swiper-lazy-loaded"><span class="main_big_banner_5 bk shop_now">shop now &gt;</span></a>
+                                </div>
+                                <div class="swiper-slide" >
+                                    <a href="#"><img src="images/web/upload/inviteyourfriends.jpg" alt="main_big_banner_6 bk" class="swiper-lazy swiper-lazy-loaded"><span class="main_big_banner_6 bk shop_now">shop now &gt;</span></a>
+                                </div>
+                            </ul>
                         </div>
                     </div>
                     <!-- //메인배너 영역 -->
@@ -496,12 +479,12 @@
                         <!-- //배너 이미지 -->
                         <!-- 상품 진열 -->
                         <div class="common_list_box new_box">
-                            <div class="swiper-container new_container swiper-container-intialized swiper-container-horizontal" data-case="121">
+                            <div id= "test-slide_new" class="swiper-container">
                                 <ul class="items common_items swiper-wrapper">
                                     <li class="xans-record- append_item swiper-slide swiper-slide-active" style="width: 286.667px; margin-right: 40px;">
                                         <div class="complete container " data-prd-no="1420" data-filter="">
                                             <dl>
-                                                <a href="/product/detail.html?product_no=1420&amp;cate_no=121&amp;display_group=1" class="viewlink"></a>
+                                                <a href="#" class="viewlink"></a>
                                                 <div class="base_img">
                                                     <div class="BR_icon">
                                                         <p><b>BEST</b>리뷰</p>
@@ -1085,13 +1068,15 @@
                                         
                                     </li>
                                 </ul>
+                                <div class="swiper-scrollbar"><div class="swiper-scrollbar-drag" ></div></div>
+                                <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
+                                <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
+                                <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
                                 <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
                             </div>
+                            
                             <div class="swiper-button-next" tabindex="0" role="button" aria-label="Next slide" aria-disabled="false"></div>
-                            <div class="swiper-button-prev swiper-button-disabled" tabindex="0" role="button" aria-label="Previous slide" aria-disabled="true"></div>
-                        </div>
-                        <div class="swiper-scrollbar">
-                            <div class="swiper-scrollbar-drag" style="transform: translate3d(0px, 0px, 0px); transition-duration: 0ms; width: 273.843px;"></div>
+                            <div class="swiper-button-prev" tabindex="0" role="button" aria-label="Previous slide" aria-disabled="true"></div>
                         </div>
                         <!-- //상품진열 -->
                     </div>
@@ -1114,7 +1099,7 @@
                         <!-- //주간 베스트 탭 -->
                         <!-- 전체 -->
                         <div class="common_list_box on" data-tab="1">
-                            <div class="swiper-container swiper-container-initialized swiper-container-horizontal" data-cate="120">
+                            <div id= "test-slide_new" class="swiper-container">
                                 <ul class="items common_items swiper-wrapper" style="transition-duration: 0ms; transform: translate3d(0px, 0px, 0px);">
                                     <li class="xans-record- append_item swiper-slide swiper-slide-active" style="width: 286.667px; margin-right: 40px;">
                                         <div class="complete container " data-prd-no="1420" data-filter="">
@@ -1676,18 +1661,15 @@
                                             </dl>
                                         </div>
                                     </li>
-
-                                    
-
                                 </ul>
-                                <div class="swiper-scrollbar"><div class="swiper-scrollbar-drag" style="transform: translate3d(0px, 0px, 0px); width: 273.843px;"></div></div>
+                                <div class="swiper-scrollbar"><div class="swiper-scrollbar-drag" ></div></div>
                                 <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
                                 <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
                                 <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
                                 <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
                             </div>
                             <div class="swiper-button-next swiper-button" tabindex="0" role="button" aria-label="Next slide" aria-disabled="false"></div>
-                            <div class="swiper-button-prev swiper-button swiper-button-disabled" tabindex="0" role="button" aria-label="Previous slide" aria-disabled="true"></div>
+                            <div class="swiper-button-prev swiper-button " tabindex="0" role="button" aria-label="Previous slide" aria-disabled="true"></div>
                         </div>
                         <!-- 전체 -->
                     </div>
@@ -1744,42 +1726,27 @@
                         </h3>
                         <!-- //타이틀 -->
                         <!-- 이벤트 배너 -->
-                        <div df-banner-code="main-event-banner" class="SP_eventBnList_wrap swiper-wrapper df-bannermanager df-bannermanager-main-event-banner" style="transition-duration: 0ms; transform: translate3d(-3150px, 0px, 0px);">
-                            <div df-banner-clone="" class="SP_eventBn_li swiper-slide swiper-slide-duplicate" data-swiper-slide-index="0">
-                                <a href="https://www.ohora.kr/event/event6.html"><img src="images/web/upload/welcomekit.jpg" alt="pc_event_banner_4 bk"><span class="pc_event_banner_4 bk shop_now">shop now &gt;</span></a>
-                            </div>
-                            <div df-banner-clone="" class="SP_eventBn_li swiper-slide swiper-slide-duplicate swiper-slide-duplicate-prev" data-swiper-slide-index="1">
-                                <a href="https://www.ohora.kr/board/product/list.html?board_no=4"><img src="images/web/upload/ohorareview.jpg" alt="pc_event_banner_3 bk" class="swiper-lazy swiper-lazy-loaded"><span class="pc_event_banner_3 bk shop_now">shop now &gt;</span></a>
-                            </div>
-                            <div df-banner-clone="" class="SP_eventBn_li swiper-slide swiper-slide-duplicate swiper-slide-duplicate-active" data-swiper-slide-index="2">
-                                <a href="https://ohora.kr/event/event1.html"><img src="images/web/upload/inviteyourfriends.jpg" alt="pc_event_banner_5 bk" class="swiper-lazy swiper-lazy-loaded"><span class="pc_event_banner_5 bk shop_now">shop now &gt;</span></a>
-                            </div>
-                            <div df-banner-clone="" class="SP_eventBn_li swiper-slide swiper-slide-duplicate-next" data-swiper-slide-index="0">
-                                <a href="https://www.ohora.kr/event/event6.html"><img src="images/web/upload/welcomekit.jpg" alt="pc_event_banner_4 bk"><span class="pc_event_banner_4 bk shop_now">shop now &gt;</span></a>
-                            </div>
-                            <div df-banner-clone="" class="SP_eventBn_li swiper-slide swiper-slide-prev" data-swiper-slide-index="1">
-                                <a href="https://www.ohora.kr/board/product/list.html?board_no=4"><img src="images/web/upload/ohorareview.jpg" alt="pc_event_banner_3 bk" class="swiper-lazy swiper-lazy-loaded"><span class="pc_event_banner_3 bk shop_now">shop now &gt;</span></a>
-                            </div>
-                            <div df-banner-clone="" class="SP_eventBn_li swiper-slide swiper-slide-active" data-swiper-slide-index="2">
-                                <a href="https://ohora.kr/event/event1.html"><img src="images/web/upload/inviteyourfriends.jpg" alt="pc_event_banner_5 bk" class="swiper-lazy swiper-lazy-loaded"><span class="pc_event_banner_5 bk shop_now">shop now &gt;</span></a>
-                            </div>
-                            <div df-banner-clone="" class="SP_eventBn_li swiper-slide swiper-slide-duplicate swiper-slide-next" data-swiper-slide-index="0">
-                                <a href="https://www.ohora.kr/event/event6.html"><img src="images/web/upload/welcomekit.jpg" alt="pc_event_banner_4 bk"><span class="pc_event_banner_4 bk shop_now">shop now &gt;</span></a>
-                            </div>
-                            <div df-banner-clone="" class="SP_eventBn_li swiper-slide swiper-slide-duplicate swiper-slide-duplicate-prev" data-swiper-slide-index="1">
-                                <a href="https://www.ohora.kr/board/product/list.html?board_no=4"><img src="images/web/upload/ohorareview.jpg" alt="pc_event_banner_3 bk" class="swiper-lazy" data-src="/web/upload/NNEditor/20210913/22043dcb73421155f9b2ee391134cbf6.jpg"><span class="pc_event_banner_3 bk shop_now">shop now &gt;</span></a>
-                            </div>
-                            <div df-banner-clone="" class="SP_eventBn_li swiper-slide swiper-slide-duplicate swiper-slide-duplicate-active" data-swiper-slide-index="2">
-                                <a href="https://ohora.kr/event/event1.html"><img src="images/web/upload/inviteyourfriends.jpg" alt="pc_event_banner_5 bk" alt="pc_event_banner_5 bk" class="swiper-lazy" data-src="/web/upload/NNEditor/20210913/fa06a2031f5661a1d08a3f48b9ed189e.jpg"><span class="pc_event_banner_5 bk shop_now">shop now &gt;</span></a>
-                            </div>
+                        <div id = "test-slide2" class="swiper-container">
+                            <ul class="swiper-wrapper">
+                                <div class="swiper-slide" >
+                                    <a href="#"><img src="images/web/upload/welcomekit.jpg" alt="pc_event_banner_4 bk"><span class="pc_event_banner_4 bk shop_now">shop now &gt;</span></a>
+                                </div>
+                                <div div class="swiper-slide">
+                                    <a href="#"><img src="images/web/upload/ohorareview.jpg" alt="pc_event_banner_3 bk" class="swiper-lazy swiper-lazy-loaded"><span class="pc_event_banner_3 bk shop_now">shop now &gt;</span></a>
+                                </div>
+                                <div div class="swiper-slide">
+                                <a href="#"><img src="images/web/upload/inviteyourfriends.jpg" alt="pc_event_banner_5 bk" class="swiper-lazy swiper-lazy-loaded"><span class="pc_event_banner_5 bk shop_now">shop now &gt;</span></a>
+                                </div>
+                            </ul>
                         </div>
-                        <!-- //이벤트 배너 -->
-                        <!-- Add Pagination -->
-                        <div class="swiper-pagination swiper-pagination-clickable swiper-pagination-bullets">
-                            <span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 1"></span>
-                            <span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 2"></span>
-                            <span class="swiper-pagination-bullet swiper-pagination-bullet-active" tabindex="0" role="button" aria-label="Go to slide 3"></span>
-                        </div>
+                            <!-- //이벤트 배너 -->
+                            <!-- Add Pagination -->
+                            <div class="swiper-pagination swiper-pagination-clickable swiper-pagination-bullets">
+                                <span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 1"></span>
+                                <span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 2"></span>
+                                <span class="swiper-pagination-bullet swiper-pagination-bullet-active" tabindex="0" role="button" aria-label="Go to slide 3"></span>
+                            </div>
+                          
                         <!-- Add Arrows -->
                         <div class="swiper-button-next displaynone" tabindex="0" role="button" aria-label="Next slide"></div>
                         <div class="swiper-button-prev displaynone" tabindex="0" role="button" aria-label="Previous slide"></div>
@@ -1981,7 +1948,7 @@
                                     <div class="insta_items">
                                         <p class="sub_title">관련디자인</p>
                                         <div class="insta_prd_wrapper swiper-container">
-                                            <!-- 관련디자인 호출 -->
+                                            관련디자인 호출 -->
                                         <!-- </div>
                                     </div>
                                 </div>
@@ -2256,35 +2223,6 @@
                         </a>
                     </div>
                     <!-- //하단 띠 배너 -->
-                </div>
-
-                
-                <div class="crema-popup crema-apploed"></div>
-                <script>(function(i,s,o,g,r,a,m){if(s.getElementById(g)){return};a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.id=g;a.async=1;a.src=r;m.parentNode.insertBefore(a,m)})(window,document,'script','crema-jssdk','https://widgets.cre.ma/ohora.kr/init.js');</script>
-                <script>
-                    (function(i,s,o,g,r,a,m){if(s.getElementById(g)){return};a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.id=g;a.async=1;a.src=r;m.parentNode.insertBefore(a,m)})(window,document,'script','crema-jssdk','https://widgets.cre.ma/ohora.kr/init.js');
-                    function UpdateCountAndScore() {
-                        if (typeof crema == "object" && typeof crema.run == "function") {
-                            crema.run();
-                        }
-                        console.log("%c[CREMA]%c REVIEWS COUNT AND SCORE WAS UPDATED.", "font-weight: bold; color: black;", "color: green");
-                    }
-                    // Ajax Callback
-                    var oldXHR = window.XMLHttpRequest;
-                    function newXHR() {
-                        var realXHR = new oldXHR();
-                        realXHR.addEventListener("readystatechange", function() {
-                            if (realXHR.readyState == 4 && realXHR.status == 200) {
-                                setTimeout(function() {
-                                    UpdateCountAndScore()
-                                }, 500);
-                            }
-                        }, false);
-                        return realXHR;
-                    }
-                    window.XMLHttpRequest = newXHR;
-                </script>
-                    
             </div>
         </div>
     </div>
@@ -2374,7 +2312,7 @@
                     <span>
                         통신판매업신고번호 : 제2019-서울성동-415호
                     </span>
-                    <a href="#none" class="co" onclick="window.open('">사업자 정보 확인</a>
+                    <a href="#none" >사업자 정보 확인</a>
                 </li>
                 <li>개인정보처리담당자 : <a href="mailto:bong@ohora.kr">유태규</a>
                 </li>
@@ -2393,36 +2331,74 @@
     <!-- //푸터호출 -->
         
     <!-- JS호출 -->
+    <script type ="text/javascript" src="js/SPcustom_common.js"></script>
+    <script src="js/topbanner_v2.js"></script>
     <!-- swiper 배너 -->
-    <script src="js/swiper.js"></script>
     <script>
-        const swiper = new Swiper('.swiper', {
-            // Optional parameters
-            direction: 'vertical',
-            loop: true,
+        const slide = new Swiper('#test-slide', {
+            slidesPerView : 'auto',
+            spaceBetwwen : 1,
 
+            // Optional parameters
+            direction: 'horizontal',
+            loop: true,// 슬라이드 반복 여부
+            loopAdditionalSlides : 1, // 슬라이드 반복 시 마지막 슬라이드에서 다음 슬라이드가 보여지지 않는 현상 수정
+            
             // If we need pagination
             pagination: {
                 el: '.swiper-pagination',
             },
-
+            
             // Navigation arrows
             navigation: {
                 nextEl: '.swiper-button-next',
                 prevEl: '.swiper-button-prev',
             },
-
+            
             // And if we need scrollbar
             scrollbar: {
                 el: '.swiper-scrollbar',
             },
+
+            autoplay :{
+                delay : 2000,   // 2초후 자동 넘김
+                disableOnInteraction : false
+            }
         });
     </script>
-        
+    <script>
+        const slide_new = new Swiper('#test-slide_new', {
+            slidesPerView : 'auto',
+            spaceBetwwen : 3,
 
+            // Optional parameters
+            direction: 'horizontal',
+            loop: true,// 슬라이드 반복 여부
+            loopedslide:1,
+            
+            // If we need pagination
+            pagination: {
+                el: '.swiper-pagination',
+            },
+            
+            // Navigation arrows
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            
+            // And if we need scrollbar
+            scrollbar: {
+                el: '.swiper-scrollbar',
+                draggable: true,
+            },
+        });
+    </script>
+    <!-- swiper 배너 -->
 
-
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    
 
     
 </body>

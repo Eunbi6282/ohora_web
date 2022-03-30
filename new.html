@@ -11,12 +11,6 @@
             <title>new collection</title>
             <meta name='viewport' content='width=device-width, initial-scale=1'>
             <link rel="stylesheet" href="css/style.css">
-            <!-- <link rel="stylesheet" href="css/optimizer.css"> -->
-            <link rel="stylesheet" href="css/optimizer_newcollection.css">
-            
-            <style type="text/css">
-                a[href^='/product/detail.html']:hover > img { opacity:0.7; filter:alpha(opacity=70) !important; }a[name^='anchorBoxName']:hover > img { opacity:0.7; filter:alpha(opacity=70) !important; }
-            </style>
 
             <!-- <link rel="stylesheet" href="css/optimizer2.css"> -->
             <!-- 스마트 pc 기본 css-->
@@ -54,45 +48,62 @@
             <!-- //스마트pc추가 css  -->
 
             
-            <!-- 배너 스와이퍼 -->
+            <link rel="stylesheet" type="text/css" href="https://www.ohora.kr/ind-script/optimizer.php?filename=nZBBCgMhEATvste8Y9g8Ig9IXqDuJCvotIwjJL-P7CmXwOK16eqCph2Fab0qVcVLfSHlhq6RKbZGT4UYRZQCWUZwoTN9jq4hd0sQF_CeBLvZrDT7D-scaj5knkRRXU7CLniRv35fKz12VLr_rt2OtdHZerTzekFPLadt2Eo6zvoC&type=css&k=3df06214bd79ead54f47098c414ed652a4a124f1&t=1635315871">
+            <link rel="stylesheet" type="text/css" href="https://www.ohora.kr/ind-script/optimizer.php?filename=rdGxbgMxCAbgPe7a56DN1rlrt3sCH4diFNtYYCfq25c75QnqmxCy_PELIEkhIAzDSA0kicbrx-cXtLFmxpB6yWAbhY2MbxXszvUK_AA08xKabj9s_c3bd_iXtUNFtpEJmnrFDtnFKlpiPtc1ioppiz1OuIT-LeqdOtfbMWWPuzy5kQYc1qVM6K_Nlu8DWlAl5zXq5B7sSDcfyw-OUorUCSrHXxkd1miMB0p48YYu_kB6zsFfM8rInS1JWxK35uc6VUepDwdYasMd_gM&type=css&k=1a26c868df18dfe548a9bda0891eb0a0a3ba1ea1&t=1648101474&user=T">
+            <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
 
 
     </head>
 
     <body id="SmartPC">
         <!-- 탑배너 -->
-        <div class="SP_topBanner" style="display: block;">
-            <div class = "SP_layoutMin">
-                <div class="SP_topBn_inr"></div>
-                <!-- 상단띠 배너 -->
-                <div class="xans-element- xans-layout xans-layout-statelogoff">
-                    <div class="slide_banner_top slick-initialized slick-slider" id="sltop_ban">
-                        <div class="slick-list draggable">
-                            <div class="slick-track" style="opacity: 1; width: 6000px; transform: translate3d(-2400px, 0px, 0px);">
-                                <div class="slick-slide" data-slick-index="0" aria-hidden="true" style="width: 1200px;" tabindex="-1">
-                                    <a href="/event/event6.html" style="display:block;" tabindex="-1"><img src="images/banner/banner_top2.jpg" style="width:100%; display:block;"></a>
-                                </div>
-                                <div class="slick-slide slick-current slick-active" data-slick-index="1" aria-hidden="false" style="width: 1200px;" tabindex="0">
-                                    <a href="/event/event8.html" style="display:block;" tabindex="0"><img src="images/banner/banner_top.jpg"width:100%; display:block;"></a>
-                                </div>
-                                <div class="slick-slide slick-cloned" data-slick-index="-1" aria-hidden="true" style="width: 1200px;" tabindex="-1">
-                                    <a href="/event/event8.html" style="display:block;" tabindex="-1"><img src="images/banner/banner_top2.jpg" style="width:100%; display:block;">
-                                    </a>
-                                </div>
-                                <div class="slick-slide slick-cloned" data-slick-index="2" aria-hidden="true" style="width: 1200px;" tabindex="-1">
-                                    <a href="/event/event6.html" style="display:block;" tabindex="-1"><img src="images/banner/banner_top.jpg" style="width:100%; display:block;">
-                                    </a>
-                                </div>
-                                <div class="slick-slide slick-cloned" data-slick-index="3" aria-hidden="true" style="width: 1200px;" tabindex="-1">
-                                    <a href="/event/event8.html" style="display:block;" tabindex="-1"><img src="images/banner/banner_top2.jpg" style="width:100%; display:block;">
-                                    </a>
-                                </div>
-                            </div>
+        <div class="xans-element- xans-layout xans-layout-statelogoff" style="height: 50px;">
+            <div class="swiper" >
+                <div class="swiper-container" id="test-slide_top">
+                    <ul class="swiper-wrapper" style=" width:100%; opacity: 1">
+                        <div class="swiper-slide" data-slick-index="0" aria-hidden="true" style="width:100%; " tabindex="-1">
+                            <a href="/event/event6.html" style="display:block;" tabindex="-1"><img src="images/banner/banner_top2.jpg" style="width:100%; display:block; height: 50px;"></a>
                         </div>
-                    </div>
+                        <div class="swiper-slide" data-slick-index="1" aria-hidden="false" style="width: 100% ;"tabindex="0">
+                            <a href="/event/event8.html" style="display:block;" tabindex="0"><img src="images/banner/banner_top.jpg" style="width:100%; display:block; height: 50px;"></a>
+                        </div>
+                        
+                    </ul>
                 </div>
-            </div>
+            </div> 
         </div>
+        <script>
+            const slide_top = new Swiper('#test-slide_top', {
+                slidesPerView : 'auto',
+                spaceBetwwen : 1,
+    
+                // Optional parameters
+                direction: 'horizontal',
+                loop: true,// 슬라이드 반복 여부
+                loopAdditionalSlides : 1, // 슬라이드 반복 시 마지막 슬라이드에서 다음 슬라이드가 보여지지 않는 현상 수정
+                
+                // If we need pagination
+                pagination: {
+                    el: '.swiper-pagination',
+                },
+                
+                // Navigation arrows
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },
+                
+                // And if we need scrollbar
+                scrollbar: {
+                    el: '.swiper-scrollbar',
+                },
+    
+                autoplay :{
+                    delay : 3000,   // 3초후 자동 넘김
+                    disableOnInteraction : false
+                }
+            });
+        </script>
         <!-- //탑배너 -->
 
         <!-- 헤더 호출 -->
@@ -2499,6 +2510,8 @@
             </div>
         </div>
 
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 
     
     </body>
