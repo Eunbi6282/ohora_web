@@ -9,7 +9,10 @@
             <!-- // PG크로스브라우징필수내용 -->
             <meta charset='utf-8'>
             <title>new collection</title>
-            <meta name='viewport' content='width=device-width, initial-scale=1'>
+            <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"
+          />
             <link rel="stylesheet" href="css/style.css">
 
             <!-- <link rel="stylesheet" href="css/optimizer2.css"> -->
@@ -51,6 +54,142 @@
             <link rel="stylesheet" type="text/css" href="https://www.ohora.kr/ind-script/optimizer.php?filename=nZBBCgMhEATvste8Y9g8Ig9IXqDuJCvotIwjJL-P7CmXwOK16eqCph2Fab0qVcVLfSHlhq6RKbZGT4UYRZQCWUZwoTN9jq4hd0sQF_CeBLvZrDT7D-scaj5knkRRXU7CLniRv35fKz12VLr_rt2OtdHZerTzekFPLadt2Eo6zvoC&type=css&k=3df06214bd79ead54f47098c414ed652a4a124f1&t=1635315871">
             <link rel="stylesheet" type="text/css" href="https://www.ohora.kr/ind-script/optimizer.php?filename=rdGxbgMxCAbgPe7a56DN1rlrt3sCH4diFNtYYCfq25c75QnqmxCy_PELIEkhIAzDSA0kicbrx-cXtLFmxpB6yWAbhY2MbxXszvUK_AA08xKabj9s_c3bd_iXtUNFtpEJmnrFDtnFKlpiPtc1ioppiz1OuIT-LeqdOtfbMWWPuzy5kQYc1qVM6K_Nlu8DWlAl5zXq5B7sSDcfyw-OUorUCSrHXxkd1miMB0p48YYu_kB6zsFfM8rInS1JWxK35uc6VUepDwdYasMd_gM&type=css&k=1a26c868df18dfe548a9bda0891eb0a0a3ba1ea1&t=1648101474&user=T">
             <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+            
+
+            <!-- <style>
+                .dropbtn {
+                    line-height: normal;
+                    box-sizing: border-box;
+                    margin: 0;
+                    vertical-align: baseline;
+                    outline: 0;
+                    font-family: 'Noto Sans KR', sans-serif;
+                    padding: 0;
+                    padding-right: 15px;
+                    width: auto;
+                    font-size: 14px;
+                    border: none;
+                    cursor: pointer;
+                    background-size: 7px auto;
+                    letter-spacing: -0.5px;
+                }
+
+                
+                .dropdown {
+                    line-height: normal;
+                    box-sizing: border-box;
+                    margin: 0;
+                    padding: 0;
+                    border: 0;
+                    vertical-align: baseline;
+                    outline: 0;
+                    font-family: 'Noto Sans KR', sans-serif;
+                    position: relative;
+                    display: inline-block;
+                    float: none;
+                    letter-spacing: -0.5px;
+                }
+
+                .dropdown-content {
+                    line-height: normal;
+                    margin: 0;
+                    outline: 0;
+                    list-style: none;
+                    font-family: 'Noto Sans KR', sans-serif;
+                    position: absolute;
+                    background: #fff;
+                    box-sizing: border-box;
+                    right: auto;
+                    left: 0;
+                    top: 30px;
+                    width: auto;
+                    padding: 0;
+                    border: 1px solid #c6c6c6;
+                    box-shadow: none;
+                    z-index: 10;
+                    letter-spacing: -0.5px;
+                    overflow: hidden;
+                    display: block;
+                }
+
+                .dropdown-content a {
+                    text-align: -webkit-match-parent;
+                    list-style: none;
+                    box-sizing: border-box;
+                    margin: 0;
+                    border: 0;
+                    outline: 0;
+                    line-height: normal;
+                    font-size: inherit;
+                    font-family: 'Noto Sans KR', sans-serif;
+                    color: black;
+                    padding: 3px 3px;
+                    text-decoration: none;
+                    display: block;
+                    letter-spacing: -0.5px;
+                }
+
+                .dropdown a:hover {background-color: #ddd;}
+
+                .show {display: block;}
+                
+            </style> -->
+
+            <style>
+                .dropbtn {
+                    padding: 10px 23px;
+                    white-space: nowrap;
+                    background: #f5f5f5;
+                    border-radius: 3px;
+                    font-size: 14px;
+                    color: #000;
+                    border: none;
+                    cursor: pointer;
+                    font-family: 'Noto Sans KR', sans-serif;
+                }
+
+              .dropbtn:hover, .dropbtn:focus {
+                background-color:whitesmoke;
+                }
+              
+              .dropbtn .dropdown{
+                padding: 0;
+                padding-right: 14px;
+                width: auto;
+                font-size: 14px;
+                border: none;
+                cursor: pointer;
+                
+                background-size: 7px auto;
+              }
+
+              .dropdown {
+                position: relative;
+                display: inline-block;
+              }
+              
+              .dropdown-content {
+                display: none;
+                position: absolute;
+                background-color: #f1f1f1;
+                min-width: 160px;
+                overflow: auto;
+                box-shadow: 0px 8px 10px 0px rgba(0,0,0,0.2);
+                z-index: 10;
+              }
+              
+              .dropdown-content a {
+                color: black;
+                padding: 12px 16px;
+                text-decoration: none;
+                display: block;
+                font-size: 14px;
+              }
+              
+              .dropdown a:hover {background-color: #ddd;}
+              
+              .show {display: block;}
+            </style>
 
 
     </head>
@@ -697,32 +836,44 @@
                                         <!-- @import(/smartpc/include/listAlignSort/categoryPage/index.html)-->
                                             <div class="align_sort_wrap" id="Product_ListMenu">
                                                 <!-- <p class="prd_list_count"><strong>343</strong><span>ITEM</span></p> -->
-                                                <div class="sory_type_wrap">
-                                                    <div class="sort_type_tt">
-                                                        <span class="selected_type">정렬방식</span>
-                                                    </div>
-                                                    <ul class="sort_type_list" style="overflow: hidden; display: none;">
+                                                <div class="dropdown sory_type_wrap">
+                                                    <button onclick="myFunction()" class="dropbtn">
+                                                      <span class="caret">정렬방식</span>
+                                                    </button>
+                                                    <div id="myDropdown" class="dropdown-content">
                                                         <li class="xans-record-"><a href="javascript:void(0);" data-href="&sort_method=6#Product_ListMenu">판매순</a></li>
                                                         <li class="xans-record-"><a href="javascript:void(0);" data-href="&sort_method=5#Product_ListMenu">신상품</a></li>
                                                         <li class="xans-record-"><a href="javascript:void(0);" data-href="&sort_method=8#Product_ListMenu">조회수</a></li>
-                                                    </ul>
+                                                    </div>
                                                 </div>
+                                                  <script>
+                                                    /* When the user clicks on the button, 
+                                                    toggle between hiding and showing the dropdown content */
+                                                    function myFunction() {
+                                                      document.getElementById("myDropdown").classList.toggle("show");
+                                                    }
+                                                    
+                                                    // Close the dropdown if the user clicks outside of it
+                                                    window.onclick = function(event) {
+                                                      if (!event.target.matches('.dropbtn')) {
+                                                        var dropdowns = document.getElementsByClassName("dropdown-content");
+                                                        var i;
+                                                        for (i = 0; i < dropdowns.length; i++) {
+                                                          var openDropdown = dropdowns[i];
+                                                          if (openDropdown.classList.contains('show')) {
+                                                            openDropdown.classList.remove('show');
+                                                          }
+                                                        }
+                                                      }
+                                                    }
+                                                    </script>
                                                 <span class="compare displaynone"><a href="#none" class="btnCompare" onclick="EC_ListAction.setProductCompare();">상품비교</a></span>
                                                 <button type="button" class="shoppingQ_btn layout-view">내가 원하는 디자인 찾기</button>
                                             </div>
                                         </div>
-                                        <!-- // 정렬방식-->
-                                        <!-- 필터 영역 추가 : 모바일과 동일한 경로로 수정하기 위해 아래 경로로 이동하였습니다. 아래에서 [파일열기] 클릭하여 이동한 뒤 수정해주세요. -->
-                                        <!-- 
-                                        추가할 경우 - [텍스트입력] 부분에 원하시는 값 입력하시고 
-                                        입력해주세요.
-                                        <li class="swiper-slide"><a href="#none">텍스트입력</a></li>
-                                        순서 변경할 경우 - <li class="swiper-slide"><a href="#none">데일리</a></li> 끼리 위치 이동주세요.
-                                        <>, / 등 다른 기호가 누락되지 않게 주의 부탁드립니다. 
                                         
-                                        -->
                                         <div class="custom_filter_wrap layout-view " style="height: 175px;">
-                                            <div class="custom_filter_container swiper-container layout-view swiper-container-initialized swiper-container-horizontal swiper-container-free-mode">
+                                            <div id = "test-slide_new" class="custom_filter_container swiper-container layout-view swiper-container-initialized swiper-container-horizontal swiper-container-free-mode">
                                                 <ul class="swiper-wrapper" style="transform: translate3d(0px, 0px, 0px);">
                                                     <li class="swiper-slide swiper-slide-active" style="margin-right: 8px;"><a href="javascript:void(0);" data-filter="데일리">데일리</a></li>
                                                     <li class="swiper-slide swiper-slide-next" style="margin-right: 8px;"><a href="javascript:void(0);" data-filter="풀컬러">풀컬러</a></li>
@@ -747,9 +898,37 @@
                                             </div>
                                             <div class="swiper-button-next filter_next" tabindex="0" role="button" aria-label="Next slide" aria-disabled="false">
                                             </div>
-                                            <div class="swiper-button-prev filter_prev swiper-button-disabled" tabindex="0" role="button" aria-label="Previous slide" aria-disabled="true"
+                                            <div class="swiper-button-prev filter_prev" tabindex="0" role="button" aria-label="Previous slide" aria-disabled="true"
                                             ></div>
                                         </div>
+                                        <script>
+                                            const slide_new = new Swiper('#test-slide_new', {
+                                                slidesPerView : 'auto',
+                                                spaceBetwwen : 3,
+                                    
+                                                // Optional parameters
+                                                direction: 'horizontal',
+                                                loop: false,// 슬라이드 반복 여부
+                                                loopedslide:1,
+                                                
+                                                // If we need pagination
+                                                pagination: {
+                                                    el: '.swiper-pagination',
+                                                },
+                                                
+                                                // Navigation arrows
+                                                navigation: {
+                                                    nextEl: '.swiper-button-next',
+                                                    prevEl: '.swiper-button-prev',
+                                                },
+                                                
+                                                // And if we need scrollbar
+                                                scrollbar: {
+                                                    el: '.swiper-scrollbar',
+                                                    draggable: true,
+                                                },
+                                            });
+                                        </script>
                                         <!-- 필터 영역 추가 : 모바일과 동일한 경로로 수정하기 위해 아래 경로로 이동하였습니다. 아래에서 [파일열기] 클릭하여 이동한 뒤 수정해주세요. -->
                                     </div>
                                     <!-- 큐레이션 선택 시 노출 필터 -->
@@ -2360,61 +2539,6 @@
                     </div>
                     <!-- //상품분류 영역 -->
                 </div>
-                <script>
-                    var sub_title_text_top_url = location.href;
-                    var title_url = location.href;
-                    var sub_title_text_top = document.getElementById("sub_title_text_top");
-                    var cate_title_text_img3 = document.getElementById("name_3");
-                    var sub_title_text_top2 = document.getElementById("sub_title_text_top2");
-                    if(sub_title_text_top_url.match("cate_no=120") || sub_title_text_top_url.match("cate_no=125") || sub_title_text_top_url.match("cate_no=127")){
-                        sub_title_text_top.style.display = 'block';
-                    }else{
-                        sub_title_text_top.style.display = 'none';
-                    }
-                    if(sub_title_text_top_url.match("cate_no=243")){
-                        sub_title_text_top2.style.display = 'block';
-                    }else{
-                        sub_title_text_top2.style.display = 'none';
-                    }
-                    if(location.href.match("cate_no=246")){
-                        document.getElementById('name_1').classList.remove('eng_font');
-                    }
-                    /*if(sub_title_text_top_url.match("cate_no=207")){
-                        document.getElementById("SP_subTitle_2").style.display = 'none';
-                        cate_title_text_img3.style.display = 'block';            
-                    }else{
-                        cate_title_text_img3.style.display = 'none';                   
-                    }*/
-                    if(title_url.match("cate_no=212") || title_url.match("cate_no=217") || title_url.match("cate_no=218") || title_url.match("cate_no=219") || title_url.match("cate_no=220") || title_url.match("cate_no=221") || title_url.match("cate_no=222") || title_url.match("cate_no=223") || title_url.match("cate_no=224") || title_url.match("cate_no=225") || title_url.match("cate_no=226") || title_url.match("cate_no=227") || title_url.match("cate_no=228") || title_url.match("cate_no=229") || title_url.match("cate_no=230") || title_url.match("cate_no=231") || title_url.match("cate_no=232") || title_url.match("cate_no=233") || title_url.match("cate_no=234") || title_url.match("cate_no=235")){
-                        document.getElementById("SP_subContHeader_top").style.display = 'none';
-                    }
-                    
-                    // banner controll
-                    /*  if(!title_url.match("cate_no=127")){
-                        var divTag = document.createElement('div');
-                        divTag.id = "echo_banner_bottom";
-                        divTag.style="padding-bottom:60px;width:100%;";
-                        divTag.insertAdjacentHTML("beforeend", "<img src='/web/_event/210510_event8_v3/PC_cart.jpg' /><a>");
-                        document.getElementsByClassName("SP_prdList_item")[5].after(divTag);
-                    }
-                    if(title_url.match("cate_no=120")|| title_url.match("cate_no=125")||title_url.match("cate_no=127")){
-                        var divTag = document.createElement('div');
-                        divTag.id = "echo_banner_bottom";
-                        divTag.style="padding-bottom:60px;width:100%;";
-                        divTag.insertAdjacentHTML("beforeend", "<img src='/web/_event/210510_event8_v3/PC_cart.jpg' /><a>");
-                        var abc = document.querySelectorAll(".SP_prdList")[1];
-                        abc.getElementsByClassName("SP_prdList_item")[5].after(divTag);
-                    }*/
-                </script>
-                <script>
-                    (function(i,s,o,g,r,a,m){if(s.getElementById(g)){return};a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.id=g;a.async=1;a.src=r;m.parentNode.insertBefore(a,m)})(window,document,'script','crema-jssdk','https://widgets.cre.ma/ohora.kr/init.js');
-                    function UpdateCountAndScore() {
-                        if (typeof crema == "object" && typeof crema.run == "function") {
-                            crema.run();
-                        }
-                        console.log("%c[CREMA]%c REVIEWS COUNT AND SCORE WAS UPDATED.", "font-weight: bold; color: black;", "color: green");
-                    }
-                </script>
             </div>
         </div>
 

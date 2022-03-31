@@ -1,6 +1,16 @@
 @charset "utf-8";    
-/* slick */
+.main_container .mainSection {
+    position: relative;
+    overflow: hidden;
+    width: 1050px;
+    margin: 20px auto 115px;
+    padding: 0;
+    letter-spacing: -0.25px;
+}
 
+
+
+  
 
 
 
@@ -290,6 +300,8 @@ legend {
     box-sizing: border-box;
     background: #fff;
 }
+
+
 #fix_position .hd_cate_container .SP_category_wrap .inner {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -365,6 +377,8 @@ legend {
 .displaynone {
     display: none !important;
 }
+
+
 
 /* 카테고리 메뉴 적용 안됨 */
 

@@ -6,10 +6,11 @@
     <meta http-equiv="Cache-Control" content="no-cache">
     <meta http-equiv="Expires" content="0"><meta http-equiv="Pragma" content="no-cache">
     <!-- // PG크로스브라우징필수내용 -->
-    <meta name="google-site-verification" content="_oaznpOmYgZ9avxvEyaup82d9C7VGilHDjS72nvLW6k">
     <meta charset='utf-8'>
     <title>ohora</title>
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"/>
     <link rel="stylesheet" href="css/style.css">
     
 
@@ -50,6 +51,8 @@
     <link rel="stylesheet" type="text/css" href="//img.echosting.cafe24.com/editors/froala/css/froala_style_ec.min.css?vs=2203281309" charset="utf-8">
     <link rel="stylesheet" type="text/css" href="https://www.ohora.kr/ind-script/optimizer.php?filename=nZBBCkIxEEP3xa3nCHoEj-ANpnXUD-2kTKegt9edbgTpNuTlQXBnUxyOju68uTS4Dk4vijIGrk4LFLZG272DPf7pa0mDdcZGS5mPRXBGrEqrPNXX0JBcdRFlT3UzTVnMfvqld5wofsH5e-7z8Qs&type=css&k=a052fbc291df183c9caddf6aefc2c6be24ab00a6&t=1635315871">
     <link rel="stylesheet" type="text/css" href="https://www.ohora.kr/ind-script/optimizer.php?filename=rdBBEsIwCAXQvXXrOVB3rr2BniClTMMYQiYk7Xh7Y9UL2C4Z4DEf8CoEhF01ygbqNbvz8XSBVPvA2PkiAWygbiDjMYI9OJ4_Y4D2XejEcdy38gB_cTwtFk8bQXKtVlTumDWE3uUV4puzmRPlTfKhiuiahME9tRbonTEuKOGuFbRrDVobVHSogX43pIbC5jXdPafEcdxUR41TA1hjwk1ey9GKu9HENL-9Fw&type=css&k=23167fd2f5d97f95de608610b30390ab53367da5&t=1641534122&user=T">
+    
+    <link rel="stylesheet" type="text/css" href="https://www.ohora.kr/ind-script/optimizer.php?filename=rdBBEsIwCAXQvXXrOVB3rr2BniClTMMYQiYk7Xh7Y9UL2C4Z4DEf8CoEhF01ygbqNbvz8XSBVPvA2PkiAWygbiDjMYI9OJ4_Y4D2XejEcdy38gB_cTwtFk8bQXKtVlTumDWE3uUV4puzmRPlTfKhiuiahME9tRbonTEuKOGuFbRrDVobVHSogX43pIbC5jXdPafEcdxUR41TA1hjwk1ey9GKu9HENL-9Fw&type=css&k=23167fd2f5d97f95de608610b30390ab53367da5&t=1641534122&user=T">
    
 
 
@@ -66,15 +69,52 @@
     
     <!-- //slick -->
 
+    <!-- 햄버거메뉴 css -->
+    <style>
+        .container {
+          display: inline-block;
+          cursor: pointer;
+        }
+        
+        .bar1, .bar2, .bar3 {
+          width: 35px;
+          height: 5px;
+          background-color: #333;
+          margin: 6px 0;
+          transition: 0.4s;
+        }
+        
+        .change .bar1 {
+          -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+          transform: rotate(-45deg) translate(-9px, 6px);
+        }
+        
+        .change .bar2 {opacity: 0;}
+        
+        .change .bar3 {
+          -webkit-transform: rotate(45deg) translate(-8px, -8px);
+          transform: rotate(45deg) translate(-8px, -8px);
+        }
+    </style>
+
+
+
 
     
-
     
     
-
+    
+    
 </head>
+
+
+
+
+
+<!-- //헤더 호출 -->
+
 <body id="SmartPC">
-    
+
     <!-- 탑배너 -->
     <div class="xans-element- xans-layout xans-layout-statelogoff">
         <div class="swiper" >
@@ -125,8 +165,6 @@
     </script>
     <!-- //탑배너 -->
 
-
-    
     <!-- 헤더 호출 -->
     <div id="fix_position" class = modify>
         <div id="SMS_fixed_wrap" class="SMS_fixed_wrap">
@@ -143,8 +181,10 @@
                 </div>
             </div>
             <div class="SMS_fixed_inner">
-                <div class="small_icon m_menu">
-                    <a class="SMS_menu"></a>
+                <div class="container" onclick="myFunction(this)">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
                 </div>
                 <div class="xans-element- xans-layout xans-layout-logotop fixed_logo">
                     <a href="/" style="display: block; text-align: center;">
@@ -163,8 +203,13 @@
                     </div>
                 </div>
             </div>
+            <script>
+                function myFunction(x) {
+                    x.classList.toggle("change");
+                }
+            </script>
             <!-- 상품 관련 페이지에서 노출되는 헤더 -->
-            <div class="prd_cate_container no-hover" style="display: none;">
+            <div class="prd_cate_container" style="display: none;">
                 <ul class="prd_cate_wrap">
                     <li class="eng_font">
                         <a href="#">product</a>
@@ -260,7 +305,8 @@
             </div>
             <!-- //검색레이아웃 -->
             <!-- 햄버거 메뉴 -->
-            <div class="hd_cate_container">
+            
+            <div class="hd_cate_container" style="overflow: hidden; display: none;">
                 <div class="SP_category_wrap">
                     <div class="inner">
                         <!-- 첫번째 줄 메뉴 -->
@@ -408,17 +454,16 @@
                     </div>
                 </div>
             </div>
+            
         </div>
         <!-- //햄버거 메뉴 -->
+        </div>
     </div>
-    <!-- //헤더 호출 -->
 
     <!-- 플로팅 버튼 호출 -->
-    <div id="floating" style="display: block;">
-        <div class="go_top"><span class="icon"></span></div>
+    <div class ="btn-top" style="position: fixed; bottom: 70px; right: 55px; left: auto; top: auto; z-index: 100; display: block;">
+        <a href="#"><img src="smartpc/icon/arrow_top.png" alt=""></a>
     </div>
-    
-
     <!-- //플로팅 버튼 호출 -->
 
     <div id="wrap" style="padding-top : 154px !important;">
@@ -1726,7 +1771,7 @@
                         </h3>
                         <!-- //타이틀 -->
                         <!-- 이벤트 배너 -->
-                        <div id = "test-slide2" class="swiper-container">
+                        <div id = "test-slide" class="swiper-container">
                             <ul class="swiper-wrapper">
                                 <div class="swiper-slide" >
                                     <a href="#"><img src="images/web/upload/welcomekit.jpg" alt="pc_event_banner_4 bk"><span class="pc_event_banner_4 bk shop_now">shop now &gt;</span></a>
@@ -1740,17 +1785,6 @@
                             </ul>
                         </div>
                             <!-- //이벤트 배너 -->
-                            <!-- Add Pagination -->
-                            <div class="swiper-pagination swiper-pagination-clickable swiper-pagination-bullets">
-                                <span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 1"></span>
-                                <span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 2"></span>
-                                <span class="swiper-pagination-bullet swiper-pagination-bullet-active" tabindex="0" role="button" aria-label="Go to slide 3"></span>
-                            </div>
-                          
-                        <!-- Add Arrows -->
-                        <div class="swiper-button-next displaynone" tabindex="0" role="button" aria-label="Next slide"></div>
-                        <div class="swiper-button-prev displaynone" tabindex="0" role="button" aria-label="Previous slide"></div>
-                        <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
                     </div>
                     <!-- //EVENT -->
                     <!-- INSTA REVIEW -->
@@ -1928,37 +1962,13 @@
                                 </div>
                                 <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
                             </div>
-                            <!-- <div class="insta_review_popup">
-                                <div class="popup_inner">
-                                    <p class="popup_title">오호라와 함께한 순간</p>
-                                    <button type="button" class="close"><span>닫기</span></button>
-                                    <div class="insta_info">
-                                        <div class="insta_img_wrap">
-                                            <div class="thumb_img"><img src="" alt="" class="insta_img"></div>
-                                            <div class="text_area">
-                                                <span><img src="/web/upload/common/ico_insta_w.png" alt="인스타그램"> &nbsp;<i class="insta_id"></i></span>
-                                                <span class="insta_date"></span>
-                                            </div>
-                                        </div>
-                                        <div class="navigation_wrap">
-                                            <span class="prev_btn">이전</span>
-                                            <span class="next_btn">다음</span>
-                                        </div>
-                                    </div>
-                                    <div class="insta_items">
-                                        <p class="sub_title">관련디자인</p>
-                                        <div class="insta_prd_wrapper swiper-container">
-                                            관련디자인 호출 -->
-                                        <!-- </div>
-                                    </div>
-                                </div>
-                            </div> --> 
                         </div>
                         <div class="swiper-scrollbar">
                             <div class="swiper-scrollbar-drag" style="width: 311.881px; transform: translate3d(0px, 0px, 0px);"></div>
                         </div>
                         <!-- //인스타그램 리뷰 -->
                     </div>
+                    <!-- //인스타그램 리뷰 -->
                     <!-- INSTA REVIEW -->
                     <!-- MAGAZINE -->
                     <div class="mainSection magazine_section">
@@ -1970,13 +1980,8 @@
                         <!-- //타이틀 -->
                         <!-- 매거진 -->
                         <div class="xans-element- xans-board xans-board-listpackage-8 xans-board-listpackage xans-board-8 magazine ">
-                            <div class="xans-element- xans-board xans-board-list-8 xans-board-list xans-board-8 swiper-container magazine-container swiper-container-initialized swiper-container-horizontal swiper-container-autoheight">
-                                <!--
-                                    $count = 8
-                                    $login_page_url = /member/login.html
-                                    $deny_access_url = /index.html
-                                -->
-                                <ul class="swiper-wrapper slide-2-wrapper" style="transition-duration: 0ms; transform: translate3d(-853.6px, 0px, 0px); height: 258px;">
+                            <div id = test-slide_magazine class="xans-element- xans-board xans-board-list-8 xans-board-list xans-board-8 swiper-container magazine-container swiper-container-initialized swiper-container-horizontal swiper-container-autoheight">
+                                <ul class="swiper-wrapper slide-2-wrapper" style="transition-duration: 0ms; transform: translate3d(-1750px, 0px, 0px); height: 258px;">
                                     <li class="swiper-slide mov03 xans-record- swiper-slide-duplicate" data-swiper-slide-index="2" style="width: 196.4px; margin-right: 17px;">
                                         <div class="boardCnt slide-inner">    
                                             <a href="/board/gallery/read.html?no=153092&amp;board_no=8" class="boardThumb imgLink mov03">
@@ -2066,7 +2071,7 @@
                                             <a href="/board/gallery/read.html?no=153351&amp;board_no=8" class="boardMore">더보기</a>
                                         </div>
                                     </li>
-                                    <li class="swiper-slide mov03 xans-record-" data-swiper-slide-index="2" style="width: 196.4px; margin-right: 17px;">
+                                    <li divclass="swiper-slide mov03 xans-record-" data-swiper-slide-index="2" style="width: 196.4px; margin-right: 17px;">
                                         <div class="boardCnt slide-inner">    
                                             <a href="/board/gallery/read.html?no=153092&amp;board_no=8" class="boardThumb imgLink mov03"><img onerror="this.src='https://img.echosting.cafe24.com/skin/base_ko_KR/board/@img_gallery.gif'" alt="" src="//www.ohora.kr/file_data/ohora2019//2022/02/23/1610ca71e42f10456780a5835fbd72fd.jpg">
                                             </a>
@@ -2204,6 +2209,35 @@
                         </div>
                         <!-- //매거진 -->
                     </div>
+                        <script>
+                            const slide_magazine = new Swiper('#test-slide_magazine', {
+                                slidesPerView : 'auto',
+                                spaceBetwwen : 8,
+                    
+                                // Optional parameters
+                                direction: 'horizontal',
+                                loop: true,// 슬라이드 반복 여부
+                                loopedslide:1,
+                                
+                                // If we need pagination
+                                pagination: {
+                                    el: '.swiper-pagination',
+                                },
+                                
+                                // Navigation arrows
+                                navigation: {
+                                    nextEl: '.swiper-button-next',
+                                    prevEl: '.swiper-button-prev',
+                                },
+                                
+                                // And if we need scrollbar
+                                scrollbar: {
+                                    el: '.swiper-scrollbar',
+                                    draggable: true,
+                                },
+                                centeredSlides:true,
+                            });
+                        </>
                     <!-- //MAGAZINE -->
                     <!-- 하단 띠 배너 -->
                     <div class="banner_container">
@@ -2222,7 +2256,8 @@
                             </div>
                         </a>
                     </div>
-                    <!-- //하단 띠 배너 -->
+                <!-- //하단 띠 배너 -->
+                </div>
             </div>
         </div>
     </div>
@@ -2332,8 +2367,8 @@
         
     <!-- JS호출 -->
     <script type ="text/javascript" src="js/SPcustom_common.js"></script>
-    <script src="js/topbanner_v2.js"></script>
     <!-- swiper 배너 -->
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
     <script>
         const slide = new Swiper('#test-slide', {
             slidesPerView : 'auto',
@@ -2396,9 +2431,7 @@
     </script>
     <!-- swiper 배너 -->
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-    
+   
 
     
 </body>

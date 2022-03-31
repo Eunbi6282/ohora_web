@@ -1,4 +1,4 @@
-@chartset "utf-8";
+
 #floating {
 	position: fixed;
 	bottom: 70px;
@@ -50,6 +50,6 @@
 	width: 36px;
 	height :50px;
 	float:right;
-	background: url('../smartpc/icon/arrow_top.png') no-repeat center center;
+	/* background: url('../smartpc/icon/arrow_top.png') no-repeat center center; */
 	background-size:90%;
 }
