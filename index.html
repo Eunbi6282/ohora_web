@@ -77,8 +77,8 @@
         }
         
         .bar1, .bar2, .bar3 {
-          width: 35px;
-          height: 5px;
+          width: 30px;
+          height: 2px;
           background-color: #333;
           margin: 6px 0;
           transition: 0.4s;
@@ -86,16 +86,21 @@
         
         .change .bar1 {
           -webkit-transform: rotate(-45deg) translate(-9px, 6px);
-          transform: rotate(-45deg) translate(-9px, 6px);
+          transform: rotate(316deg) translate(-5px, 6px);
         }
         
         .change .bar2 {opacity: 0;}
         
         .change .bar3 {
           -webkit-transform: rotate(45deg) translate(-8px, -8px);
-          transform: rotate(45deg) translate(-8px, -8px);
+          transform: rotate(53deg) translate(-4px, -8px);
         }
     </style>
+    <style>
+        
+
+    </style>
+
 
 
 
@@ -306,8 +311,8 @@
             <!-- //검색레이아웃 -->
             <!-- 햄버거 메뉴 -->
             
-            <div class="hd_cate_container" style="overflow: hidden; display: none;">
-                <div class="SP_category_wrap">
+            <div id ="menu"class="hd_cate_container" >
+                <div class="close SP_category_wrap">
                     <div class="inner">
                         <!-- 첫번째 줄 메뉴 -->
                         <div class="cate_wrap">
@@ -454,6 +459,11 @@
                     </div>
                 </div>
             </div>
+            <script>
+                $(".container").click(function() { $("#menu").addClass("open"); }); 
+                $(".close").click(function() { $("#menu").removeClass("open"); });
+            </script>
+
             
         </div>
         <!-- //햄버거 메뉴 -->
