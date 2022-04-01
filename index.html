@@ -1154,7 +1154,7 @@
                         <!-- //주간 베스트 탭 -->
                         <!-- 전체 -->
                         <div class="common_list_box on" data-tab="1">
-                            <div id= "test-slide_new" class="swiper-container">
+                            <div id= "test-slide_best" class="swiper-container">
                                 <ul class="items common_items swiper-wrapper" style="transition-duration: 0ms; transform: translate3d(0px, 0px, 0px);">
                                     <li class="xans-record- append_item swiper-slide swiper-slide-active" style="width: 286.667px; margin-right: 40px;">
                                         <div class="complete container " data-prd-no="1420" data-filter="">
@@ -1802,7 +1802,7 @@
                         <!-- 타이틀 -->
                         <h3>
                             <strong>오호라와 함께한 순간</strong>
-                            <a href="/instagram/index.html" class="tit_moreBtn more_btn">+ 전체보기<span class="more displaynone"></span></a>
+                            <a href="insta.html" class="tit_moreBtn more_btn">+ 전체보기<span class="more displaynone"></span></a>
                         </h3>
                         <!-- //타이틀 -->
                         <!-- 인스타그램 리뷰 -->
@@ -2379,6 +2379,7 @@
     <script type ="text/javascript" src="js/SPcustom_common.js"></script>
     <!-- swiper 배너 -->
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <!-- 메인배너 -->
     <script>
         const slide = new Swiper('#test-slide', {
             slidesPerView : 'auto',
@@ -2411,8 +2412,38 @@
             }
         });
     </script>
+    <!-- 신상품 -->
     <script>
         const slide_new = new Swiper('#test-slide_new', {
+            slidesPerView : 'auto',
+            spaceBetwwen : 3,
+
+            // Optional parameters
+            direction: 'horizontal',
+            loop: true,// 슬라이드 반복 여부
+            loopedslide:1,
+            
+            // If we need pagination
+            pagination: {
+                el: '.swiper-pagination',
+            },
+            
+            // Navigation arrows
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            
+            // And if we need scrollbar
+            scrollbar: {
+                el: '.swiper-scrollbar',
+                draggable: true,
+            },
+        });
+    </script>
+    <!-- 주간베스트 -->
+    <script>
+        const slide_best = new Swiper('#test-slide_best', {
             slidesPerView : 'auto',
             spaceBetwwen : 3,
 
