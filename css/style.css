@@ -7,15 +7,6 @@
     padding: 0;
     letter-spacing: -0.25px;
 }
-
-
-
-  
-
-
-
-
-
 span, a {
     font-family: inherit;
     color: inherit;
@@ -400,9 +391,11 @@ legend {
     color: #7e7e7e;
 }
 
-
-
-
+/* 메인로고 가운데 정렬*/
+/* .xans-element- .xans-layout .xans-layout-logotop .fixed_logo {
+    position: relative;
+    text-align: center;
+} */
 
 
 
